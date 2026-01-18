@@ -7,18 +7,16 @@ backgroundImage: url('https://marp.app/assets/hero-background.svg')
 style: |
   section {
     font-family: 'Inter', sans-serif;
-    font-size: 26px;
+    font-size: 24px;
     padding: 30px;
   }
-  h1 { color: #2D3E50; font-size: 1.5em; margin-bottom: 0.1em; }
-  h2 { color: #E74C3C; font-size: 1.1em; margin-bottom: 0.4em; }
+  h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
+  h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
   strong { color: #2980B9; }
-  blockquote { background: #f9f9f9; border-left: 8px solid #ccc; padding: 10px 15px; font-style: italic; font-size: 0.9em; }
   img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-  .columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: center; }
+  .columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
   .small-text { font-size: 0.7em; }
-  .center { text-align: center; }
-  .profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.85em; }
+  .profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
 ---
 
 # **APS** 🤖💳
@@ -32,14 +30,14 @@ style: |
 *Ex-BIS Innovation Hub Singapore*
 
 **🌏 Seeking Opportunities in Singapore**
-I am looking for roles in **Product Management, Fintech, Payments, RegTech**, and **Digital Assets**.
+Product Management • Fintech • Payments • RegTech
 
 </div>
 <div class="profile-box">
 
 "I am a Product person. **I build.**"
 
-I have worked across product delivery, user research, and cross-agency collaboration. I enjoy solving complex problems and bringing structure to early ideas.
+I have worked across product delivery, user research, and cross-agency collaboration. I enjoy solving complex problems.
 
 **I care deeply about building products that create real impact.**
 
@@ -52,11 +50,11 @@ I have worked across product delivery, user research, and cross-agency collabora
 
 We are moving from a world where **humans click buttons** to a world where **agents negotiate protocols**.
 
-![h:300](https://kroki.io/mermaid/svg/eNqFj88KgkAQxu89xeQ1TOjoQTD7JyR06AUmd9RFnbVtRXr7tg3BEGouw8z8vm_4HnTviXPaSSw1tguw1aE2MpcdsoFT3yLPtnEKcUlsZoeMdF454pK6o9P7UTQqQvC2_ROKRpaVAaPgrFgo9hw8QpafGoVw3F8hWA_UNH7NauAAN-gUU8z_euMaJKjFb-tEExp6gwZWkCELO_7xThQXUrc0s3ZpbcTDJ95NqZrE0nsBfgpuTw==)
+![h:250](https://kroki.io/mermaid/svg/eNorTi0sTc1LTnXJTEwvSszlUgCCgsSikszkzILEvBIFj9LcxDwMUUdPTKEAiBhYg66dnaOnlYKSU2mlQlpOZnpGiRJY0tETJBMAlPJLTc8vyUwsSYWIB3jqQvX4JualwIXhyoMz0_MU1BQCEivR1Tvn56VlFuWmpiB0gJ0AtN0lPy9VUQkAOQtAlA==)
 
-### **The Shift**
+### **The Paradigm Shift**
 *   **Today**: Humans navigate UI, solve CAPTCHAs, enter details.
-*   **Tomorrow**: Agents use APIs JSON-RPC, and Crypto Signatures.
+*   **Tomorrow**: Agents use UCP to discover products and fill carts.
 
 > **Prediction**: By 2027, a significant % of eCommerce will be Agent-to-Agent.
 
@@ -68,10 +66,10 @@ We are moving from a world where **humans click buttons** to a world where **age
 
 | Protocol | Company | Approach |
 |----------|---------|----------|
-| **AP2** | Google | "Agent-to-Agent" mandates |
-| **x402** | Coinbase | HTTP 402 Micropayments |
-| **ACP** | Shopify + OpenAI | E-commerce checkout |
-| **UCP** | Stripe | Universal payment API |
+| **UCP** | **Google + Partners** | Universal Commerce |
+| **ACP** | **Shopify + OpenAI** | E-commerce checkout |
+| **x402** | **Coinbase** | Micropayments |
+| **AP2** | **Agent Standard** | Mandate-based A2A |
 
 > **The Problem**: Developers need to validate signatures, parse headers, and handle mandates across 4 disparate specs.
 
@@ -108,66 +106,102 @@ We are moving from a world where **humans click buttons** to a world where **age
 
 # **Introducing APS** 🚀
 
-*A Unified Sandbox for Agentic Commerce Protocols*
+*Unified Sandbox for Agentic Commerce*
 
-![h:300](https://kroki.io/mermaid/svg/eNpLy0kvT85ILCpRCHHiUgCC4tKk9KLEggwFt6L8vJLUvBSwKAgE5CRWphfll-alRCOYCqGesXAVLonFGUn5iUUp0XAWRBJmDNxwp8TkbGSzQ50DovVz85Oz9UuTCxAGOsKFE5GFI0wMjKDiFUAmkvoAmHhiAZKwZ15xQWpySX5RNFA8Uz8TxkV1HMzDCrq6djAHAgC1wlLn)
+![h:220](https://kroki.io/flowchart/svg/eNpLy8kvT85ILCpRCHHiUgCC4tKk9KLEggwFt6L8vJLUvBSwKAiEekYH5CRWphfll-alxMKFXRKLM6JBRFJ-YhFUHKYNbphTYnI2ilnOAdH6ufnJ2fqlyQX6CMMc4eKJKOIVJgZGUAkQE1lHAEwisQAmDrMJ5gUFXV07mBMAj_NCjg==)
 
 *   ⚡ **Mock Servers**: Instant endpoints for UCP, ACP, x402, AP2.
-*   🔍 **Inspector**: Validates your requests against official schemas.
-*   🛡️ **Security Overview**: Verifies cryptographic signatures (EIP-712).
+*   🔍 **Inspector**: Validates requests against schemas.
+*   🛡️ **Security**: Verifies EIP-712 signatures.
 *   🎮 **Playground**: Learn by doing in the UI.
 
 ---
 
-# **Testing Flow 1: x402 (Coinbase)** ⚡
+# **Flow 1: x402 (Coinbase)** ⚡
 
-*The Standard for Micropayments & Metered Access.*
+*For Micropayments & Metered Access.*
 
-![h:350](https://kroki.io/mermaid/svg/eNqNjjELwkAMhXd_RUZFDmsRhA4FqUUcLMV20DG0oQa863leBf-9oaeTCGZ7L99L3p1uA5mGtoydQz0BGYvOc8MWjYfsymT8l12Re5Ab7UCoNA1eAru8hoV1pHnQCi2PVFgqwQKfwCqKYQ4lPrXIo9RgRy1cCNv34aL3BL2k4BOpuDNSY0zANN-Xar2MZ_-1kF8nVW7Oh7yofzSKo0iorDde5As4LFiw)
+<div class="columns">
+<div>
 
-### **What APS Tests:**
-1.  **Header Parsing**: Does the agent correctly parse `402 Payment Required` headers?
-2.  **Signature Validation**: Is the `X-Payment` header signature valid?
-3.  **Payload Structure**: Does the payment payload match the resource price?
+![w:450](https://kroki.io/mermaid/svg/eNp9zrEKwkAMBuDdp8guxaM4deiioiCoWAfXcP0pAXtX06vg23vc6SSaLX8-koy4T3AWa-FOuZ9RrIE1iJWBXaDVTeDCV9xAH9AUZ1HUdc4q2m4utFCMflKLRPKkiCbjipampBM_-9ic4weiaJM8-ADyEdNHNtI52oHbf-fmdC3e634cLI2h4_4FXgBLkg==)
 
----
+</div>
+<div>
 
-# **Testing Flow 2: AP2 (Google)** 🤖
+### **What APS Tests**
+1.  **Header Parsing**: Can agent handle `402 Payment Required`?
+2.  **Signatures**: Is `X-Payment` header valid?
+3.  **Payload**: Does payment match price?
 
-*High-Trust Commerce with User Mandates.*
-
-![h:350](https://kroki.io/mermaid/svg/eNqNT70KwkAM3n2KjDp0cexQKHZVxOIDhGtoA_Yu5q6CPr1nnaIVzHLhvr98ka4TeUcNY684riCPoCZ2LOgTtEMQYd9D3ZNPX_Ce1A2vZRk-4n0kg1q_oqqsQwkNRxdupLCut_Vm1lhKkUXWpXw_sEPt_gvJzHw7-g4TzYpDSARz7Kf1OeZPFNGMRrjwyD-KmK75pCkNQflBJseQlpqcyBFLegL8d4jH)
-
-### **What APS Tests:**
-1.  **Discovery**: Can the agent find and parse the `/.well-known/a2a` card?
-2.  **Mandate Limits**: Does the agent respect the spending limit in the Mandate?
-3.  **OTP Challenge**: Can the agent handle user intervention flows?
+</div>
+</div>
 
 ---
 
-# **Testing Flow 3: ACP (Shopify + OpenAI)** 🛍️
+# **Flow 2: AP2 (Agent Standard)** 🤖
 
-*Agentic Commerce Protocol: Specialized for E-commerce.*
+*High-Trust Mandates for Agent-to-Agent.*
 
-![h:350](https://kroki.io/mermaid/svg/eNqVjcEKgzAQRO_9ir0X692DUNrSU0mo_YElLhqMSUxWxL9vrD0IBaFznHkzE2kYySq6amwC9gdI8hhYK-3RMpwbsvzrXiQ8KKgWv-EHy8pyGxRwv70gP01kTNZZN9k8ts6v_IbLlt7SL6BKOdTEqE3c2ZWiSsOqJdW5kfNIMWpnd4dXBI4gce6TBcJzMv548TjvPYhQU4AnKdKe36hvbaA=)
+<div class="columns">
+<div>
 
-### **What APS Tests:**
-1.  **Session Management**: Can the agent maintain session state across requests?
-2.  **Product Selection**: Does the agent correctly select variants (size/color)?
-3.  **Checkout Validity**: Is the shipping address and payment method valid?
+![w:450](https://kroki.io/mermaid/svg/eNorTi0sTc1LTnXJTEwvSszlUgCCgsSikszkzILEvBIFj9LcxDwMUUdPTKEAiBhYg66dnaOnlYKSU2mlQlpOZnpGiRJY0tETJBMAlPJLTc8vyUwsSYWIB3jqQvX4JualwIXhyoMz0_MU1BQCEivR1Tvn56VlFuWmpiB0gJ0AtN0lPy9VUQkAOQtAlA==)
+
+</div>
+<div>
+
+### **What APS Tests**
+1.  **Discovery**: Finding `/.well-known/a2a`.
+2.  **Mandates**: Respecting spending limits.
+3.  **OTP**: Handling user approval.
+
+</div>
+</div>
 
 ---
 
-# **Testing Flow 4: UCP (Stripe)** 💳
+# **Flow 3: ACP (Shopify + OpenAI)** 🛍️
 
-*Universal Commerce Protocol: The "Stripe for Agents".*
+*Specialized for E-commerce Checkout.*
 
-![h:350](https://kroki.io/mermaid/svg/eNqFjUEKwjAQRfeeYlbuYvddFCSIC5EWqgeIydgOTZOYpBQR726oCgWhznL---8HvA1oJCoSjRf9CtI54SNJcsJE2DZo4s_3zCs4opet-IQTxopiHuSw350g24yoNeuMHU02SDfhc4yl2lTPgQsnLqQpEgZYwwHvYcFelXXSyxZlZ4fIAoZA1oSlgfrNAPcoIqq_8q8ze5B6ZtL2TmPEpYXSK_TArbmS79PCC4-lcfM=)
+<div class="columns">
+<div>
 
-### **What APS Tests:**
-1.  **Capability Discovery**: Can the agent identify supported payment methods?
-2.  **Idempotency**: Does the agent safely retry requests without double-charging?
-3.  **Card Validation**: Are the card details (simulated) correctly formatted?
+![w:450](https://kroki.io/mermaid/svg/eNorTi0sTc1LTnXJTEwvSszlUgCCgsSikszkzILEvBIFx_TUvBIM0eCM_AKwIFha184OJGCl4O4aoqBfDJMDiekC5cBqrBScE0sSc_LTsWgL8A8G6kvOSE3Ozi8twaY3OLW4ODM_D6fegsRKbNqCUpNTMwtKABNkRlM=)
+
+</div>
+<div>
+
+### **What APS Tests**
+1.  **Sessions**: Maintaining state.
+2.  **Variants**: Selecting size/color.
+3.  **Checkout**: Validating payments.
+
+</div>
+</div>
+
+---
+
+# **Flow 4: UCP (Google + Partners)** 💳
+
+*Universal Commerce Protocol (Shopify, Stripe, Visa, etc)*
+
+<div class="columns">
+<div>
+
+![w:450](https://kroki.io/mermaid/svg/eNp9jjEKwzAQBPu84j7gD7gwGKtxFwh5wEVemwPrpEiXvD9GBFwEZcvdYdiC5wvq4YS3zOFCRxJnEy-J1WjcoPbT3lVWwTJe5zpVqBuGs-7JSfHxjVyBc-gOrOI9TZz4IbuYoDQ1UwYb6IZSJGpb9gVodm1VDGmH4c-jqKvkgOUDGKhZEw==)
+
+</div>
+<div>
+
+### **What APS Tests**
+1.  **Discovery**: Unified product search.
+2.  **Carts**: Filling carts autonomously.
+3.  **Purchase**: Completing orders.
+
+</div>
+</div>
 
 ---
 
@@ -200,7 +234,7 @@ if (IS_DEMO) {
 }
 ```
 
-> **Result**: A frictionless live demo for recruiters and developers.
+> **Result**: A frictionless live demo.
 
 </div>
 </div>
@@ -210,13 +244,13 @@ if (IS_DEMO) {
 # **About Me** 👨‍💼
 
 **Sivasubramanian Ramanathan**
-*Product Owner | Fintech, Payments & Digital Innovation*
+*Product Owner | Fintech, Payments & Innovation*
 
 I specialize in **simplifying complexity**.
 
 *   **Experience**: BIS Innovation Hub Singapore (CBDCs, Cross-Border Payments).
 *   **Skills**: Product Management, Rapid Prototyping, Technical Strategy.
-*   **Focus**: Bridging the gap between Policy/Regulation and Engineering.
+*   **Focus**: Bridging Policy/Regulation and Engineering.
 
 ---
 
