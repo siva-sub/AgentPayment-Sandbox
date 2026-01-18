@@ -55,9 +55,9 @@ I believe the best Product Owners accept complexity. I built this sandbox not to
 *   **Gap**: Depends on human attention span.
 *   **Result**: "Cart Abandonment" and friction.
 
-### 2. The AP2 Way (Agent-Centric) 🚀
-*   Agent negotiates locally. User signs a **Mandate** once.
-*   **Trust**: Intent Mandate -> Cart Mandate -> Settlement.
+### 2. The UCP Way (Agent-Centric) 🚀
+*   Agents use **Universal Commerce Protocol** to negotiate deals.
+*   **Trust**: User signs a **Mandate** once.
 *   **Result**: Zero-click, autonomous execution.
 
 > **Impact**: Unlocks the "Machine Economy" (Agents trading 24/7).
@@ -77,18 +77,18 @@ It is not about the payment rail itself.
 
 ---
 
-# **The Infrastructure Gap** 🧩
+# **The Unified Ecosystem** 🧩
 
-*The protocols exist, but the testing tools do not.*
+*UCP unifies the fragmented agent landscape.*
 
-| Protocol | Owner | Key Use Case |
-|----------|-------|--------------|
-| **AP2** | **Google** | Intent/Cart Mandates (60+ Partners) |
-| **x402** | **Google + Coinbase** | Crypto Extension for Web3 |
-| **ACP** | **Shopify + OpenAI** | E-commerce Checkout |
-| **UCP** | **Generic / Stripe** | Universal Card Payments |
+| Protocol | Owner | Role |
+|----------|-------|------|
+| **UCP** | **Google, Shopify, Walmart** | **The Universal Standard** |
+| **AP2** | Google | Mandate & Auth Layer |
+| **ACP** | Shopify + OpenAI | Commerce/Checkout Layer |
+| **x402** | Google + Coinbase | Crypto Extension (A2A) |
 
-> **The Problem**: Developers cannot test these flows without building 4 different mock servers from scratch.
+> **The Problem**: Developers need a single tool to test this entire stack.
 
 ---
 
@@ -96,84 +96,29 @@ It is not about the payment rail itself.
 
 *Unified Sandbox for Agentic Commerce*
 
-![h:200](https://kroki.io/mermaid/svg/eNpLL0osyFAIceJSAILi0qR0MN-tKD-vJDUvBSwKAo7RATmJlelF-aV5KQqhnrFgCZgCuDanxORsZF1O0aHOAQq--cnZsXAx52hHDDGXaMcAIzQx1-gKEwNkQZjBMLcp6OrawWwEAB3zNLo=)
+<div class="columns">
+<div>
 
-*   ⚡ **Mock Servers**: Instant endpoints for AP2, x402, ACP, UCP.
+**The "Postman" for Agents**
+
+*   ⚡ **Mock Servers**: Instant endpoints for UCP, AP2, ACP, x402.
 *   🔍 **Inspector**: Validates requests against schemas.
 *   🛡️ **Security**: Verifies Mandate signatures.
-*   🎮 **Playground**: Learn by doing in the UI.
-
----
-
-# **A2A x402 Extension (Coinbase)** ⚡
-
-*Production-Ready Solution for Crypto Payments.*
-
-<div class="columns">
-<div>
-
-![w:450](https://kroki.io/mermaid/svg/eNp9zrEKwkAMBuDdp8guxaM4deiioiCoWAfXcP0pAXtX06vg23vc6SSaLX8-koy4T3AWa-FOuZ9RrIE1iJWBXaDVTeDCV9xAH9AUZ1HUdc4q2m4utFCMflKLRPKkiCbjipampBM_-9ic4weiaJM8-ADyEdNHNtI52oHbf-fmdC3e634cLI2h4_4FXgBLkg==)
+*   🎮 **Playground**: Learn by doing.
 
 </div>
 <div>
 
-### **What APS Tests**
-1.  **Header Parsing**: Handling `402 Payment Required`.
-2.  **Web3 Signatures**: Validating EIP-712.
-3.  **Metered Access**: Paying per-request.
+![w:500](https://kroki.io/mermaid/svg/eNpLL0osyFAIceJSAILi0qR0MN-tKD-vJDUvBSwKAo7RATmJlelF-aV5KQqhnrFgCZgCuDanxORsZF1O0aHOAQq--cnZsXAx52hHDDGXaMcAIzQx1-gKEwNkQZjBMLcp6OrawWwEAB3zNLo=)
 
 </div>
 </div>
 
 ---
 
-# **AP2 (Google): The New Standard** 🤖
+# **UCP (Google + Partners)** 💳
 
-*Built with 60+ Partners (Adyen, Amex, Mastercard).*
-
-<div class="columns">
-<div>
-
-![w:450](https://kroki.io/mermaid/svg/eNorTi0sTc1LTnXJTEwvSszlUgCCgsSikszkzILEvBIFj9LcxDwMUUdPTKEAiBhYg66dnaOnlYKSU2mlQlpOZnpGiRJY0tETJBMAlPJLTc8vyUwsSYWIB3jqQvX4JualwIXhyoMz0_MU1BQCEivR1Tvn56VlFuWmpiB0gJ0AtN0lPy9VUQkAOQtAlA==)
-
-</div>
-<div>
-
-### **What APS Tests**
-1.  **Intent Mandates**: Proving user authority upfront.
-2.  **Cart Mandates**: "What you see is what you pay for."
-3.  **Accountability**: Non-repudiable audit trails.
-
-</div>
-</div>
-
----
-
-# **ACP (Shopify + OpenAI)** 🛍️
-
-*Specialized for E-commerce Checkout.*
-
-<div class="columns">
-<div>
-
-![w:450](https://kroki.io/mermaid/svg/eNorTi0sTc1LTnXJTEwvSszlUgCCgsSikszkzILEvBIFx_TUvBIM0eCM_AKwIFha184OJGCl4O4aoqBfDJMDiekC5cBqrBScE0sSc_LTsWgL8A8G6kvOSE3Ozi8twaY3OLW4ODM_D6fegsRKbNqCUpNTMwtKABNkRlM=)
-
-</div>
-<div>
-
-### **What APS Tests**
-1.  **Sessions**: Maintaining state.
-2.  **Variants**: Selecting size/color.
-3.  **Checkout**: Validating payments.
-
-</div>
-</div>
-
----
-
-# **UCP (Universal / Stripe)** 💳
-
-*Universal Commerce Protocol.*
+*The Universal Standard (Shopify, Etsy, Target, Walmart).*
 
 <div class="columns">
 <div>
@@ -184,9 +129,75 @@ It is not about the payment rail itself.
 <div>
 
 ### **What APS Tests**
-1.  **Discovery**: Unified product search.
-2.  **Carts**: Filling carts autonomously.
-3.  **Purchase**: Completing orders.
+1.  **Orchestration**: Tying Discovery to Payment.
+2.  **Product Search**: Universal catalog access.
+3.  **Cross-Platform**: Works across Shopify, Stripe, etc.
+
+</div>
+</div>
+
+---
+
+# **AP2 (Google): The Auth Layer** 🤖
+
+*Handling Trust, Mandates, and Verifiable Credentials.*
+
+<div class="columns">
+<div>
+
+![w:450](https://kroki.io/mermaid/svg/eNorTi0sTc1LTnXJTEwvSszlUgCCgsSikszkzILEvBIFj9LcxDwMUUdPTKEAiBhYg66dnaOnlYKSU2mlQlpOZnpGiRJY0tETJBMAlPJLTc8vyUwsSYWIB3jqQvX4JualwIXhyoMz0_MU1BQCEivR1Tvn56VlFuWmpiB0gJ0AtN0lPy9VUQkAOQtAlA==)
+
+</div>
+<div>
+
+### **What APS Tests**
+1.  **Intent Mandates**: Proving user authority.
+2.  **Cart Mandates**: Locking in prices.
+3.  **Accountability**: Audit trails.
+
+</div>
+</div>
+
+---
+
+# **ACP (Shopify + OpenAI)** 🛍️
+
+*Specialized for E-commerce Checkout flows.*
+
+<div class="columns">
+<div>
+
+![w:450](https://kroki.io/mermaid/svg/eNorTi0sTc1LTnXJTEwvSszlUgCCgsSikszkzILEvBIFx_TUvBIM0eCM_AKwIFha184OJGCl4O4aoqBfDJMDiekC5cBqrBScE0sSc_LTsWgL8A8G6kvOSE3Ozi8twaY3OLW4ODM_D6fegsRKbNqCUpNTMwtKABNkRlM=)
+
+</div>
+<div>
+
+### **What APS Tests**
+1.  **Sessions**: Maintaining cart state.
+2.  **Variants**: Size, Color, SKU selection.
+3.  **Checkout**: Completing the purchase.
+
+</div>
+</div>
+
+---
+
+# **A2A x402 Extension (Coinbase)** ⚡
+
+*The Crypto Rail for Agent-to-Agent (A2A) payments.*
+
+<div class="columns">
+<div>
+
+![w:450](https://kroki.io/mermaid/svg/eNp9zrEKwkAMBuDdp8guxaM4deiioiCoWAfXcP0pAXtX06vg23vc6SSaLX8-koy4T3AWa-FOuZ9RrIE1iJWBXaDVTeDCV9xAH9AUZ1HUdc4q2m4utFCMflKLRPKkiCbjipampBM_-9ic4weiaJM8-ADyEdNHNtI52oHbf-fmdC3e634cLI2h4_4FXgBLkg==)
+
+</div>
+<div>
+
+### **What APS Tests**
+1.  **Micro-payments**: Per-token billing.
+2.  **EIP-712**: Web3 signatures.
+3.  **Metered Access**: Pay-as-you-go APIs.
 
 </div>
 </div>
