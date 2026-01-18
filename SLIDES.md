@@ -35,72 +35,60 @@ Product Management • Fintech • Payments • RegTech
 </div>
 <div class="profile-box">
 
-"I am a Product person. **I build.**"
+"I am a Product person. **I built this to understand the problem.**"
 
-I have worked across product delivery, user research, and cross-agency collaboration. I enjoy solving complex problems.
-
-**I care deeply about building products that create real impact.**
+I believe the best Product Owners accept complexity. I built this sandbox not to be an engineer, but to deeply understand the **infrastructure gap** preventing agentic commerce.
 
 </div>
 </div>
 
 ---
 
-# **The Vision: Agents Will Shop For You** 🌍
+# **The Agentic Vision** 🌍
 
-We are moving from a world where **humans click buttons** to a world where **agents negotiate protocols**.
+*Instead of optimizing checkout forms for humans, can we eliminate them?*
 
-![h:250](https://kroki.io/mermaid/svg/eNorTi0sTc1LTnXJTEwvSszlUgCCgsSikszkzILEvBIFj9LcxDwMUUdPTKEAiBhYg66dnaOnlYKSU2mlQlpOZnpGiRJY0tETJBMAlPJLTc8vyUwsSYWIB3jqQvX4JualwIXhyoMz0_MU1BQCEivR1Tvn56VlFuWmpiB0gJ0AtN0lPy9VUQkAOQtAlA==)
+**YES. This replaces "User Attention" with "Cryptographic Mandates".**
 
-### **The Shift**
-*   **Today**: Humans navigate UI, solve CAPTCHAs, enter details.
-*   **Tomorrow**: Agents use **AP2** (Google) and **ACP** (Shopify).
+### 1. The Old Way (Human-Centric) 👤
+*   User navigates UI, solves CAPTCHAs, inputs 16-digit PAN.
+*   **Gap**: Depends on human attention span.
+*   **Result**: "Cart Abandonment" and friction.
 
-> **Prediction**: By 2027, a significant % of eCommerce will be Agent-to-Agent.
+### 2. The AP2 Way (Agent-Centric) 🚀
+*   Agent negotiates locally. User signs a **Mandate** once.
+*   **Trust**: Intent Mandate -> Cart Mandate -> Settlement.
+*   **Result**: Zero-click, autonomous execution.
+
+> **Impact**: Unlocks the "Machine Economy" (Agents trading 24/7).
 
 ---
 
-# **The Reality: A Testing Nightmare** 🧩
+# **The Paradigm Shift** 💡
 
-*The infrastructure is here, but it is fragmented.*
+It is not about the payment rail itself.
 
-| Protocol | Owner | Key Features |
+### **It is about the AUTHORITY to transact.**
+
+*   **From**: "Prove you are human" (CAPTCHAs).
+*   **To**: "Prove you are authorized" (Verifiable Credentials).
+
+> This treats the Agent as a **first-class participant** in the economy.
+
+---
+
+# **The Infrastructure Gap** 🧩
+
+*The protocols exist, but the testing tools do not.*
+
+| Protocol | Owner | Key Use Case |
 |----------|-------|--------------|
 | **AP2** | **Google** | Intent/Cart Mandates (60+ Partners) |
-| **x402** | **Google + Coinbase** | Crypto Extension for AP2 |
+| **x402** | **Google + Coinbase** | Crypto Extension for Web3 |
 | **ACP** | **Shopify + OpenAI** | E-commerce Checkout |
 | **UCP** | **Generic / Stripe** | Universal Card Payments |
 
-> **The Problem**: Developers need to validate signatures, parse headers, and handle mandates across 4 disparate specs.
-
----
-
-# **The Developer Pain Point** 😤
-
-*"I am building an AI shopping agent. How do I test it?"*
-
-<div class="columns">
-<div>
-
-### **Option A: Real Test Accounts** 💸
-*   Sign up for Stripe/Shopify.
-*   Get API keys.
-*   Configure webhooks.
-*   **Days of setup.**
-
-</div>
-<div>
-
-### **Option B: Build Mock Servers** 🔧
-*   Read 4 different PDF specs.
-*   Code endpoints from scratch.
-*   Handle encryption manually.
-*   **Weeks of work.**
-
-</div>
-</div>
-
-> **There was no "Postman for Agent Payments". So I built one.**
+> **The Problem**: Developers cannot test these flows without building 4 different mock servers from scratch.
 
 ---
 
@@ -108,7 +96,7 @@ We are moving from a world where **humans click buttons** to a world where **age
 
 *Unified Sandbox for Agentic Commerce*
 
-![h:220](https://kroki.io/flowchart/svg/eNpLy8kvT85ILCpRCHHiUgCC4tKk9KLEggwFt6L8vJLUvBSwKAiEekYH5CRWphfll-alxMKFXRKLM6JBRFJ-YhFUHKYNbphTYnI2ilnOAdH6ufnJ2fqlyQX6CMMc4eKJKOIVJgZGUAkQE1lHAEwisQAmDrMJ5gUFXV07mBMAj_NCjg==)
+![h:200](https://kroki.io/mermaid/svg/eNpLL0osyFAIceJSAILi0qR0MN-tKD-vJDUvBSwKAo7RATmJlelF-aV5KQqhnrFgCZgCuDanxORsZF1O0aHOAQq--cnZsXAx52hHDDGXaMcAIzQx1-gKEwNkQZjBMLcp6OrawWwEAB3zNLo=)
 
 *   ⚡ **Mock Servers**: Instant endpoints for AP2, x402, ACP, UCP.
 *   🔍 **Inspector**: Validates requests against schemas.
@@ -185,7 +173,7 @@ We are moving from a world where **humans click buttons** to a world where **age
 
 # **UCP (Universal / Stripe)** 💳
 
-*Generic Card Protocol for Agents.*
+*Universal Commerce Protocol.*
 
 <div class="columns">
 <div>
@@ -246,11 +234,11 @@ if (IS_DEMO) {
 **Sivasubramanian Ramanathan**
 *Product Owner | Fintech, Payments & Innovation*
 
-I specialize in **simplifying complexity**.
+I specialize in **taking complex systems and making them usable**.
 
-*   **Experience**: BIS Innovation Hub Singapore (CBDCs, Cross-Border Payments).
-*   **Skills**: Product Management, Rapid Prototyping, Technical Strategy.
-*   **Focus**: Bridging Policy/Regulation and Engineering.
+*   **Philosophy**: Product Managers must understand the protocols they govern.
+*   **Experience**: BIS Innovation Hub Singapore.
+*   **Focus**: Bridging the gap between Regulation/Policy and Engineering.
 
 ---
 
