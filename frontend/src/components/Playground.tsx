@@ -2,10 +2,26 @@ import { useState } from "react";
 import { StepIndicator, AP2_STEPS, X402_STEPS, UCP_STEPS } from "./StepIndicator";
 import { PayloadEditor } from "./PayloadEditor";
 import { ErrorCard, WarningCard, SuccessCard } from "./ErrorCard";
-import { ChevronLeft, ChevronRight, RotateCcw, Zap, Play, Loader2 } from "lucide-react";
-import { executeProtocolStep, type ApiResponse, type Protocol as ApiProtocol } from "../services/api";
+import { ChevronLeft, ChevronRight, RotateCcw, Zap, Play, Loader2, Info } from "lucide-react";
+import { executeProtocolStep, type ApiResponse, type Protocol as ApiProtocol, IS_DEMO_MODE } from "../services/api";
 
 type Protocol = "AP2" | "x402" | "UCP";
+
+// Demo mode banner component
+const DemoModeBanner = () => (
+    <div className="bg-gradient-to-r from-amber-500/20 to-orange-500/20 border border-amber-500/50 rounded-xl p-4 mb-6">
+        <div className="flex items-start gap-3">
+            <Info className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+            <div>
+                <h3 className="text-amber-300 font-medium mb-1">Demo Mode</h3>
+                <p className="text-amber-200/80 text-sm">
+                    Running with mock data. For live API calls, run the backend locally:
+                    <code className="ml-2 px-2 py-0.5 bg-slate-900/50 rounded text-xs">uvicorn app.main:app --port 8080</code>
+                </p>
+            </div>
+        </div>
+    </div>
+);
 
 // Sample payloads for each step
 const AP2_PAYLOADS: Record<number, object> = {
@@ -300,6 +316,7 @@ export function Playground() {
 
             {/* Main Content */}
             <div className="max-w-7xl mx-auto px-6 pb-12">
+                {IS_DEMO_MODE && <DemoModeBanner />}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                     {/* Left: Payload Editor */}
                     <div className="bg-slate-800/50 rounded-2xl border border-slate-700/50 overflow-hidden">
