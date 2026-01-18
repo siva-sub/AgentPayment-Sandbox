@@ -14,7 +14,6 @@ style: |
   h2 { color: #E74C3C; font-size: 1.1em; margin-bottom: 0.4em; }
   strong { color: #2980B9; }
   blockquote { background: #f9f9f9; border-left: 8px solid #ccc; padding: 10px 15px; font-style: italic; font-size: 0.9em; }
-  img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
   .columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: center; }
   .small-text { font-size: 0.7em; }
   .center { text-align: center; }
@@ -48,86 +47,66 @@ I have worked across product delivery, user research, and cross-agency collabora
 
 ---
 
-# **The Agentic Commerce Vision** 🌍
+# **The Problem: Protocol Fragmentation** 🧩
 
-*Your AI assistant wants to book you a flight. What happens next?*
+*Four major companies have released agent payment protocols. Each solves part of the puzzle.*
 
-**Today, the agent hits a wall.**
+| Protocol | Company | Approach | Use Case |
+|----------|---------|----------|----------|
+| **AP2** | Google | A2A + Mandates | Multi-agent orchestration |
+| **x402** | Coinbase | HTTP 402 | Micropayments, pay-per-call |
+| **ACP** | Shopify | OpenAPI | E-commerce checkout |
+| **UCP** | Stripe | Universal API | Card payments |
 
-### The Current Reality 🚫
-*   Agent navigates to airline website.
-*   Encounters **CAPTCHA**: "Select all traffic lights."
-*   **Game Over**. Agent cannot proceed.
-
-### The Emerging Future 🚀
-*   Agent discovers airline's **Agent API** (like `/.well-known/a2a`).
-*   Sends structured **payment mandate** with your pre-approved limits.
-*   Receives confirmation. **You just flew.**
-
-> **This is not science fiction. Four protocols are making this real today.**
+> **The landscape is fragmenting.** Developers building agent commerce must learn 4 different specs.
 
 ---
 
-# **The Paradigm Shift** 💡
+# **The Developer Pain Point** 😤
 
-Just like SWIFT transformed paper-based banking, **agentic protocols** are transforming online commerce.
-
-### **It is not about the AI itself. It is about designing infrastructure FOR agents.**
-
-![h:280](https://kroki.io/mermaid/svg/eNpVjzFuwzAMRfc9BWcHcIqsXeq5mzxkUGRRNhFJFCRKTXL4ymoRoCAg_v_-hy_zPTdLlvFXM0X8WvMV_WjZ-pVxpZMBTX3b-S8LILOlp3XxQs03pBzrQ0L_ChFIbJHZujHjd8YBSF3TQeJKO3e8gJ0v2knbDr4cWXx2N7eLt8p3P0xf2q8u9B9nN8Zj)
-
-*   **From**: "Prove you're human" (CAPTCHAs, forms, clicks).
-*   **To**: "Prove you're authorized" (Cryptographic signatures, mandates).
-
-> This treats the **Agent** as a first-class participant in commerce.
-
----
-
-# **The Problem: No Testing Infrastructure** 🧪❌
-
-*I am building an AI shopping agent. How do I test it?*
+*"I am building an AI shopping agent. How do I test it?"*
 
 <div class="columns">
 <div>
 
-### **Option 1: Real Services** 💸
-*   Sign up for Stripe Test Mode.
-*   Configure Shopify sandbox.
-*   Apply for API keys from each provider.
-*   **Spend days** on setup.
-
-### **Option 2: Build Mock Servers** 🔧
-*   Read 4 different protocol specs.
-*   Implement each from scratch.
-*   Maintain parity with spec changes.
-*   **Spend weeks** on infrastructure.
+### **Option A: Real Test Accounts** 💸
+*   Sign up for Stripe Test Mode
+*   Configure Shopify sandbox
+*   Apply for API access to each
+*   **Days of setup per protocol**
 
 </div>
 <div>
 
-### **The Gap**
-There is no **"Postman for agentic commerce"**.
-
-Developers cannot:
-*   ✗ Test flows without real money
-*   ✗ Validate compliance easily
-*   ✗ Reproduce edge cases
-*   ✗ Learn protocols interactively
-
-> **APS fills this gap.**
+### **Option B: Build Mock Servers** 🔧
+*   Read each protocol spec
+*   Implement endpoints from scratch
+*   Maintain when specs change
+*   **Weeks of work**
 
 </div>
 </div>
+
+> **Neither option is acceptable for rapid prototyping.**
 
 ---
 
-# **Four Protocols, One Problem** 📋
+# **The Gap I Identified** 🔍
 
-*The agentic commerce landscape is fragmenting. Each solves part of the puzzle.*
+There is no **"Postman for agent payments"** today.
 
-![h:350](https://kroki.io/mermaid/svg/eNp1kMFqwzAMhu99Cl0CGWTkuntPPewy6HEPoBhJoqzGVrCVlb79nKRkpDA4CPH9n_QJz-4YRxz8o5kDfM_5iGG0Yt3EtNLVgqG-nfwTAxjmFHc-xN2WemL7sUXmKRJLnfORgAc5nM3qnL8L9kBmj82EU_ShThvE4V8rr_pPJYQmMM3S3sP7lMJf9V6f-dkqxXQY79IFl-iKVd9upzaGCMXuZi6R1DvhCNm-Yap_ckO2gE7epzR2J4rP4aOWy4BDz3Ufj3GNNxU7cOLjKfEn_n25kA==)
+### What Developers Cannot Do:
+*   ❌ Test full payment flows without real money
+*   ❌ Validate protocol compliance automatically
+*   ❌ Reproduce edge cases (errors, timeouts, 402)
+*   ❌ Learn multiple protocols interactively
+*   ❌ Compare protocol approaches side-by-side
 
-> **Question**: How do developers test against all 4 without building 4 mock servers?
+### What Would Help:
+*   ✅ Mock servers for all 4 protocols
+*   ✅ Interactive playground UI
+*   ✅ Validation against official specs
+*   ✅ Zero setup, zero cost
 
 ---
 
@@ -135,71 +114,127 @@ Developers cannot:
 
 *Postman + Chaos Monkey + Case Manager for Agent Payments*
 
-![h:300](https://kroki.io/mermaid/svg/eNplkM1qwzAQhO9-iqWnBALJvRfTntokpIQQJzlVPcjWxhGVJKNdjPP2lWP3p_Qlszt8Mwie7DGN2OpHM0X4mvMJw2A5hIlppbMFQ30L4RMDOGaKOx8ct0SN7b9WyDTGwqXJWRB4ksNZr8754-AEZPbYFjhNPuq6gu__tfKqflVC0wnT5HVAb1MKf9R7e-YnqxjT4dWyC85Bixlfd0cIVspYmQWGGUmlU44QHGum5ievyJaAd-lmHLquVCv34q2W04BDz3Wf3uM13uRsgAsfj4k_8e_LBekPz76Lcw==)
+<div class="columns">
+<div>
 
-APS provides **mock servers** for all 4 protocols, plus:
-*   🔍 **Inspector**: Validate your implementation against specs.
-*   🎮 **Playground**: Explore protocols interactively.
-*   🛡️ **Security Analyzer**: Check signatures and mandates.
+### **What It Provides**
+*   ⚡ **4 Mock Servers**: UCP, ACP, x402, AP2
+*   🔍 **Inspector**: Validate your implementation
+*   🎮 **Playground**: Explore protocols step-by-step
+*   🛡️ **Security Analyzer**: Check signatures
 
----
+</div>
+<div>
 
-# **The x402 Flow: Micropayments** ⚡
+### **Who Benefits**
+*   Developers building AI shopping agents
+*   Teams integrating agent payments
+*   Engineers learning protocol specs
+*   Architects comparing approaches
 
-*HTTP 402 "Payment Required" for pay-per-request APIs.*
+</div>
+</div>
 
-![h:400](https://kroki.io/mermaid/svg/eNptkLFuwzAMRHd9BWcHcIJsXeq5mzJkUGRRMRFJFCRKTfL1lWMnCIoCgsC7O95hLbdcLNnHR80M8GvOO_SjZQ8T00qjBE19O_gndsCCsKU-eLpB0uXsG5gpXCNy5-GCRLexGP5OOADJa3pM4kkva-rR2-daefNfKiEYwTz19w7ek0r4I_JNz_JklaJ6MFhxQRM4h62hXs7RxRChmN0sOZJ6J5wg2TemTaF-CXMCH9LLOA7tzfqLfzU9e-xnrvt0jAvoLmcNnP14TPyJv1-uSL8BJbaI2Q==)
-
-**Use Case**: AI model access, premium data APIs, content paywalls.
-
-> APS simulates the **402 response** and **signature verification**.
-
----
-
-# **The AP2 Flow: Multi-Agent** 🤖🤖
-
-*Google's AP2 enables agent-to-agent commerce with user protection.*
-
-![h:380](https://kroki.io/mermaid/svg/eNp1kMFqwzAMhu99Cm0aJLQl9NpLTzsMdtgDKEZSiGtsB1tp0reflCxhZRgMQvz_J30ihLNvPNd4LaYB8GvOe3SjJQ8909oWBmbq28FPCWB_MrRRFxW3kUxy1q4sMY_lWdBPWqFzP6C4k93Rlc7-K9A7ku80J3GzXjZbxxfstfLyL0UIjsE2-Xr3byGFP6J99EyPGhTF3dWMPRrI8bbQ0Ef4R6YSsfLDNHmye5FXxvHQ3dFNlrZxDZv-Xc0fU5g47KNwjEvYb3IWwNm3Q6Bv_PpyAdZvC6qR2A==)
-
-**Key Innovation**: Mandates ensure agents can't spend beyond limits.
-
-> APS includes **OTP challenge** and **credentials provider** simulation.
+> **One sandbox to test all four protocols.**
 
 ---
 
-# **The Technical Architecture** ⚙️
+# **The x402 Flow** ⚡
 
-I built a full-stack testing platform to demonstrate end-to-end agent payment flows.
+*Coinbase's HTTP 402 enables pay-per-request APIs.*
 
-![h:280](https://kroki.io/mermaid/svg/eNp1j8EKwjAQRO_5imVPCgXxbr14UhFED0Ive1iTtQnGTdhshX6926oiepi7vJl5e6bFhCOjf9XJBn5TG4AMSugCp6IHT9Q0X-_AqEFkF9yFPExEbr67ISHOQyj2wk9TOpnQWj9bYKssDZqVPjrIIlCn4gOJ9DJY2-F7TxuE86gRSr8gJ1i6UT-q3VDdMvKlFN8d53iBH6_3g40Lv7BzprMnHNjz9AP6WIAc)
+```
+┌──────────────────────────────────────────────────────────────┐
+│                         x402 FLOW                             │
+├──────────────────────────────────────────────────────────────┤
+│                                                               │
+│  Client ──GET /api──▶ Server                                 │
+│         ◀── 402 + PaymentRequired header ──                  │
+│                                                               │
+│  Client signs EIP-712 payment payload                        │
+│                                                               │
+│  Client ──GET /api + X-PAYMENT──▶ Server                     │
+│         ◀── 200 + Content ────────                           │
+│                                                               │
+└──────────────────────────────────────────────────────────────┘
+```
 
-*   **Frontend**: React + TypeScript + Vite
-*   **Backend**: FastAPI + Pydantic (Mock Servers)
-*   **Docs**: 8 documentation files, 3 Architecture Decision Records
+**APS simulates** the 402 response, payment header validation, and content delivery.
 
 ---
 
-# **Demo Mode: Works Everywhere** 🌐
+# **The AP2 Flow** 🤖🤖🤖
 
-*The live demo runs on GitHub Pages (static hosting). How?*
+*Google's AP2 enables agent-to-agent commerce with spending limits.*
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│                         AP2 FLOW                              │
+├──────────────────────────────────────────────────────────────┤
+│                                                               │
+│  Shopping     ──discover──▶  Merchant    (Agent Card)        │
+│  Agent        ◀──products───  Agent                          │
+│               ──cart mandate──▶           (Items + Price)    │
+│                                                               │
+│  User         ◀──confirm?───  Shopping   (OTP Challenge)     │
+│               ──approve+OTP──▶  Agent                        │
+│                                                               │
+│  Shopping     ──pay mandate──▶  Payment   (Authorized)       │
+│  Agent        ◀──receipt─────  Processor                     │
+│                                                               │
+└──────────────────────────────────────────────────────────────┘
+```
+
+**APS simulates** the full multi-agent flow including OTP verification.
+
+---
+
+# **Technical Architecture** ⚙️
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                         APS                                  │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│   ┌─────────────────────┐    ┌─────────────────────┐        │
+│   │   Frontend (React)  │    │  Backend (FastAPI)  │        │
+│   │   ───────────────   │    │  ────────────────   │        │
+│   │   • Playground UI   │───▶│  • /mock/ucp       │        │
+│   │   • Dashboard       │    │  • /mock/acp       │        │
+│   │   • Protocol Viz    │    │  • /mock/x402      │        │
+│   └─────────────────────┘    │  • /mock/ap2       │        │
+│                              │  • /api/inspector   │        │
+│                              │  • /api/security    │        │
+│                              └─────────────────────┘        │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+*   **Frontend**: React + TypeScript + Vite + TailwindCSS
+*   **Backend**: Python + FastAPI + Pydantic
+
+---
+
+# **Demo Mode: Works on GitHub Pages** 🌐
+
+*Live demo runs on static hosting. How?*
 
 <div class="columns">
 <div>
 
 ### **The Challenge**
-GitHub Pages has **no server**.
+GitHub Pages = no server.
 API calls would fail.
 
 ### **The Solution**
-*   Detect `github.io` hostname.
-*   Return **realistic mock data**.
-*   Show clear **Demo Mode** banner.
+*   Detect `github.io` hostname
+*   Return **realistic mock data**
+*   Show clear **Demo Mode** banner
 
 </div>
 <div>
 
-### **Developer Experience**
+### **What Users See**
 
 ```
 ⚠️ Demo Mode
@@ -207,31 +242,32 @@ API calls would fail.
 Running with mock data. 
 For live API calls, run:
 
+cd backend
 uvicorn app.main:app --port 8080
 ```
 
-> Users understand the limitation and can run locally for full testing.
+</div>
+</div>
 
-</div>
-</div>
+> Users understand the limitation and can run locally for full functionality.
 
 ---
 
 # **Why This Matters** 🌟
 
-This project reflects my ability to bridge **Emerging Tech** and **Real Products**:
+This project demonstrates my approach to building products:
 
 1.  **Problem-First Thinking**: 
-    Started with "developers can't test agent payments" - not "let me build cool tech".
+    "Developers can't test agent payments" came before "let me build cool tech".
 
-2.  **Protocol Expertise**: 
-    Deep understanding of 4 competing agentic commerce standards.
+2.  **Market Awareness**: 
+    4 protocols from Google, Coinbase, Shopify, Stripe — the landscape is real.
 
 3.  **Full-Stack Execution**: 
-    Built React frontend, Python backend, documentation, and CI/CD.
+    React frontend, Python backend, 8 doc files, 3 ADRs, GitHub Pages deploy.
 
-4.  **Developer Experience**: 
-    Focused on making complex protocols **accessible and testable**.
+4.  **Developer Experience Focus**: 
+    Making complex protocols **accessible and testable**.
 
 ---
 

@@ -6,47 +6,43 @@
 
 ---
 
-Teaching AI Agents to Shop: The Infrastructure That's Missing 🤖💳
+Four Protocols. Four Companies. One Testing Nightmare. 🧩
 
-Your AI assistant wants to book you a flight.
-It navigates to the airline website.
-Encounters a CAPTCHA: "Select all traffic lights."
-**Game over.** 🚫
+Google, Coinbase, Shopify, and Stripe have each released agent payment protocols.
 
-**Checkout forms were designed for humans, not agents.**
+*   **AP2** (Google) - A2A mandates for multi-agent orchestration
+*   **x402** (Coinbase) - HTTP 402 for micropayments
+*   **ACP** (Shopify) - OpenAPI checkout sessions
+*   **UCP** (Stripe) - Universal commerce protocol
 
-The biggest inefficiency in AI commerce isn't the AI: it's the infrastructure.
+**The agentic commerce landscape is fragmenting.** And developers building AI shopping agents are stuck in the middle.
 
-I built a solution to demonstrate how we're bridging this gap.
+I identified a real pain point: **How do you test against 4 different protocols without spending weeks building mock servers?**
+
+So I built a solution.
 
 Introducing the **𝗔𝗴𝗲𝗻𝘁𝗣𝗮𝘆𝗺𝗲𝗻𝘁 𝗦𝗮𝗻𝗱𝗯𝗼𝘅 (𝗔𝗣𝗦)** 🚀
 
-This is a testing platform designed to solve a real problem: **How do developers test agent payment flows without spending real money or building mock servers from scratch?**
+One unified testing platform for all 4 agent payment protocols.
 
-How it works (The Paradigm Shift):
+⚡ **𝗧𝗵𝗲 𝗣𝗿𝗼𝗯𝗹𝗲𝗺 𝗜 𝗦𝗼𝗹𝘃𝗲𝗱**
+Before APS, developers had two bad options:
+• Sign up for test accounts on each platform (days of setup per protocol)
+• Build mock servers from scratch (weeks of implementation work)
 
-⚡ **𝗙𝗿𝗼𝗺 𝗖𝗔𝗣𝗧𝗖𝗛𝗔𝘀 𝘁𝗼 𝗖𝗿𝘆𝗽𝘁𝗼𝗴𝗿𝗮𝗽𝗵𝗶𝗰 𝗠𝗮𝗻𝗱𝗮𝘁𝗲𝘀**
-Instead of "prove you're human", agents sign mandates with spending limits.
-Result? User stays in control. Agents can transact.
+Neither is acceptable for rapid prototyping.
 
-🧪 **𝗧𝗵𝗲 𝗣𝗿𝗼𝗯𝗹𝗲𝗺 𝗜 𝗦𝗼𝗹𝘃𝗲𝗱**
-Before APS, developers had to:
-• Sign up for Stripe/Shopify test accounts (days of setup)
-• Or build mock servers from 4 different protocol specs (weeks of work)
-
-APS provides **one unified sandbox** for all 4 agentic commerce protocols.
-
-🤖 **𝗙𝗼𝘂𝗿 𝗣𝗿𝗼𝘁𝗼𝗰𝗼𝗹𝘀, 𝗢𝗻𝗲 𝗦𝗮𝗻𝗱𝗯𝗼𝘅**
-• AP2 (Google) - Agent-to-Agent mandates
-• x402 (Coinbase) - HTTP 402 micropayments
-• ACP (Shopify) - OpenAPI checkout
-• UCP (Stripe) - Universal commerce
+🧪 **𝗪𝗵𝗮𝘁 𝗔𝗣𝗦 𝗣𝗿𝗼𝘃𝗶𝗱𝗲𝘀**
+• Mock servers for all 4 protocols (zero setup)
+• Interactive Playground UI (learn by doing)
+• Protocol Inspector (validate compliance)
+• Security Analyzer (check signatures)
 
 🔧 **𝗧𝗵𝗲 𝗕𝘂𝗶𝗹𝗱**
-I architected this to bridge the gap between **Protocol Specs** and **Working Code**:
 • Frontend: React + TypeScript (Interactive Playground)
 • Backend: FastAPI + Pydantic (Mock Servers + Validators)
-• Security: Signature verification and compliance checking
+• Docs: 8 documentation files, 3 Architecture Decision Records
+• Deploy: GitHub Pages with intelligent demo mode
 
 🌟 **𝗔𝗯𝗼𝘂𝘁 𝗺𝗲 𝗮𝗻𝗱 𝘁𝗵𝗲 𝗿𝗼𝗹𝗲𝘀 𝗜 𝗮𝗺 𝗼𝗽𝗲𝗻 𝘁𝗼:**
 
@@ -68,16 +64,12 @@ The full slide deck is attached below! 👇
 
 - **Live Demo**: https://siva-sub.github.io/AgentPayment-Sandbox/
 - **GitHub**: https://github.com/siva-sub/AgentPayment-Sandbox
-- **Slides PDF**: Attach SLIDES.pdf (generate from SLIDES.md using marp)
+- **Slides PDF**: Attach SLIDES.pdf
 
 ---
 
 ## To Generate PDF from SLIDES.md:
 
 ```bash
-# Generate PDF
 marp SLIDES.md --pdf --output SLIDES.pdf --allow-local-files
-
-# Or generate PNG images for each slide
-marp SLIDES.md --images png
 ```
