@@ -63,7 +63,7 @@ Each solves a piece of the puzzle. **APS helps you test all of them.**
 
 ## 💡 Why I Built This
 
-As an engineer fascinated by the intersection of AI agents and financial infrastructure, I saw a critical gap:
+Fascinated by the intersection of **AI agents** and **financial infrastructure**, I saw a critical gap emerging:
 
 > **"How do developers test agent payment flows without spending real money or building mock servers from scratch?"**
 
@@ -259,9 +259,13 @@ This is a **portfolio project/prototype**. It is designed for testing and develo
 
 ## 👤 About the Author
 
-**Siva Subramaniam**
+**Sivasubramanian Ramanathan**
+*Product Owner | Fintech, Payments & Digital Innovation*
+*Ex-BIS Innovation Hub Singapore*
 
-Building at the intersection of AI agents and financial infrastructure.
+I specialize in taking complex, real-world problems and structuring them into reliable products. My background spans product delivery, user research, and cross-agency collaboration.
+
+**Open for roles in Product Management, Fintech, Payments, RegTech, and Digital Assets.**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-sivasub987-blue?logo=linkedin)](https://www.linkedin.com/in/sivasub987)
 [![Website](https://img.shields.io/badge/Website-sivasub.com-green?logo=google-chrome)](https://www.sivasub.com)
