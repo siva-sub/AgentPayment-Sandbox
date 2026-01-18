@@ -14,6 +14,7 @@ style: |
   h2 { color: #E74C3C; font-size: 1.1em; margin-bottom: 0.4em; }
   strong { color: #2980B9; }
   blockquote { background: #f9f9f9; border-left: 8px solid #ccc; padding: 10px 15px; font-style: italic; font-size: 0.9em; }
+  img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
   .columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: center; }
   .small-text { font-size: 0.7em; }
   .center { text-align: center; }
@@ -47,18 +48,32 @@ I have worked across product delivery, user research, and cross-agency collabora
 
 ---
 
-# **The Problem: Protocol Fragmentation** 🧩
+# **The Vision: Agents Will Shop For You** 🌍
 
-*Four major companies have released agent payment protocols. Each solves part of the puzzle.*
+We are moving from a world where **humans click buttons** to a world where **agents negotiate protocols**.
 
-| Protocol | Company | Approach | Use Case |
-|----------|---------|----------|----------|
-| **AP2** | Google | A2A + Mandates | Multi-agent orchestration |
-| **x402** | Coinbase | HTTP 402 | Micropayments, pay-per-call |
-| **ACP** | Shopify | OpenAPI | E-commerce checkout |
-| **UCP** | Stripe | Universal API | Card payments |
+![h:300](https://kroki.io/mermaid/svg/eNqFj88KgkAQxu89xeQ1TOjoQTD7JyR06AUmd9RFnbVtRXr7tg3BEGouw8z8vm_4HnTviXPaSSw1tguw1aE2MpcdsoFT3yLPtnEKcUlsZoeMdF454pK6o9P7UTQqQvC2_ROKRpaVAaPgrFgo9hw8QpafGoVw3F8hWA_UNH7NauAAN-gUU8z_euMaJKjFb-tEExp6gwZWkCELO_7xThQXUrc0s3ZpbcTDJ95NqZrE0nsBfgpuTw==)
 
-> **The landscape is fragmenting.** Developers building agent commerce must learn 4 different specs.
+### **The Shift**
+*   **Today**: Humans navigate UI, solve CAPTCHAs, enter details.
+*   **Tomorrow**: Agents use APIs JSON-RPC, and Crypto Signatures.
+
+> **Prediction**: By 2027, a significant % of eCommerce will be Agent-to-Agent.
+
+---
+
+# **The Reality: A Testing Nightmare** 🧩
+
+*The infrastructure is here, but it is fragmented.*
+
+| Protocol | Company | Approach |
+|----------|---------|----------|
+| **AP2** | Google | "Agent-to-Agent" mandates |
+| **x402** | Coinbase | HTTP 402 Micropayments |
+| **ACP** | Shopify + OpenAI | E-commerce checkout |
+| **UCP** | Stripe | Universal payment API |
+
+> **The Problem**: Developers need to validate signatures, parse headers, and handle mandates across 4 disparate specs.
 
 ---
 
@@ -70,204 +85,125 @@ I have worked across product delivery, user research, and cross-agency collabora
 <div>
 
 ### **Option A: Real Test Accounts** 💸
-*   Sign up for Stripe Test Mode
-*   Configure Shopify sandbox
-*   Apply for API access to each
-*   **Days of setup per protocol**
+*   Sign up for Stripe/Shopify.
+*   Get API keys.
+*   Configure webhooks.
+*   **Days of setup.**
 
 </div>
 <div>
 
 ### **Option B: Build Mock Servers** 🔧
-*   Read each protocol spec
-*   Implement endpoints from scratch
-*   Maintain when specs change
-*   **Weeks of work**
+*   Read 4 different PDF specs.
+*   Code endpoints from scratch.
+*   Handle encryption manually.
+*   **Weeks of work.**
 
 </div>
 </div>
 
-> **Neither option is acceptable for rapid prototyping.**
-
----
-
-# **The Gap I Identified** 🔍
-
-There is no **"Postman for agent payments"** today.
-
-### What Developers Cannot Do:
-*   ❌ Test full payment flows without real money
-*   ❌ Validate protocol compliance automatically
-*   ❌ Reproduce edge cases (errors, timeouts, 402)
-*   ❌ Learn multiple protocols interactively
-*   ❌ Compare protocol approaches side-by-side
-
-### What Would Help:
-*   ✅ Mock servers for all 4 protocols
-*   ✅ Interactive playground UI
-*   ✅ Validation against official specs
-*   ✅ Zero setup, zero cost
+> **There was no "Postman for Agent Payments". So I built one.**
 
 ---
 
 # **Introducing APS** 🚀
 
-*Postman + Chaos Monkey + Case Manager for Agent Payments*
+*A Unified Sandbox for Agentic Commerce Protocols*
 
-<div class="columns">
-<div>
+![h:300](https://kroki.io/mermaid/svg/eNpLy0kvT85ILCpRCHHiUgCC4tKk9KLEggwFt6L8vJLUvBSwKAgE5CRWphfll-alRCOYCqGesXAVLonFGUn5iUUp0XAWRBJmDNxwp8TkbGSzQ50DovVz85Oz9UuTCxAGOsKFE5GFI0wMjKDiFUAmkvoAmHhiAZKwZ15xQWpySX5RNFA8Uz8TxkV1HMzDCrq6djAHAgC1wlLn)
 
-### **What It Provides**
-*   ⚡ **4 Mock Servers**: UCP, ACP, x402, AP2
-*   🔍 **Inspector**: Validate your implementation
-*   🎮 **Playground**: Explore protocols step-by-step
-*   🛡️ **Security Analyzer**: Check signatures
-
-</div>
-<div>
-
-### **Who Benefits**
-*   Developers building AI shopping agents
-*   Teams integrating agent payments
-*   Engineers learning protocol specs
-*   Architects comparing approaches
-
-</div>
-</div>
-
-> **One sandbox to test all four protocols.**
+*   ⚡ **Mock Servers**: Instant endpoints for UCP, ACP, x402, AP2.
+*   🔍 **Inspector**: Validates your requests against official schemas.
+*   🛡️ **Security Overview**: Verifies cryptographic signatures (EIP-712).
+*   🎮 **Playground**: Learn by doing in the UI.
 
 ---
 
-# **The x402 Flow** ⚡
+# **Testing Flow 1: x402 (Coinbase)** ⚡
 
-*Coinbase's HTTP 402 enables pay-per-request APIs.*
+*The Standard for Micropayments & Metered Access.*
 
-```
-┌──────────────────────────────────────────────────────────────┐
-│                         x402 FLOW                             │
-├──────────────────────────────────────────────────────────────┤
-│                                                               │
-│  Client ──GET /api──▶ Server                                 │
-│         ◀── 402 + PaymentRequired header ──                  │
-│                                                               │
-│  Client signs EIP-712 payment payload                        │
-│                                                               │
-│  Client ──GET /api + X-PAYMENT──▶ Server                     │
-│         ◀── 200 + Content ────────                           │
-│                                                               │
-└──────────────────────────────────────────────────────────────┘
-```
+![h:350](https://kroki.io/mermaid/svg/eNqNjjELwkAMhXd_RUZFDmsRhA4FqUUcLMV20DG0oQa863leBf-9oaeTCGZ7L99L3p1uA5mGtoydQz0BGYvOc8MWjYfsymT8l12Re5Ab7UCoNA1eAru8hoV1pHnQCi2PVFgqwQKfwCqKYQ4lPrXIo9RgRy1cCNv34aL3BL2k4BOpuDNSY0zANN-Xar2MZ_-1kF8nVW7Oh7yofzSKo0iorDde5As4LFiw)
 
-**APS simulates** the 402 response, payment header validation, and content delivery.
+### **What APS Tests:**
+1.  **Header Parsing**: Does the agent correctly parse `402 Payment Required` headers?
+2.  **Signature Validation**: Is the `X-Payment` header signature valid?
+3.  **Payload Structure**: Does the payment payload match the resource price?
 
 ---
 
-# **The AP2 Flow** 🤖🤖🤖
+# **Testing Flow 2: AP2 (Google)** 🤖
 
-*Google's AP2 enables agent-to-agent commerce with spending limits.*
+*High-Trust Commerce with User Mandates.*
 
-```
-┌──────────────────────────────────────────────────────────────┐
-│                         AP2 FLOW                              │
-├──────────────────────────────────────────────────────────────┤
-│                                                               │
-│  Shopping     ──discover──▶  Merchant    (Agent Card)        │
-│  Agent        ◀──products───  Agent                          │
-│               ──cart mandate──▶           (Items + Price)    │
-│                                                               │
-│  User         ◀──confirm?───  Shopping   (OTP Challenge)     │
-│               ──approve+OTP──▶  Agent                        │
-│                                                               │
-│  Shopping     ──pay mandate──▶  Payment   (Authorized)       │
-│  Agent        ◀──receipt─────  Processor                     │
-│                                                               │
-└──────────────────────────────────────────────────────────────┘
-```
+![h:350](https://kroki.io/mermaid/svg/eNqNT70KwkAM3n2KjDp0cexQKHZVxOIDhGtoA_Yu5q6CPr1nnaIVzHLhvr98ka4TeUcNY684riCPoCZ2LOgTtEMQYd9D3ZNPX_Ce1A2vZRk-4n0kg1q_oqqsQwkNRxdupLCut_Vm1lhKkUXWpXw_sEPt_gvJzHw7-g4TzYpDSARz7Kf1OeZPFNGMRrjwyD-KmK75pCkNQflBJseQlpqcyBFLegL8d4jH)
 
-**APS simulates** the full multi-agent flow including OTP verification.
+### **What APS Tests:**
+1.  **Discovery**: Can the agent find and parse the `/.well-known/a2a` card?
+2.  **Mandate Limits**: Does the agent respect the spending limit in the Mandate?
+3.  **OTP Challenge**: Can the agent handle user intervention flows?
 
 ---
 
-# **Technical Architecture** ⚙️
+# **Testing Flow 3: ACP (Shopify + OpenAI)** 🛍️
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                         APS                                  │
-├─────────────────────────────────────────────────────────────┤
-│                                                              │
-│   ┌─────────────────────┐    ┌─────────────────────┐        │
-│   │   Frontend (React)  │    │  Backend (FastAPI)  │        │
-│   │   ───────────────   │    │  ────────────────   │        │
-│   │   • Playground UI   │───▶│  • /mock/ucp       │        │
-│   │   • Dashboard       │    │  • /mock/acp       │        │
-│   │   • Protocol Viz    │    │  • /mock/x402      │        │
-│   └─────────────────────┘    │  • /mock/ap2       │        │
-│                              │  • /api/inspector   │        │
-│                              │  • /api/security    │        │
-│                              └─────────────────────┘        │
-│                                                              │
-└─────────────────────────────────────────────────────────────┘
-```
+*Agentic Commerce Protocol: Specialized for E-commerce.*
 
-*   **Frontend**: React + TypeScript + Vite + TailwindCSS
-*   **Backend**: Python + FastAPI + Pydantic
+![h:350](https://kroki.io/mermaid/svg/eNqVjcEKgzAQRO_9ir0X692DUNrSU0mo_YElLhqMSUxWxL9vrD0IBaFznHkzE2kYySq6amwC9gdI8hhYK-3RMpwbsvzrXiQ8KKgWv-EHy8pyGxRwv70gP01kTNZZN9k8ts6v_IbLlt7SL6BKOdTEqE3c2ZWiSsOqJdW5kfNIMWpnd4dXBI4gce6TBcJzMv548TjvPYhQU4AnKdKe36hvbaA=)
+
+### **What APS Tests:**
+1.  **Session Management**: Can the agent maintain session state across requests?
+2.  **Product Selection**: Does the agent correctly select variants (size/color)?
+3.  **Checkout Validity**: Is the shipping address and payment method valid?
 
 ---
 
-# **Demo Mode: Works on GitHub Pages** 🌐
+# **Testing Flow 4: UCP (Stripe)** 💳
 
-*Live demo runs on static hosting. How?*
+*Universal Commerce Protocol: The "Stripe for Agents".*
+
+![h:350](https://kroki.io/mermaid/svg/eNqFjUEKwjAQRfeeYlbuYvddFCSIC5EWqgeIydgOTZOYpBQR726oCgWhznL---8HvA1oJCoSjRf9CtI54SNJcsJE2DZo4s_3zCs4opet-IQTxopiHuSw350g24yoNeuMHU02SDfhc4yl2lTPgQsnLqQpEgZYwwHvYcFelXXSyxZlZ4fIAoZA1oSlgfrNAPcoIqq_8q8ze5B6ZtL2TmPEpYXSK_TArbmS79PCC4-lcfM=)
+
+### **What APS Tests:**
+1.  **Capability Discovery**: Can the agent identify supported payment methods?
+2.  **Idempotency**: Does the agent safely retry requests without double-charging?
+3.  **Card Validation**: Are the card details (simulated) correctly formatted?
+
+---
+
+# **Demo Mode: GitHub Pages** 🌐
+
+*How I deployed a backend-heavy app to static hosting.*
 
 <div class="columns">
 <div>
 
 ### **The Challenge**
-GitHub Pages = no server.
-API calls would fail.
+GitHub Pages = No Server.
+API calls usually fail.
 
 ### **The Solution**
-*   Detect `github.io` hostname
-*   Return **realistic mock data**
-*   Show clear **Demo Mode** banner
+*   **Context-Aware API**: Detects `github.io`.
+*   **Service Worker Logic**: Intercepts requests.
+*   **Mock Data Layer**: Returns valid JSON responses.
 
 </div>
 <div>
 
-### **What Users See**
+```typescript
+// frontend/src/services/api.ts
+const IS_DEMO = window.location.hostname
+  .includes('github.io');
 
+if (IS_DEMO) {
+  return MOCK_DATA.ap2_response;
+}
 ```
-⚠️ Demo Mode
 
-Running with mock data. 
-For live API calls, run:
-
-cd backend
-uvicorn app.main:app --port 8080
-```
+> **Result**: A frictionless live demo for recruiters and developers.
 
 </div>
 </div>
-
-> Users understand the limitation and can run locally for full functionality.
-
----
-
-# **Why This Matters** 🌟
-
-This project demonstrates my approach to building products:
-
-1.  **Problem-First Thinking**: 
-    "Developers can't test agent payments" came before "let me build cool tech".
-
-2.  **Market Awareness**: 
-    4 protocols from Google, Coinbase, Shopify, Stripe — the landscape is real.
-
-3.  **Full-Stack Execution**: 
-    React frontend, Python backend, 8 doc files, 3 ADRs, GitHub Pages deploy.
-
-4.  **Developer Experience Focus**: 
-    Making complex protocols **accessible and testable**.
 
 ---
 
@@ -275,24 +211,23 @@ This project demonstrates my approach to building products:
 
 **Sivasubramanian Ramanathan**
 *Product Owner | Fintech, Payments & Digital Innovation*
-*PMP | PSM II | PSPO II*
 
-I specialize in taking messy, real-world complexity and structuring it into reliable products.
+I specialize in **simplifying complexity**.
 
-**Open for roles that sit between policy, technology, and stakeholder engagement.**
-
-Previous: **BIS Innovation Hub Singapore** - Cross-border payments, CBDCs, regulatory innovation.
+*   **Experience**: BIS Innovation Hub Singapore (CBDCs, Cross-Border Payments).
+*   **Skills**: Product Management, Rapid Prototyping, Technical Strategy.
+*   **Focus**: Bridging the gap between Policy/Regulation and Engineering.
 
 ---
 
 # **Let's Connect** 🤝
 
-I am ready to bring this level of product thinking and technical depth to your team.
+I am ready to bring this level of product thinking and execution to your team.
 
 *   🌐 **Portfolio**: [sivasub.com](https://sivasub.com)
 *   💼 **LinkedIn**: [linkedin.com/in/sivasub987](https://www.linkedin.com/in/sivasub987/)
-*   💻 **Code**: [github.com/siva-sub/AgentPayment-Sandbox](https://github.com/siva-sub/AgentPayment-Sandbox)
-*   📚 **Docs**: [Full Documentation](https://github.com/siva-sub/AgentPayment-Sandbox/tree/main/docs)
+*   💻 **Code**: [GitHub/APS](https://github.com/siva-sub/AgentPayment-Sandbox)
+*   📚 **Docs**: [Documentation](https://github.com/siva-sub/AgentPayment-Sandbox/tree/main/docs)
 
 <br>
 

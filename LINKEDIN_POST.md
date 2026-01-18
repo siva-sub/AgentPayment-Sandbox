@@ -6,49 +6,45 @@
 
 ---
 
-Four Protocols. Four Companies. One Testing Nightmare. 🧩
+Teaching AI Agents to Shop: The Infrastructure Gap �💳
 
-Google, Coinbase, Shopify, and Stripe have each released agent payment protocols.
+We are moving from a world where humans click buttons to a world where agents negotiate protocols.
 
-*   **AP2** (Google) - A2A mandates for multi-agent orchestration
-*   **x402** (Coinbase) - HTTP 402 for micropayments
-*   **ACP** (Shopify) - OpenAPI checkout sessions
-*   **UCP** (Stripe) - Universal commerce protocol
+**The Vision:** Your AI assistant books your flight, orders your groceries, and pays for your news subscription. By 2027, a significant percentage of eCommerce will be Agent-to-Agent.
 
-**The agentic commerce landscape is fragmenting.** And developers building AI shopping agents are stuck in the middle.
+**The Reality:** We have a testing nightmare. 🧩
 
-I identified a real pain point: **How do you test against 4 different protocols without spending weeks building mock servers?**
+Four tech giants are fighting to set the standard:
+• **Google (AP2)**: High-trust mandates
+• **Coinbase (x402)**: Micropayments
+• **Shopify (ACP)**: E-commerce checkout
+• **Stripe (UCP)**: Universal payment API
 
-So I built a solution.
+Use cases are fragmenting, and developers are stuck in the middle. **"How do I test my agent against all of these?"**
+
+There was no "Postman for Agent Payments". So I built one.
 
 Introducing the **𝗔𝗴𝗲𝗻𝘁𝗣𝗮𝘆𝗺𝗲𝗻𝘁 𝗦𝗮𝗻𝗱𝗯𝗼𝘅 (𝗔𝗣𝗦)** 🚀
 
-One unified testing platform for all 4 agent payment protocols.
+A unified testing platform for the agentic commerce ecosystem.
 
-⚡ **𝗧𝗵𝗲 𝗣𝗿𝗼𝗯𝗹𝗲𝗺 𝗜 𝗦𝗼𝗹𝘃𝗲𝗱**
-Before APS, developers had two bad options:
-• Sign up for test accounts on each platform (days of setup per protocol)
-• Build mock servers from scratch (weeks of implementation work)
-
-Neither is acceptable for rapid prototyping.
-
-🧪 **𝗪𝗵𝗮𝘁 𝗔𝗣𝗦 𝗣𝗿𝗼𝘃𝗶𝗱𝗲𝘀**
-• Mock servers for all 4 protocols (zero setup)
-• Interactive Playground UI (learn by doing)
-• Protocol Inspector (validate compliance)
-• Security Analyzer (check signatures)
+⚡ **�𝗵�𝘁 �� �𝗼𝗲�**
+• **Mock Servers**: Instant endpoints for all 4 protocols (no setup required).
+• **Playground**: Learn the flows interactively in the UI.
+• **Inspector**: Validate your agent's requests against official schemas.
+• **Security**: Verify cryptographic signatures (EIP-712).
 
 🔧 **𝗧𝗵𝗲 𝗕𝘂𝗶𝗹𝗱**
+I architected this to bridge the gap between abstract specs and working code:
 • Frontend: React + TypeScript (Interactive Playground)
-• Backend: FastAPI + Pydantic (Mock Servers + Validators)
-• Docs: 8 documentation files, 3 Architecture Decision Records
-• Deploy: GitHub Pages with intelligent demo mode
+• Backend: FastAPI + Pydantic (Mock Servers)
+• Deployment: GitHub Pages (with a custom "Demo Mode" for static hosting)
 
 🌟 **𝗔𝗯𝗼𝘂𝘁 𝗺𝗲 𝗮𝗻𝗱 𝘁𝗵𝗲 𝗿𝗼𝗹𝗲𝘀 𝗜 𝗮𝗺 𝗼𝗽𝗲𝗻 𝘁𝗼:**
 
-💼 I am looking for roles in **𝗣𝗿𝗼𝗱𝘂𝗰𝘁 𝗠𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁, 𝗙𝗶𝗻𝘁𝗲𝗰𝗵, 𝗣𝗮𝘆𝗺𝗲𝗻𝘁𝘀, 𝗥𝗲𝗴𝗧𝗲𝗰𝗵, 𝗗𝗶𝗴𝗶𝘁𝗮𝗹 𝗔𝘀𝘀𝗲𝘁𝘀**, and related areas that involve building and improving financial or data-driven products. I am also open to roles that sit between policy, technology, and stakeholder engagement.
+💼 I am looking for roles in **𝗣𝗿𝗼𝗱𝘂𝗰𝘁 𝗠𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁, 𝗙𝗶𝗻𝘁𝗲𝗰𝗵, 𝗣𝗮𝘆𝗺𝗲𝗻𝘁𝘀, 𝗥𝗲𝗴𝗧𝗲𝗰𝗵, 𝗗𝗶𝗴𝗶𝘁𝗮𝗹 𝗔𝘀𝘀𝗲𝘁𝘀**, and related areas that involve building and improving financial or data-driven products.
 
-My background spans product delivery and cross-agency collaboration at the **BIS Innovation Hub Singapore**. I specialize in bringing structure to complex, real-world ideas to build products with real impact.
+My background spans product delivery and cross-agency collaboration at the **BIS Innovation Hub Singapore**. I specialize in identifying emerging waves (like Agentic Commerce) and building the infrastructure to enable them.
 
 The full slide deck is attached below! 👇
 
