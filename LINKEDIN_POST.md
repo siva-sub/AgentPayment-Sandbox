@@ -6,39 +6,38 @@
 
 ---
 
-Teaching AI Agents to Shop: The Infrastructure Gap �💳
+Teaching AI Agents to Shop: The Infrastructure Gap 🤖💳
 
-We are moving from a world where humans click buttons to a world where agents negotiate protocols.
+We are moving from a world where humans click buttons to a world where **agents negotiate protocols**.
 
-**The Vision:** Your AI assistant books your flight, orders your groceries, and pays for your news subscription. By 2027, a significant percentage of eCommerce will be Agent-to-Agent.
+Today, Google announced **AP2 (Agent Payments Protocol)**, developed with 60+ partners including Adyen, Amex, and Mastercard. This introduces a paradigm shift:
 
-**The Reality:** We have a testing nightmare. 🧩
+⚡ **From "Clicks" to "Mandates"**
+Instead of just clicking "Buy", agents will use **Intent Mandates** and **Cart Mandates**—cryptographically signed contracts that prove a user's intent and authorization.
 
-Four tech giants are fighting to set the standard:
-• **Google (AP2)**: High-trust mandates
-• **Coinbase (x402)**: Micropayments
-• **Shopify (ACP)**: E-commerce checkout
-• **Stripe (UCP)**: Universal payment API
+But the ecosystem is complex.
+• **AP2** (Google): High-trust mandates & VCs
+• **x402** (Google + Coinbase): Crypto extension for web3 payments
+• **ACP** (Shopify + OpenAI): E-commerce checkout
+• **UCP** (Stripe/Universal): Generic card payments
 
-Use cases are fragmenting, and developers are stuck in the middle. **"How do I test my agent against all of these?"**
-
-There was no "Postman for Agent Payments". So I built one.
+**The Problem:** How do developers test their agents against *all* of these disjointed protocols without building 4 different mock servers?
 
 Introducing the **𝗔𝗴𝗲𝗻𝘁𝗣𝗮𝘆𝗺𝗲𝗻𝘁 𝗦𝗮𝗻𝗱𝗯𝗼𝘅 (𝗔𝗣𝗦)** 🚀
 
 A unified testing platform for the agentic commerce ecosystem.
 
-⚡ **�𝗵�𝘁 �� �𝗼𝗲�**
-• **Mock Servers**: Instant endpoints for all 4 protocols (no setup required).
-• **Playground**: Learn the flows interactively in the UI.
-• **Inspector**: Validate your agent's requests against official schemas.
-• **Security**: Verify cryptographic signatures (EIP-712).
+🧪 **𝗪𝗵𝗮𝘁 𝗔𝗣𝗦 𝗗𝗼𝗲𝘀**
+• **Mock Servers**: Instant endpoints for AP2, x402, ACP, and UCP.
+• **Mandate Validation**: Checks "Intent" and "Cart" signatures.
+• **Inspector**: Validates agent requests against official schemas.
+• **Playground**: Learn the flows interactively.
 
 🔧 **𝗧𝗵𝗲 𝗕𝘂𝗶𝗹𝗱**
 I architected this to bridge the gap between abstract specs and working code:
 • Frontend: React + TypeScript (Interactive Playground)
 • Backend: FastAPI + Pydantic (Mock Servers)
-• Deployment: GitHub Pages (with a custom "Demo Mode" for static hosting)
+• Deployment: GitHub Pages (Demo Mode)
 
 🌟 **𝗔𝗯𝗼𝘂𝘁 𝗺𝗲 𝗮𝗻𝗱 𝘁𝗵𝗲 𝗿𝗼𝗹𝗲𝘀 𝗜 𝗮𝗺 𝗼𝗽𝗲𝗻 𝘁𝗼:**
 

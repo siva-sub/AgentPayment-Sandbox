@@ -52,9 +52,9 @@ We are moving from a world where **humans click buttons** to a world where **age
 
 ![h:250](https://kroki.io/mermaid/svg/eNorTi0sTc1LTnXJTEwvSszlUgCCgsSikszkzILEvBIFj9LcxDwMUUdPTKEAiBhYg66dnaOnlYKSU2mlQlpOZnpGiRJY0tETJBMAlPJLTc8vyUwsSYWIB3jqQvX4JualwIXhyoMz0_MU1BQCEivR1Tvn56VlFuWmpiB0gJ0AtN0lPy9VUQkAOQtAlA==)
 
-### **The Paradigm Shift**
+### **The Shift**
 *   **Today**: Humans navigate UI, solve CAPTCHAs, enter details.
-*   **Tomorrow**: Agents use UCP to discover products and fill carts.
+*   **Tomorrow**: Agents use **AP2** (Google) and **ACP** (Shopify).
 
 > **Prediction**: By 2027, a significant % of eCommerce will be Agent-to-Agent.
 
@@ -64,12 +64,12 @@ We are moving from a world where **humans click buttons** to a world where **age
 
 *The infrastructure is here, but it is fragmented.*
 
-| Protocol | Company | Approach |
-|----------|---------|----------|
-| **UCP** | **Google + Partners** | Universal Commerce |
-| **ACP** | **Shopify + OpenAI** | E-commerce checkout |
-| **x402** | **Coinbase** | Micropayments |
-| **AP2** | **Agent Standard** | Mandate-based A2A |
+| Protocol | Owner | Key Features |
+|----------|-------|--------------|
+| **AP2** | **Google** | Intent/Cart Mandates (60+ Partners) |
+| **x402** | **Google + Coinbase** | Crypto Extension for AP2 |
+| **ACP** | **Shopify + OpenAI** | E-commerce Checkout |
+| **UCP** | **Generic / Stripe** | Universal Card Payments |
 
 > **The Problem**: Developers need to validate signatures, parse headers, and handle mandates across 4 disparate specs.
 
@@ -110,16 +110,16 @@ We are moving from a world where **humans click buttons** to a world where **age
 
 ![h:220](https://kroki.io/flowchart/svg/eNpLy8kvT85ILCpRCHHiUgCC4tKk9KLEggwFt6L8vJLUvBSwKAiEekYH5CRWphfll-alxMKFXRKLM6JBRFJ-YhFUHKYNbphTYnI2ilnOAdH6ufnJ2fqlyQX6CMMc4eKJKOIVJgZGUAkQE1lHAEwisQAmDrMJ5gUFXV07mBMAj_NCjg==)
 
-*   ⚡ **Mock Servers**: Instant endpoints for UCP, ACP, x402, AP2.
+*   ⚡ **Mock Servers**: Instant endpoints for AP2, x402, ACP, UCP.
 *   🔍 **Inspector**: Validates requests against schemas.
-*   🛡️ **Security**: Verifies EIP-712 signatures.
+*   🛡️ **Security**: Verifies Mandate signatures.
 *   🎮 **Playground**: Learn by doing in the UI.
 
 ---
 
-# **Flow 1: x402 (Coinbase)** ⚡
+# **A2A x402 Extension (Coinbase)** ⚡
 
-*For Micropayments & Metered Access.*
+*Production-Ready Solution for Crypto Payments.*
 
 <div class="columns">
 <div>
@@ -130,18 +130,18 @@ We are moving from a world where **humans click buttons** to a world where **age
 <div>
 
 ### **What APS Tests**
-1.  **Header Parsing**: Can agent handle `402 Payment Required`?
-2.  **Signatures**: Is `X-Payment` header valid?
-3.  **Payload**: Does payment match price?
+1.  **Header Parsing**: Handling `402 Payment Required`.
+2.  **Web3 Signatures**: Validating EIP-712.
+3.  **Metered Access**: Paying per-request.
 
 </div>
 </div>
 
 ---
 
-# **Flow 2: AP2 (Agent Standard)** 🤖
+# **AP2 (Google): The New Standard** 🤖
 
-*High-Trust Mandates for Agent-to-Agent.*
+*Built with 60+ Partners (Adyen, Amex, Mastercard).*
 
 <div class="columns">
 <div>
@@ -152,16 +152,16 @@ We are moving from a world where **humans click buttons** to a world where **age
 <div>
 
 ### **What APS Tests**
-1.  **Discovery**: Finding `/.well-known/a2a`.
-2.  **Mandates**: Respecting spending limits.
-3.  **OTP**: Handling user approval.
+1.  **Intent Mandates**: Proving user authority upfront.
+2.  **Cart Mandates**: "What you see is what you pay for."
+3.  **Accountability**: Non-repudiable audit trails.
 
 </div>
 </div>
 
 ---
 
-# **Flow 3: ACP (Shopify + OpenAI)** 🛍️
+# **ACP (Shopify + OpenAI)** 🛍️
 
 *Specialized for E-commerce Checkout.*
 
@@ -183,9 +183,9 @@ We are moving from a world where **humans click buttons** to a world where **age
 
 ---
 
-# **Flow 4: UCP (Google + Partners)** 💳
+# **UCP (Universal / Stripe)** 💳
 
-*Universal Commerce Protocol (Shopify, Stripe, Visa, etc)*
+*Generic Card Protocol for Agents.*
 
 <div class="columns">
 <div>
