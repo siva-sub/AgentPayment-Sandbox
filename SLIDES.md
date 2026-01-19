@@ -32,6 +32,8 @@ style: |
 **Sivasubramanian Ramanathan**
 *Product Owner | Fintech & Innovation*
 
+💼 Looking for roles in Product, Fintech, Payments
+
 ---
 
 # The Problem: Checkout Was Designed for Humans 🧩
@@ -296,27 +298,20 @@ I build things to understand them. APS is how I learn.
 </div>
 <div>
 
-### Inspector
-- Runs test suites against YOUR server
-- Checks: endpoints, status codes, fields
-- Returns: **Security Score** (0-100)
-- Recommendations for compliance
+### Inspector Flow
 
-### Schema Validators
-- Pydantic validators for x402
-- CAIP-2 network validation
-- EIP-3009 authorization format
+![w:380](https://kroki.io/mermaid/svg/eNptj00KwjAQhfeeYi7gFYQ2_UEQlMaNFBc1HW2xTUoyUUS8u3XQGsG3-vjgDW-OnbmqprIEq2IGY5w_nGw1NLAz3oIwNbJ-JSrZSbQXtHvWqOvfVrSRsNRuQEXGTs243KIjKLzWn-Yr4i4aVGeQVJF3j8knb5-12NWBT99-WWM_GEKtbo__M9aeBk9TMSslKm9buoFUxuJ3Ql4WqEzfjxcqao12v39FMJ8vIGaOmUXAScAps2DOmJOA04Az5vwJoU1iIA==)
 
 </div>
 </div>
 
 ---
 
-# Why a PM Built This 👨‍💼
+# Why a Product Owner Built This 👨‍💼
 
 ![bg right:40%](https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=700&fit=crop)
 
-*"You wrote 2,700+ lines. Aren't you a PM?"*
+*"You built a testing sandbox. Aren't you a PM?"*
 
 ### My Philosophy
 1. **Build to Understand**
