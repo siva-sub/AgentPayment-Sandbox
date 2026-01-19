@@ -24,9 +24,10 @@ Agent → API Discovery → Structured Checkout → Crypto Auth → Done
 
 "I'm building an AI shopping agent. How do I test it?"
 
-Four major protocols have emerged:
-• 𝗨𝗖𝗣 (Google + Shopify + Walmart + Target) — Universal checkout
-• 𝗔𝗣𝟮 (Google) — Agent-to-Agent mandates
+Google announced 𝗨𝗖𝗣 with 20+ partners (Shopify, Stripe, Walmart, Target). But testing these protocols is hard:
+
+• 𝗨𝗖𝗣 (Google + Partners) — Universal checkout standard
+• 𝗔𝗣𝟮 (Google) — Agent Payments (built on A2A messaging)
 • 𝗔𝗖𝗣 (OpenAI/Shopify) — E-commerce checkout
 • 𝘅𝟰𝟬𝟮 (Coinbase) — HTTP 402 micropayments
 
@@ -34,12 +35,15 @@ There was no "Postman for Agent Payments". So I built one.
 
 𝗜𝗻𝘁𝗿𝗼𝗱𝘂𝗰𝗶𝗻𝗴 𝗔𝗣𝗦 (𝗔𝗴𝗲𝗻𝘁𝗣𝗮𝘆𝗺𝗲𝗻𝘁 𝗦𝗮𝗻𝗱𝗯𝗼𝘅) 🚀
 
-A unified testing platform for all 4 protocols:
-
-⚡ 𝗠𝗼𝗰𝗸 𝗦𝗲𝗿𝘃𝗲𝗿𝘀: Instant endpoints (2,000+ lines of Python)
-🔍 𝗜𝗻𝘀𝗽𝗲𝗰𝘁𝗼𝗿: Validates requests against specs
-🛡️ 𝗦𝗲𝗰𝘂𝗿𝗶𝘁𝘆 𝗔𝗻𝗮𝗹𝘆𝘇𝗲𝗿: Signature verification
+⚡ 𝗠𝗼𝗰𝗸 𝗦𝗲𝗿𝘃𝗲𝗿𝘀: 4 protocols, 2,700+ lines of Python
+🔍 𝗜𝗻𝘀𝗽𝗲𝗰𝘁𝗼𝗿: Runs test suites, returns security scores
+🛡️ 𝗦𝗰𝗵𝗲𝗺𝗮 𝗩𝗮𝗹𝗶𝗱𝗮𝘁𝗼𝗿𝘀: Pydantic validators for x402, ACP
 🎮 𝗣𝗹𝗮𝘆𝗴𝗿𝗼𝘂𝗻𝗱 𝗨𝗜: Interactive protocol explorer
+
+𝗛𝗼𝘄 𝗔𝟮𝗔 𝗿𝗲𝗹𝗮𝘁𝗲𝘀 𝘁𝗼 𝗔𝗣𝟮:
+
+A2A = Agent-to-Agent (messaging protocol)
+AP2 = Agent Payments Protocol (built ON TOP of A2A)
 
 𝗪𝗵𝘆 𝗮 𝗣𝗿𝗼𝗱𝘂𝗰𝘁 𝗢𝘄𝗻𝗲𝗿 𝗕𝘂𝗶𝗹𝘁 𝗧𝗵𝗶𝘀
 
@@ -56,7 +60,7 @@ The full slide deck is attached below! 👇
 
 ## Hashtags:
 
-#AgenticCommerce #AIPayments #Fintech #ProductManagement #UCP #AP2 #x402 #Coinbase #Google #Stripe #Shopify #AIAgents #Payments #RegTech #DigitalAssets #OpenToWork
+#AgenticCommerce #AIPayments #Fintech #ProductManagement #UCP #AP2 #A2A #x402 #Coinbase #Google #Shopify #AIAgents #Payments #RegTech #DigitalAssets #OpenToWork
 
 ---
 

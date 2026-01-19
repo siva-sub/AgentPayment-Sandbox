@@ -1,147 +1,106 @@
-<!DOCTYPE html><html lang="en-SG"><head><title>**APS** 🤖💳</title><meta property="og:title" content="**APS** 🤖💳"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><style>@media screen{body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button{appearance:none;background-color:initial;border:0;color:inherit;cursor:pointer;font-size:inherit;opacity:.8;outline:none;padding:0;transition:opacity .2s linear;-webkit-tap-highlight-color:transparent}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:disabled{cursor:not-allowed;opacity:.15!important}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover{opacity:1}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover:active{opacity:.6}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover:not(:disabled){transition:none}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-prev{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNNjggOTAgMjggNTBsNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-next{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJtMzIgOTAgNDAtNDAtNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen]{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgeD0iMTAiIHk9IjIwIiBjbGFzcz0iYSIgcng9IjUuNjciLz48cGF0aCBkPSJNNDAgNzBIMjBWNTBtMjAgMEwyMCA3MG00MC00MGgyMHYyMG0tMjAgMCAyMC0yMCIgY2xhc3M9ImEiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen]{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgeD0iMTAiIHk9IjIwIiBjbGFzcz0iYSIgcng9IjUuNjciLz48cGF0aCBkPSJNMjAgNTBoMjB2MjBtLTIwIDAgMjAtMjBtNDAgMEg2MFYzMG0yMCAwTDYwIDUwIiBjbGFzcz0iYSIvPjwvc3ZnPg==")}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter]{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNODcuOCA0Ny41Qzg5IDUwIDg3LjcgNTIgODUgNTJIMzVhOC43IDguNyAwIDAgMS03LjItNC41bC0xNS42LTMxQzExIDE0IDEyLjIgMTIgMTUgMTJoNTBhOC44IDguOCAwIDAgMSA3LjIgNC41ek02MCA1MnYzNm0tMTAgMGgyME00NSA0MmgyMCIvPjwvc3ZnPg==") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button.bespoke-marp-presenter-note-bigger{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNMTIgNTBoODBNNTIgOTBWMTAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button.bespoke-marp-presenter-note-smaller{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNMTIgNTBoODAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}}@keyframes __bespoke_marp_transition_reduced_outgoing__{0%{opacity:1}to{opacity:0}}@keyframes __bespoke_marp_transition_reduced_incoming__{0%{mix-blend-mode:plus-lighter;opacity:0}to{mix-blend-mode:plus-lighter;opacity:1}}.bespoke-marp-note,.bespoke-marp-osc,.bespoke-progress-parent{display:none;transition:none}@media screen{::view-transition-group(*){animation-duration:var(--marp-bespoke-transition-animation-duration,.5s);animation-timing-function:ease}::view-transition-new(*),::view-transition-old(*){animation-delay:0s;animation-direction:var(--marp-bespoke-transition-animation-direction,normal);animation-duration:var(--marp-bespoke-transition-animation-duration,.5s);animation-fill-mode:both;animation-name:var(--marp-bespoke-transition-animation-name,var(--marp-bespoke-transition-animation-name-fallback,__bespoke_marp_transition_no_animation__));mix-blend-mode:normal}::view-transition-old(*){--marp-bespoke-transition-animation-name-fallback:__bespoke_marp_transition_reduced_outgoing__;animation-timing-function:ease}::view-transition-new(*){--marp-bespoke-transition-animation-name-fallback:__bespoke_marp_transition_reduced_incoming__;animation-timing-function:ease}::view-transition-new(root),::view-transition-old(root){animation-timing-function:linear}::view-transition-new(__bespoke_marp_transition_osc__),::view-transition-old(__bespoke_marp_transition_osc__){animation-duration:0s!important;animation-name:__bespoke_marp_transition_osc__!important}::view-transition-new(__bespoke_marp_transition_osc__){opacity:0!important}.bespoke-marp-transition-warming-up::view-transition-group(*),.bespoke-marp-transition-warming-up::view-transition-new(*),.bespoke-marp-transition-warming-up::view-transition-old(*){animation-play-state:paused!important}body,html{height:100%;margin:0}body{background:#000;overflow:hidden}svg.bespoke-marp-slide{content-visibility:hidden;opacity:0;pointer-events:none;z-index:-1}svg.bespoke-marp-slide:not(.bespoke-marp-active) *{view-transition-name:none!important}svg.bespoke-marp-slide.bespoke-marp-active{content-visibility:visible;opacity:1;pointer-events:auto;z-index:0}svg.bespoke-marp-slide.bespoke-marp-active.bespoke-marp-active-ready *{animation-name:__bespoke_marp__!important}@supports not (content-visibility:hidden){svg.bespoke-marp-slide[data-bespoke-marp-load=hideable]{display:none}svg.bespoke-marp-slide[data-bespoke-marp-load=hideable].bespoke-marp-active{display:block}}}@media screen and (prefers-reduced-motion:reduce){svg.bespoke-marp-slide *{view-transition-name:none!important}}@media screen{[data-bespoke-marp-fragment=inactive]{visibility:hidden}body[data-bespoke-view=""] .bespoke-marp-parent,body[data-bespoke-view=next] .bespoke-marp-parent{inset:0;position:absolute}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc{background:#000000a6;border-radius:7px;bottom:50px;color:#fff;contain:paint;display:block;font-family:Helvetica,Arial,sans-serif;font-size:16px;left:50%;line-height:0;opacity:1;padding:12px;position:absolute;touch-action:manipulation;transform:translateX(-50%);transition:opacity .2s linear;-webkit-user-select:none;user-select:none;white-space:nowrap;will-change:transform;z-index:1;view-transition-name:__bespoke_marp_transition_osc__}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>*,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>*{margin-left:6px}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>:first-child,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>:first-child{margin-left:0}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span{opacity:.8}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page]{display:inline-block;min-width:140px;text-align:center}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev]{height:32px;line-height:32px;width:32px}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive{cursor:none}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc{opacity:0;pointer-events:none}body[data-bespoke-view=""] svg.bespoke-marp-slide,body[data-bespoke-view=next] svg.bespoke-marp-slide{height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent{background:#222;display:flex;height:5px;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent+.bespoke-marp-parent{top:5px}body[data-bespoke-view=""] .bespoke-progress-parent .bespoke-progress-bar{background:#0288d1;flex:0 0 0;transition:flex-basis .2s cubic-bezier(0,1,1,1)}body[data-bespoke-view=next]{background:#0000}body[data-bespoke-view=presenter]{background:#161616}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container{display:grid;font-family:Helvetica,Arial,sans-serif;grid-template:"current dragbar next" minmax(140px,1fr) "current dragbar note" 2fr "info    dragbar note" 3em;grid-template-columns:minmax(3px,var(--bespoke-marp-presenter-split-ratio,66%)) 0 minmax(3px,1fr);height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent{grid-area:current;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide{height:calc(100% - 40px);left:20px;pointer-events:none;position:absolute;top:20px;-webkit-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide.bespoke-marp-active{filter:drop-shadow(0 3px 10px rgba(0,0,0,.5))}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container{background:#0288d1;cursor:col-resize;grid-area:dragbar;margin-left:-3px;opacity:0;position:relative;transition:opacity .4s linear .1s;width:6px;z-index:10}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container:hover{opacity:1}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container.active{opacity:1;transition-delay:0s}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container{background:#222;cursor:pointer;display:none;grid-area:next;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container iframe.bespoke-marp-presenter-next{background:#0000;border:0;display:block;filter:drop-shadow(0 3px 10px rgba(0,0,0,.5));height:calc(100% - 40px);left:20px;pointer-events:none;position:absolute;top:20px;-webkit-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container{background:#222;color:#eee;grid-area:note;position:relative;z-index:1}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-wrapper{display:block;inset:0;position:absolute}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-buttons{background:#000000a6;border-radius:4px;bottom:0;display:flex;gap:4px;margin:12px;opacity:0;padding:6px;pointer-events:none;position:absolute;right:0;transition:opacity .2s linear}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-buttons:focus-within,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-wrapper:focus-within+.bespoke-marp-presenter-note-buttons,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container:hover .bespoke-marp-presenter-note-buttons{opacity:1;pointer-events:auto}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note{box-sizing:border-box;font-size:calc(1.1em*var(--bespoke-marp-note-font-scale, 1));height:calc(100% - 40px);margin:20px;overflow:auto;padding-right:3px;white-space:pre-wrap;width:calc(100% - 40px);word-wrap:break-word;scrollbar-color:#eeeeee80 #0000;scrollbar-width:thin}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar{width:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-track{background:#0000}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-thumb{background:#eeeeee80;border-radius:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note:empty{pointer-events:none}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:first-child{margin-top:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:last-child{margin-bottom:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container{align-items:center;box-sizing:border-box;color:#eee;display:flex;flex-wrap:nowrap;grid-area:info;justify-content:center;overflow:hidden;padding:0 10px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{box-sizing:border-box;display:block;padding:0 10px;white-space:nowrap;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page{order:2;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page .bespoke-marp-presenter-info-page-text{display:inline-block;min-width:120px;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time{color:#999;order:1;text-align:left}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{color:#999;order:3;text-align:right}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer:hover{cursor:pointer}}@media print{.bespoke-marp-presenter-info-container,.bespoke-marp-presenter-next-container,.bespoke-marp-presenter-note-container{display:none}}</style><style>@charset "UTF-8";@import "https://fonts.bunny.net/css?family=Lato:400,900|Roboto+Mono:400,700&display=swap";div#\:\$p > svg > foreignObject > section{width:1280px;height:720px;box-sizing:border-box;overflow:hidden;position:relative;scroll-snap-align:center center;-webkit-text-size-adjust:100%;text-size-adjust:100%}div#\:\$p > svg > foreignObject > section::after{bottom:0;content:attr(data-marpit-pagination);padding:inherit;pointer-events:none;position:absolute;right:0}div#\:\$p > svg > foreignObject > section:not([data-marpit-pagination])::after{display:none}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1){font-size:2em;margin-block:0.67em}div#\:\$p > svg > foreignObject > section video::-webkit-media-controls{will-change:transform}@page {size:1280px 720px;margin:0}@media print{html, body{background-color:#fff;margin:0;page-break-inside:avoid;break-inside:avoid-page}div#\:\$p > svg > foreignObject > section{page-break-before:always;break-before:page}div#\:\$p > svg > foreignObject > section, div#\:\$p > svg > foreignObject > section *{-webkit-print-color-adjust:exact!important;animation-delay:0s!important;animation-duration:0s!important;color-adjust:exact!important;print-color-adjust:exact!important;transition:none!important}div#\:\$p > svg[data-marpit-svg]{display:block;height:100vh;width:100vw}}div#\:\$p > svg > foreignObject > :where(section){container-type:size}div#\:\$p > svg > foreignObject > section img[data-marp-twemoji]{background:transparent;height:1em;margin:0 .05em 0 .1em;vertical-align:-.1em;width:1em}/*!
- * Marp / Marpit Gaia theme.
+<!DOCTYPE html><html lang="en-SG"><head><title>🤖 **AgentPayment Sandbox**</title><meta property="og:title" content="🤖 **AgentPayment Sandbox**"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><style>@media screen{body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button{appearance:none;background-color:initial;border:0;color:inherit;cursor:pointer;font-size:inherit;opacity:.8;outline:none;padding:0;transition:opacity .2s linear;-webkit-tap-highlight-color:transparent}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:disabled{cursor:not-allowed;opacity:.15!important}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover{opacity:1}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover:active{opacity:.6}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover:not(:disabled){transition:none}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-prev{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNNjggOTAgMjggNTBsNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-next{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJtMzIgOTAgNDAtNDAtNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen]{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgeD0iMTAiIHk9IjIwIiBjbGFzcz0iYSIgcng9IjUuNjciLz48cGF0aCBkPSJNNDAgNzBIMjBWNTBtMjAgMEwyMCA3MG00MC00MGgyMHYyMG0tMjAgMCAyMC0yMCIgY2xhc3M9ImEiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen]{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgeD0iMTAiIHk9IjIwIiBjbGFzcz0iYSIgcng9IjUuNjciLz48cGF0aCBkPSJNMjAgNTBoMjB2MjBtLTIwIDAgMjAtMjBtNDAgMEg2MFYzMG0yMCAwTDYwIDUwIiBjbGFzcz0iYSIvPjwvc3ZnPg==")}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter]{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNODcuOCA0Ny41Qzg5IDUwIDg3LjcgNTIgODUgNTJIMzVhOC43IDguNyAwIDAgMS03LjItNC41bC0xNS42LTMxQzExIDE0IDEyLjIgMTIgMTUgMTJoNTBhOC44IDguOCAwIDAgMSA3LjIgNC41ek02MCA1MnYzNm0tMTAgMGgyME00NSA0MmgyMCIvPjwvc3ZnPg==") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button.bespoke-marp-presenter-note-bigger{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNMTIgNTBoODBNNTIgOTBWMTAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button.bespoke-marp-presenter-note-smaller{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNMTIgNTBoODAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}}@keyframes __bespoke_marp_transition_reduced_outgoing__{0%{opacity:1}to{opacity:0}}@keyframes __bespoke_marp_transition_reduced_incoming__{0%{mix-blend-mode:plus-lighter;opacity:0}to{mix-blend-mode:plus-lighter;opacity:1}}.bespoke-marp-note,.bespoke-marp-osc,.bespoke-progress-parent{display:none;transition:none}@media screen{::view-transition-group(*){animation-duration:var(--marp-bespoke-transition-animation-duration,.5s);animation-timing-function:ease}::view-transition-new(*),::view-transition-old(*){animation-delay:0s;animation-direction:var(--marp-bespoke-transition-animation-direction,normal);animation-duration:var(--marp-bespoke-transition-animation-duration,.5s);animation-fill-mode:both;animation-name:var(--marp-bespoke-transition-animation-name,var(--marp-bespoke-transition-animation-name-fallback,__bespoke_marp_transition_no_animation__));mix-blend-mode:normal}::view-transition-old(*){--marp-bespoke-transition-animation-name-fallback:__bespoke_marp_transition_reduced_outgoing__;animation-timing-function:ease}::view-transition-new(*){--marp-bespoke-transition-animation-name-fallback:__bespoke_marp_transition_reduced_incoming__;animation-timing-function:ease}::view-transition-new(root),::view-transition-old(root){animation-timing-function:linear}::view-transition-new(__bespoke_marp_transition_osc__),::view-transition-old(__bespoke_marp_transition_osc__){animation-duration:0s!important;animation-name:__bespoke_marp_transition_osc__!important}::view-transition-new(__bespoke_marp_transition_osc__){opacity:0!important}.bespoke-marp-transition-warming-up::view-transition-group(*),.bespoke-marp-transition-warming-up::view-transition-new(*),.bespoke-marp-transition-warming-up::view-transition-old(*){animation-play-state:paused!important}body,html{height:100%;margin:0}body{background:#000;overflow:hidden}svg.bespoke-marp-slide{content-visibility:hidden;opacity:0;pointer-events:none;z-index:-1}svg.bespoke-marp-slide:not(.bespoke-marp-active) *{view-transition-name:none!important}svg.bespoke-marp-slide.bespoke-marp-active{content-visibility:visible;opacity:1;pointer-events:auto;z-index:0}svg.bespoke-marp-slide.bespoke-marp-active.bespoke-marp-active-ready *{animation-name:__bespoke_marp__!important}@supports not (content-visibility:hidden){svg.bespoke-marp-slide[data-bespoke-marp-load=hideable]{display:none}svg.bespoke-marp-slide[data-bespoke-marp-load=hideable].bespoke-marp-active{display:block}}}@media screen and (prefers-reduced-motion:reduce){svg.bespoke-marp-slide *{view-transition-name:none!important}}@media screen{[data-bespoke-marp-fragment=inactive]{visibility:hidden}body[data-bespoke-view=""] .bespoke-marp-parent,body[data-bespoke-view=next] .bespoke-marp-parent{inset:0;position:absolute}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc{background:#000000a6;border-radius:7px;bottom:50px;color:#fff;contain:paint;display:block;font-family:Helvetica,Arial,sans-serif;font-size:16px;left:50%;line-height:0;opacity:1;padding:12px;position:absolute;touch-action:manipulation;transform:translateX(-50%);transition:opacity .2s linear;-webkit-user-select:none;user-select:none;white-space:nowrap;will-change:transform;z-index:1;view-transition-name:__bespoke_marp_transition_osc__}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>*,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>*{margin-left:6px}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>:first-child,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>:first-child{margin-left:0}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span{opacity:.8}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page]{display:inline-block;min-width:140px;text-align:center}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev]{height:32px;line-height:32px;width:32px}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive{cursor:none}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc{opacity:0;pointer-events:none}body[data-bespoke-view=""] svg.bespoke-marp-slide,body[data-bespoke-view=next] svg.bespoke-marp-slide{height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent{background:#222;display:flex;height:5px;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent+.bespoke-marp-parent{top:5px}body[data-bespoke-view=""] .bespoke-progress-parent .bespoke-progress-bar{background:#0288d1;flex:0 0 0;transition:flex-basis .2s cubic-bezier(0,1,1,1)}body[data-bespoke-view=next]{background:#0000}body[data-bespoke-view=presenter]{background:#161616}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container{display:grid;font-family:Helvetica,Arial,sans-serif;grid-template:"current dragbar next" minmax(140px,1fr) "current dragbar note" 2fr "info    dragbar note" 3em;grid-template-columns:minmax(3px,var(--bespoke-marp-presenter-split-ratio,66%)) 0 minmax(3px,1fr);height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent{grid-area:current;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide{height:calc(100% - 40px);left:20px;pointer-events:none;position:absolute;top:20px;-webkit-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide.bespoke-marp-active{filter:drop-shadow(0 3px 10px rgba(0,0,0,.5))}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container{background:#0288d1;cursor:col-resize;grid-area:dragbar;margin-left:-3px;opacity:0;position:relative;transition:opacity .4s linear .1s;width:6px;z-index:10}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container:hover{opacity:1}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container.active{opacity:1;transition-delay:0s}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container{background:#222;cursor:pointer;display:none;grid-area:next;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container iframe.bespoke-marp-presenter-next{background:#0000;border:0;display:block;filter:drop-shadow(0 3px 10px rgba(0,0,0,.5));height:calc(100% - 40px);left:20px;pointer-events:none;position:absolute;top:20px;-webkit-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container{background:#222;color:#eee;grid-area:note;position:relative;z-index:1}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-wrapper{display:block;inset:0;position:absolute}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-buttons{background:#000000a6;border-radius:4px;bottom:0;display:flex;gap:4px;margin:12px;opacity:0;padding:6px;pointer-events:none;position:absolute;right:0;transition:opacity .2s linear}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-buttons:focus-within,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-wrapper:focus-within+.bespoke-marp-presenter-note-buttons,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container:hover .bespoke-marp-presenter-note-buttons{opacity:1;pointer-events:auto}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note{box-sizing:border-box;font-size:calc(1.1em*var(--bespoke-marp-note-font-scale, 1));height:calc(100% - 40px);margin:20px;overflow:auto;padding-right:3px;white-space:pre-wrap;width:calc(100% - 40px);word-wrap:break-word;scrollbar-color:#eeeeee80 #0000;scrollbar-width:thin}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar{width:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-track{background:#0000}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-thumb{background:#eeeeee80;border-radius:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note:empty{pointer-events:none}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:first-child{margin-top:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:last-child{margin-bottom:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container{align-items:center;box-sizing:border-box;color:#eee;display:flex;flex-wrap:nowrap;grid-area:info;justify-content:center;overflow:hidden;padding:0 10px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{box-sizing:border-box;display:block;padding:0 10px;white-space:nowrap;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page{order:2;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page .bespoke-marp-presenter-info-page-text{display:inline-block;min-width:120px;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time{color:#999;order:1;text-align:left}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{color:#999;order:3;text-align:right}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer:hover{cursor:pointer}}@media print{.bespoke-marp-presenter-info-container,.bespoke-marp-presenter-next-container,.bespoke-marp-presenter-note-container{display:none}}</style><style>div#\:\$p > svg > foreignObject > section{width:1280px;height:720px;box-sizing:border-box;overflow:hidden;position:relative;scroll-snap-align:center center;-webkit-text-size-adjust:100%;text-size-adjust:100%}div#\:\$p > svg > foreignObject > section::after{bottom:0;content:attr(data-marpit-pagination);padding:inherit;pointer-events:none;position:absolute;right:0}div#\:\$p > svg > foreignObject > section:not([data-marpit-pagination])::after{display:none}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1){font-size:2em;margin-block:0.67em}div#\:\$p > svg > foreignObject > section video::-webkit-media-controls{will-change:transform}@page {size:1280px 720px;margin:0}@media print{html, body{background-color:#fff;margin:0;page-break-inside:avoid;break-inside:avoid-page}div#\:\$p > svg > foreignObject > section{page-break-before:always;break-before:page}div#\:\$p > svg > foreignObject > section, div#\:\$p > svg > foreignObject > section *{-webkit-print-color-adjust:exact!important;animation-delay:0s!important;animation-duration:0s!important;color-adjust:exact!important;print-color-adjust:exact!important;transition:none!important}div#\:\$p > svg[data-marpit-svg]{display:block;height:100vh;width:100vw}}div#\:\$p > svg > foreignObject > :where(section){container-type:size}div#\:\$p > svg > foreignObject > section img[data-marp-twemoji]{background:transparent;height:1em;margin:0 .05em 0 .1em;vertical-align:-.1em;width:1em}/*!
+ * Marp / Marpit Uncover theme
  *
- * @theme gaia
+ * @theme uncover
  * @author Yuki Hattori
  *
  * @auto-scaling true
  * @size 16:9 1280px 720px
  * @size 4:3 960px 720px
- */div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) code.hljs{display:block;overflow-x:auto;padding:1em}div#\:\$p > svg > foreignObject > section code.hljs{padding:3px 5px}div#\:\$p > svg > foreignObject > section .hljs{background:#000;color:#f8f8f8}div#\:\$p > svg > foreignObject > section .hljs-comment,div#\:\$p > svg > foreignObject > section .hljs-quote{color:#aeaeae;font-style:italic}div#\:\$p > svg > foreignObject > section .hljs-keyword,div#\:\$p > svg > foreignObject > section .hljs-selector-tag,div#\:\$p > svg > foreignObject > section .hljs-type{color:#e28964}div#\:\$p > svg > foreignObject > section .hljs-string{color:#65b042}div#\:\$p > svg > foreignObject > section .hljs-subst{color:#daefa3}div#\:\$p > svg > foreignObject > section .hljs-link,div#\:\$p > svg > foreignObject > section .hljs-regexp{color:#e9c062}div#\:\$p > svg > foreignObject > section .hljs-name,div#\:\$p > svg > foreignObject > section .hljs-section,div#\:\$p > svg > foreignObject > section .hljs-tag,div#\:\$p > svg > foreignObject > section .hljs-title{color:#89bdff}div#\:\$p > svg > foreignObject > section .hljs-class .hljs-title,div#\:\$p > svg > foreignObject > section .hljs-doctag,div#\:\$p > svg > foreignObject > section .hljs-title.class_{text-decoration:underline}div#\:\$p > svg > foreignObject > section .hljs-bullet,div#\:\$p > svg > foreignObject > section .hljs-number,div#\:\$p > svg > foreignObject > section .hljs-symbol{color:#3387cc}div#\:\$p > svg > foreignObject > section .hljs-params,div#\:\$p > svg > foreignObject > section .hljs-template-variable,div#\:\$p > svg > foreignObject > section .hljs-variable{color:#3e87e3}div#\:\$p > svg > foreignObject > section .hljs-attribute{color:#cda869}div#\:\$p > svg > foreignObject > section .hljs-meta{color:#8996a8}div#\:\$p > svg > foreignObject > section .hljs-formula{background-color:#0e2231;color:#f8f8f8;font-style:italic}div#\:\$p > svg > foreignObject > section .hljs-addition{background-color:#253b22;color:#f8f8f8}div#\:\$p > svg > foreignObject > section .hljs-deletion{background-color:#420e09;color:#f8f8f8}div#\:\$p > svg > foreignObject > section .hljs-selector-class{color:#9b703f}div#\:\$p > svg > foreignObject > section .hljs-selector-id{color:#8b98ab}div#\:\$p > svg > foreignObject > section .hljs-emphasis{font-style:italic}div#\:\$p > svg > foreignObject > section .hljs-strong{font-weight:700}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1),div#\:\$p > svg > foreignObject > section :is(h2, marp-h2),div#\:\$p > svg > foreignObject > section :is(h3, marp-h3),div#\:\$p > svg > foreignObject > section :is(h4, marp-h4),div#\:\$p > svg > foreignObject > section :is(h5, marp-h5),div#\:\$p > svg > foreignObject > section :is(h6, marp-h6){margin:.5em 0 0}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1) strong,div#\:\$p > svg > foreignObject > section :is(h2, marp-h2) strong,div#\:\$p > svg > foreignObject > section :is(h3, marp-h3) strong,div#\:\$p > svg > foreignObject > section :is(h4, marp-h4) strong,div#\:\$p > svg > foreignObject > section :is(h5, marp-h5) strong,div#\:\$p > svg > foreignObject > section :is(h6, marp-h6) strong{font-weight:inherit}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1)::part(auto-scaling),div#\:\$p > svg > foreignObject > section :is(h2, marp-h2)::part(auto-scaling),div#\:\$p > svg > foreignObject > section :is(h3, marp-h3)::part(auto-scaling),div#\:\$p > svg > foreignObject > section :is(h4, marp-h4)::part(auto-scaling),div#\:\$p > svg > foreignObject > section :is(h5, marp-h5)::part(auto-scaling),div#\:\$p > svg > foreignObject > section :is(h6, marp-h6)::part(auto-scaling){max-height:580px}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1){font-size:1.8em}div#\:\$p > svg > foreignObject > section :is(h2, marp-h2){font-size:1.5em}div#\:\$p > svg > foreignObject > section :is(h3, marp-h3){font-size:1.3em}div#\:\$p > svg > foreignObject > section :is(h4, marp-h4){font-size:1.1em}div#\:\$p > svg > foreignObject > section :is(h5, marp-h5){font-size:1em}div#\:\$p > svg > foreignObject > section :is(h6, marp-h6){font-size:.9em}div#\:\$p > svg > foreignObject > section blockquote,div#\:\$p > svg > foreignObject > section p{margin:1em 0 0}div#\:\$p > svg > foreignObject > section ol>li,div#\:\$p > svg > foreignObject > section ul>li{margin:.3em 0 0}div#\:\$p > svg > foreignObject > section ol>li>p,div#\:\$p > svg > foreignObject > section ul>li>p{margin:.6em 0 0}div#\:\$p > svg > foreignObject > section code{display:inline-block;font-family:Roboto Mono,monospace;font-size:.8em;letter-spacing:0;margin:-.1em .15em;padding:.1em .2em;vertical-align:baseline}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre){display:block;margin:1em 0 0;overflow:visible}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) code{box-sizing:border-box;font-size:.7em;margin:0;min-width:100%;padding:.5em}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre)::part(auto-scaling){max-height:calc(580px - 1em)}div#\:\$p > svg > foreignObject > section blockquote{margin:1em 0 0;padding:0 1em;position:relative}div#\:\$p > svg > foreignObject > section blockquote:after,div#\:\$p > svg > foreignObject > section blockquote:before{content:"“";display:block;font-family:Times New Roman,serif;font-weight:700;position:absolute}div#\:\$p > svg > foreignObject > section blockquote:before{left:0;top:0}div#\:\$p > svg > foreignObject > section blockquote:after{bottom:0;right:0;transform:rotate(180deg)}div#\:\$p > svg > foreignObject > section blockquote>:first-child{margin-top:0}div#\:\$p > svg > foreignObject > section mark{background:transparent}div#\:\$p > svg > foreignObject > section table{border-collapse:collapse;border-spacing:0;margin:1em 0 0}div#\:\$p > svg > foreignObject > section table td,div#\:\$p > svg > foreignObject > section table th{border-style:solid;border-width:1px;padding:.2em .4em}div#\:\$p > svg > foreignObject > section footer,div#\:\$p > svg > foreignObject > section header,div#\:\$p > svg > foreignObject > section:after{box-sizing:border-box;font-size:66%;height:70px;line-height:50px;overflow:hidden;padding:10px 25px;position:absolute}div#\:\$p > svg > foreignObject > section:after{--marpit-root-font-size:66%;}div#\:\$p > svg > foreignObject > section header{top:0}div#\:\$p > svg > foreignObject > section footer,div#\:\$p > svg > foreignObject > section header{left:0;right:0}div#\:\$p > svg > foreignObject > section footer{bottom:0}div#\:\$p > svg > foreignObject > section{background-color:var(--color-background);background-image:linear-gradient(135deg, hsla(0,0%,53%,0), hsla(0,0%,53%,.02) 50%, hsla(0,0%,100%,0) 0, hsla(0,0%,100%,.05));color:var(--color-foreground);font-family:Lato,Avenir Next,Avenir,Trebuchet MS,Segoe UI,sans-serif;font-size:35px;height:720px;letter-spacing:1.25px;line-height:1.35;padding:70px;width:1280px;word-wrap:break-word;--color-background:#fff8e1;--color-background-stripe:rgba(69,90,100,.1);--color-foreground:#455a64;--color-dimmed:#6a7a7d;--color-highlight:#0288d1;}div#\:\$p > svg > foreignObject > section{--marpit-root-font-size:35px;}div#\:\$p > svg > foreignObject > section:after{bottom:0;font-size:80%;right:0}div#\:\$p > svg > foreignObject > section:after{--marpit-root-font-size:80%;}div#\:\$p > svg > foreignObject > section a,div#\:\$p > svg > foreignObject > section mark{color:var(--color-highlight)}div#\:\$p > svg > foreignObject > section code{background:var(--color-dimmed);color:var(--color-background)}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1) strong,div#\:\$p > svg > foreignObject > section :is(h2, marp-h2) strong,div#\:\$p > svg > foreignObject > section :is(h3, marp-h3) strong,div#\:\$p > svg > foreignObject > section :is(h4, marp-h4) strong,div#\:\$p > svg > foreignObject > section :is(h5, marp-h5) strong,div#\:\$p > svg > foreignObject > section :is(h6, marp-h6) strong{color:var(--color-highlight)}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre){background:var(--color-foreground)}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre)>code{background:transparent}div#\:\$p > svg > foreignObject > section blockquote:after,div#\:\$p > svg > foreignObject > section blockquote:before,div#\:\$p > svg > foreignObject > section footer,div#\:\$p > svg > foreignObject > section header,div#\:\$p > svg > foreignObject > section section:after{color:var(--color-dimmed)}div#\:\$p > svg > foreignObject > section table td,div#\:\$p > svg > foreignObject > section table th{border-color:var(--color-foreground)}div#\:\$p > svg > foreignObject > section table thead th{background:var(--color-foreground);color:var(--color-background)}div#\:\$p > svg > foreignObject > section table tbody>tr:nth-child(odd) td,div#\:\$p > svg > foreignObject > section table tbody>tr:nth-child(odd) th{background:var(--color-background-stripe, transparent)}div#\:\$p > svg > foreignObject > section>:first-child,div#\:\$p > svg > foreignObject > section>header:first-child+*{margin-top:0}div#\:\$p > svg > foreignObject > section:where(.invert){--color-background:#455a64;--color-background-stripe:rgba(255,248,225,.1);--color-foreground:#fff8e1;--color-dimmed:#dad8c8;--color-highlight:#81d4fa;}div#\:\$p > svg > foreignObject > section:where(.gaia){--color-background:#0288d1;--color-background-stripe:rgba(255,248,225,.1);--color-foreground:#fff8e1;--color-dimmed:#cce2de;--color-highlight:#81d4fa;}div#\:\$p > svg > foreignObject > section:where(.lead){align-items:stretch;flex-flow:column nowrap;place-content:safe center center}div#\:\$p > svg > foreignObject > section:where(.lead) :is(h1, marp-h1),div#\:\$p > svg > foreignObject > section:where(.lead) :is(h2, marp-h2),div#\:\$p > svg > foreignObject > section:where(.lead) :is(h3, marp-h3),div#\:\$p > svg > foreignObject > section:where(.lead) :is(h4, marp-h4),div#\:\$p > svg > foreignObject > section:where(.lead) :is(h5, marp-h5),div#\:\$p > svg > foreignObject > section:where(.lead) :is(h6, marp-h6){text-align:center}div#\:\$p > svg > foreignObject > section:where(.lead) p{text-align:center}div#\:\$p > svg > foreignObject > section:where(.lead) blockquote>:is(h1, marp-h1),div#\:\$p > svg > foreignObject > section:where(.lead) blockquote>:is(h2, marp-h2),div#\:\$p > svg > foreignObject > section:where(.lead) blockquote>:is(h3, marp-h3),div#\:\$p > svg > foreignObject > section:where(.lead) blockquote>:is(h4, marp-h4),div#\:\$p > svg > foreignObject > section:where(.lead) blockquote>:is(h5, marp-h5),div#\:\$p > svg > foreignObject > section:where(.lead) blockquote>:is(h6, marp-h6),div#\:\$p > svg > foreignObject > section:where(.lead) blockquote>p{text-align:left}div#\:\$p > svg > foreignObject > section:where(.lead) ol>li>p,div#\:\$p > svg > foreignObject > section:where(.lead) ul>li>p{text-align:left}div#\:\$p > svg > foreignObject > section:where(.lead) table{margin-left:auto;margin-right:auto}div#\:\$p > svg > foreignObject > section{font-family:'Inter', sans-serif;font-size:24px;padding:30px}div#\:\$p > svg > foreignObject > section{--marpit-root-font-size: 24px;}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1){color:#2D3E50;font-size:1.4em;margin-bottom:0.1em}div#\:\$p > svg > foreignObject > section :is(h2, marp-h2){color:#E74C3C;font-size:1.0em;margin-bottom:0.3em}div#\:\$p > svg > foreignObject > section strong{color:#2980B9}div#\:\$p > svg > foreignObject > section img{box-shadow:0 4px 6px rgba(0,0,0,0.1);border-radius:8px;background-color:transparent}div#\:\$p > svg > foreignObject > section .columns{display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:calc(var(--marpit-root-font-size, 1rem) * 1);align-items:start}div#\:\$p > svg > foreignObject > section .profile-box{background:#f0f4f8;padding:15px;border-radius:8px;font-size:0.8em}div#\:\$p > svg > foreignObject > section section.profile-box{--marpit-root-font-size: 0.8em;}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"]{columns:initial!important;display:block!important;padding:0!important}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"]::before, div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"]::after, div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="content"]::before, div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="content"]::after{display:none!important}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"] > div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"] > div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction="vertical"]{flex-direction:column}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"][data-marpit-advanced-background-split] > div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split, 50%)}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"][data-marpit-advanced-background-split="right"] > div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"] > div[data-marpit-advanced-background-container] > figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"] > div[data-marpit-advanced-background-container] > figure > figcaption{position:absolute;border:0;clip:rect(0, 0, 0, 0);height:1px;margin:-1px;overflow:hidden;padding:0;white-space:nowrap;width:1px}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="content"], div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="pseudo"]{background:transparent!important}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="pseudo"], div#\:\$p > svg[data-marpit-svg] > foreignObject[data-marpit-advanced-background="pseudo"]{pointer-events:none!important}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background-split]{width:100%;height:100%}
-</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id=":$p"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-class="lead" data-background-color="#fff" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-style="section {
+ */div#\:\$p > svg > foreignObject > section{--color-background:#fdfcff;--color-background-code:#f2f1f4;--color-background-paginate:rgba(32,34,40,.05);--color-foreground:#202228;--color-highlight:#009dd5;--color-highlight-hover:#087eaa;--color-highlight-heading:#33b1dd;--color-header:rgba(32,34,40,.4);--color-header-shadow:rgba(253,252,255,.8);background:var(--color-background);color:var(--color-foreground);display:block;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;font-size:40px;height:720px;letter-spacing:3px;line-height:1.4;padding:30px 70px;place-content:safe center center;position:relative;text-align:center;width:1280px;word-wrap:break-word;align-items:stretch;flex-flow:column nowrap;z-index:0}div#\:\$p > svg > foreignObject > section{--marpit-root-font-size:40px;}div#\:\$p > svg > foreignObject > section:after{align-items:flex-end;background:linear-gradient(-45deg, var(--color-background-paginate) 50%, transparent 50%);background-size:cover;color:var(--color-foreground);display:flex;font-size:.6em;height:80px;justify-content:flex-end;padding:30px;text-align:right;text-shadow:0 0 5px var(--color-background);width:80px}div#\:\$p > svg > foreignObject > section:after{--marpit-root-font-size:.6em;}div#\:\$p > svg > foreignObject > section:where(:not(.invert)) :is(pre, marp-pre) code.hljs{display:block;overflow-x:auto;padding:1em}div#\:\$p > svg > foreignObject > section:where(:not(.invert)) code.hljs{padding:3px 5px}div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs{background:#fff;color:#000}div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-addition,div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-meta,div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-string,div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-symbol,div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-template-tag,div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-template-variable{color:#756bb1}div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-comment,div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-quote{color:#636363}div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-bullet,div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-link,div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-literal,div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-number,div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-regexp{color:#31a354}div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-deletion,div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-variable{color:#88f}div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-built_in,div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-doctag,div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-keyword,div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-name,div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-section,div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-selector-class,div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-selector-id,div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-selector-tag,div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-strong,div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-tag,div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-title,div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-type{color:#3182bd}div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-emphasis{font-style:italic}div#\:\$p > svg > foreignObject > section:where(:not(.invert)) .hljs-attribute{color:#e6550d}div#\:\$p > svg > foreignObject > section:where(.invert){--color-background:#202228;--color-background-code:#2b2d33;--color-background-paginate:hsla(0,0%,100%,.05);--color-foreground:#fff;--color-highlight:#60d0f0;--color-highlight-hover:#88dcf4;--color-highlight-heading:#80d9f3;--color-header:hsla(0,0%,100%,.4);--color-header-shadow:rgba(32,34,40,.8);}div#\:\$p > svg > foreignObject > section:where(.invert) :is(pre, marp-pre) code.hljs{display:block;overflow-x:auto;padding:1em}div#\:\$p > svg > foreignObject > section:where(.invert) code.hljs{padding:3px 5px}div#\:\$p > svg > foreignObject > section:where(.invert) .hljs{background:#222;color:#fff}div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-comment,div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-quote{color:#777}div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-built_in,div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-bullet,div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-deletion,div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-link,div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-literal,div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-meta,div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-number,div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-params,div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-regexp,div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-symbol,div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-tag,div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-template-variable,div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-variable{color:#ab875d}div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-attribute,div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-name,div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-section,div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-selector-class,div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-selector-id,div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-title,div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-type{color:#9b869b}div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-addition,div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-keyword,div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-selector-tag,div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-string{color:#8f9c6c}div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-emphasis{font-style:italic}div#\:\$p > svg > foreignObject > section:where(.invert) .hljs-strong{font-weight:700}div#\:\$p > svg > foreignObject > section>:first-child,div#\:\$p > svg > foreignObject > section[data-header]>:nth-child(2){margin-top:0}div#\:\$p > svg > foreignObject > section>:last-child,div#\:\$p > svg > foreignObject > section[data-footer]>:nth-last-child(2){margin-bottom:0}div#\:\$p > svg > foreignObject > section blockquote,div#\:\$p > svg > foreignObject > section p{margin:0 0 15px}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1),div#\:\$p > svg > foreignObject > section :is(h2, marp-h2),div#\:\$p > svg > foreignObject > section :is(h3, marp-h3),div#\:\$p > svg > foreignObject > section :is(h4, marp-h4),div#\:\$p > svg > foreignObject > section :is(h5, marp-h5),div#\:\$p > svg > foreignObject > section :is(h6, marp-h6){margin:15px 0 30px}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1) strong,div#\:\$p > svg > foreignObject > section :is(h2, marp-h2) strong,div#\:\$p > svg > foreignObject > section :is(h3, marp-h3) strong,div#\:\$p > svg > foreignObject > section :is(h4, marp-h4) strong,div#\:\$p > svg > foreignObject > section :is(h5, marp-h5) strong,div#\:\$p > svg > foreignObject > section :is(h6, marp-h6) strong{color:var(--color-highlight-heading);font-weight:inherit}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1)::part(auto-scaling),div#\:\$p > svg > foreignObject > section :is(h2, marp-h2)::part(auto-scaling),div#\:\$p > svg > foreignObject > section :is(h3, marp-h3)::part(auto-scaling),div#\:\$p > svg > foreignObject > section :is(h4, marp-h4)::part(auto-scaling),div#\:\$p > svg > foreignObject > section :is(h5, marp-h5)::part(auto-scaling),div#\:\$p > svg > foreignObject > section :is(h6, marp-h6)::part(auto-scaling){max-height:660px}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1){font-size:2em}div#\:\$p > svg > foreignObject > section :is(h2, marp-h2){font-size:1.7em}div#\:\$p > svg > foreignObject > section :is(h3, marp-h3){font-size:1.4em;letter-spacing:2px}div#\:\$p > svg > foreignObject > section :is(h4, marp-h4){font-size:1.2em;letter-spacing:2px}div#\:\$p > svg > foreignObject > section :is(h5, marp-h5){font-size:1em;letter-spacing:1px}div#\:\$p > svg > foreignObject > section :is(h6, marp-h6){font-size:.8em;letter-spacing:1px}div#\:\$p > svg > foreignObject > section footer,div#\:\$p > svg > foreignObject > section header{color:var(--color-header);font-size:.45em;left:70px;letter-spacing:1px;position:absolute;right:70px;text-shadow:0 1px 0 var(--color-header-shadow);z-index:1}div#\:\$p > svg > foreignObject > section header{top:30px}div#\:\$p > svg > foreignObject > section footer{bottom:30px}div#\:\$p > svg > foreignObject > section a{color:var(--color-highlight);text-decoration:none}div#\:\$p > svg > foreignObject > section a:hover{color:var(--color-highlight-hover);text-decoration:underline}div#\:\$p > svg > foreignObject > section ol,div#\:\$p > svg > foreignObject > section ul{margin:0 auto;text-align:left}div#\:\$p > svg > foreignObject > section>ol,div#\:\$p > svg > foreignObject > section>ul{margin-bottom:15px}div#\:\$p > svg > foreignObject > section code{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;letter-spacing:0}div#\:\$p > svg > foreignObject > section :not(:is(pre, marp-pre))>code,div#\:\$p > svg > foreignObject > section>code{background:var(--color-background-code);color:var(--color-foreground);margin:-.2em .2em .2em;padding:.2em}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre){--preserve-aspect-ratio:xMidYMid meet;filter:drop-shadow(0 4px 4px rgba(0, 0, 0, .2));font-size:70%;line-height:1.15;margin:15px 0 30px;text-align:left}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre)::part(auto-scaling){max-height:570px}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre)>code{background:var(--color-background-code);box-sizing:content-box;color:var(--color-foreground);display:block;margin:0 auto;min-width:456px;padding:.4em .6em}div#\:\$p > svg > foreignObject > section[data-size="4:3"] :is(pre, marp-pre)>code{min-width:328px}div#\:\$p > svg > foreignObject > section table{border-collapse:collapse;margin:0 auto 15px}div#\:\$p > svg > foreignObject > section table>tbody>tr>td,div#\:\$p > svg > foreignObject > section table>tbody>tr>th,div#\:\$p > svg > foreignObject > section table>thead>tr>td,div#\:\$p > svg > foreignObject > section table>thead>tr>th{padding:.15em .5em}div#\:\$p > svg > foreignObject > section table>thead>tr>td,div#\:\$p > svg > foreignObject > section table>thead>tr>th{border-bottom:3px solid}div#\:\$p > svg > foreignObject > section table>tbody>tr:not(:last-child)>td,div#\:\$p > svg > foreignObject > section table>tbody>tr:not(:last-child)>th{border-bottom:1px solid}div#\:\$p > svg > foreignObject > section blockquote{font-size:90%;line-height:1.3;padding:0 2em;position:relative;z-index:0}div#\:\$p > svg > foreignObject > section blockquote:after,div#\:\$p > svg > foreignObject > section blockquote:before{content:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBkPSJNNDQgMTkuMyAzOC45NCAwQzguMTQgOS41OSAwIDQwLjA1IDAgNTQuODNWMTAwaDQxLjQ3VjU0LjgzaC0yM2MtLjA0LS4yOC4yNS0yNy42NiAyNS41My0zNS41M201NiAwTDk0Ljk0IDBDNjQuMTQgOS41OSA1NiA0MC4wNSA1NiA1NC44M1YxMDBoNDEuNDdWNTQuODNoLTIzYy0uMDQtLjI4LjI1LTI3LjY2IDI1LjUzLTM1LjUzIiBzdHlsZT0iZmlsbDojODg4O29wYWNpdHk6LjMzIi8+PC9zdmc+");height:auto;pointer-events:none;position:absolute;width:1em;z-index:-1}div#\:\$p > svg > foreignObject > section blockquote:before{left:0;top:0}div#\:\$p > svg > foreignObject > section blockquote:after{bottom:0;right:0;transform:rotate(180deg)}div#\:\$p > svg > foreignObject > section blockquote>:last-child{margin-bottom:0}div#\:\$p > svg > foreignObject > section mark{background:transparent;color:var(--color-highlight)}div#\:\$p > svg > foreignObject > section{font-family:'Inter', sans-serif;font-size:22px;padding:40px}div#\:\$p > svg > foreignObject > section{--marpit-root-font-size: 22px;}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1){color:#58a6ff;font-size:1.5em;margin-bottom:0.2em}div#\:\$p > svg > foreignObject > section :is(h2, marp-h2){color:#8b949e;font-size:1.0em;margin-bottom:0.4em}div#\:\$p > svg > foreignObject > section :is(h3, marp-h3){color:#58a6ff;font-size:0.9em}div#\:\$p > svg > foreignObject > section strong{color:#7ee787}div#\:\$p > svg > foreignObject > section code{background:#161b22;padding:2px 6px;border-radius:4px}div#\:\$p > svg > foreignObject > section img{border-radius:8px;background-color:white;padding:10px}div#\:\$p > svg > foreignObject > section .columns{display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:calc(var(--marpit-root-font-size, 1rem) * 1.5);align-items:start}div#\:\$p > svg > foreignObject > section table{font-size:0.85em}div#\:\$p > svg > foreignObject > section th{background:#21262d}div#\:\$p > svg > foreignObject > section td{background:#161b22}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"]{columns:initial!important;display:block!important;padding:0!important}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"]::before, div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"]::after, div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="content"]::before, div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="content"]::after{display:none!important}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"] > div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"] > div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction="vertical"]{flex-direction:column}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"][data-marpit-advanced-background-split] > div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split, 50%)}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"][data-marpit-advanced-background-split="right"] > div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"] > div[data-marpit-advanced-background-container] > figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"] > div[data-marpit-advanced-background-container] > figure > figcaption{position:absolute;border:0;clip:rect(0, 0, 0, 0);height:1px;margin:-1px;overflow:hidden;padding:0;white-space:nowrap;width:1px}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="content"], div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="pseudo"]{background:transparent!important}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="pseudo"], div#\:\$p > svg[data-marpit-svg] > foreignObject[data-marpit-advanced-background="pseudo"]{pointer-events:none!important}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background-split]{width:100%;height:100%}
+</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id=":$p"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-class="invert" data-background-color="#0d1117" data-color="#c9d1d9" data-theme="uncover" data-style="section {
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  padding: 30px;
+  font-size: 22px;
+  padding: 40px;
 }
-h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-strong { color: #2980B9; }
-img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
-" lang="en-SG" class="lead" style="--class:lead;--background-color:#fff;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;--style:section {
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+" lang="en-SG" class="invert" style="--class:invert;--background-color:#0d1117;--color:#c9d1d9;--theme:uncover;--style:section {
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  padding: 30px;
+  font-size: 22px;
+  padding: 40px;
 }
-h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-strong { color: #2980B9; }
-img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
-;background-color:#fff;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;">
-<h1 id="aps-%F0%9F%A4%96%F0%9F%92%B3"><strong>APS</strong> <img class="emoji" draggable="false" alt="🤖" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f916.svg" data-marp-twemoji=""/><img class="emoji" draggable="false" alt="💳" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4b3.svg" data-marp-twemoji=""/></h1>
-<h2 id="agentpayment-sandbox">AgentPayment Sandbox</h2>
-<div class="columns">
-<div>
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+;color:#c9d1d9;background-color:#0d1117;background-image:none;">
+<h1 id="%F0%9F%A4%96-agentpayment-sandbox"><img class="emoji" draggable="false" alt="🤖" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f916.svg" data-marp-twemoji=""/> <strong>AgentPayment Sandbox</strong></h1>
+<h2 id="test-ai-agent-payments-without-real-money">Test AI Agent Payments Without Real Money</h2>
 <p><strong>Sivasubramanian Ramanathan</strong><br />
-<em>Product Owner | Fintech &amp; Innovation</em><br />
-<em>Ex-BIS Innovation Hub Singapore</em></p>
-<p><strong><img class="emoji" draggable="false" alt="🌏" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f30f.svg" data-marp-twemoji=""/> Seeking Opportunities in Singapore</strong><br />
-Product Management • Fintech • Payments • RegTech</p>
-</div>
-<div class="profile-box">
-<p>&quot;I am a Product person. <strong>I build to understand.</strong>&quot;</p>
-<p>The best Product Owners don't just write specs—they prototype. I built APS to deeply understand the protocols I might one day govern.</p>
-<p>This is how I learn: by building.</p>
-</div>
-</div>
+<em>Product Owner | Fintech &amp; Innovation</em></p>
+<p><img class="emoji" draggable="false" alt="🌏" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f30f.svg" data-marp-twemoji=""/> Open to roles in Product Management, Fintech, Payments, RegTech</p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-marpit-fragments="6" data-class="lead" data-background-color="#fff" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-style="section {
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-class="invert" data-background-color="#0d1117" data-color="#c9d1d9" data-theme="uncover" data-style="section {
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  padding: 30px;
+  font-size: 22px;
+  padding: 40px;
 }
-h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-strong { color: #2980B9; }
-img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
-" lang="en-SG" class="lead" style="--class:lead;--background-color:#fff;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;--style:section {
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+" lang="en-SG" class="invert" style="--class:invert;--background-color:#0d1117;--color:#c9d1d9;--theme:uncover;--style:section {
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  padding: 30px;
+  font-size: 22px;
+  padding: 40px;
 }
-h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-strong { color: #2980B9; }
-img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
-;background-color:#fff;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;">
-<h1 id="the-paradigm-shift-%F0%9F%8C%8D"><strong>The Paradigm Shift</strong> <img class="emoji" draggable="false" alt="🌍" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f30d.svg" data-marp-twemoji=""/></h1>
-<p><em>Checkout forms were designed for humans. Agents don't have fingers.</em></p>
-<h3 id="1-the-old-world-human-commerce-%F0%9F%91%A4">1. The Old World (Human Commerce) <img class="emoji" draggable="false" alt="👤" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f464.svg" data-marp-twemoji=""/></h3>
-<ul>
-<li data-marpit-fragment="1">Human → Browser → Click &quot;Buy&quot; → CAPTCHA → Enter Card → Done</li>
-<li data-marpit-fragment="2"><strong>Designed for</strong>: Eyeballs and fingers</li>
-<li data-marpit-fragment="3"><strong>Result</strong>: CAPTCHAs actively block automation</li>
-</ul>
-<h3 id="2-the-new-world-agentic-commerce-%F0%9F%9A%80">2. The New World (Agentic Commerce) <img class="emoji" draggable="false" alt="🚀" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f680.svg" data-marp-twemoji=""/></h3>
-<ul>
-<li data-marpit-fragment="4">Agent → API Discovery → Structured Checkout → Crypto Auth → Done</li>
-<li data-marpit-fragment="5"><strong>Designed for</strong>: Autonomous software agents</li>
-<li data-marpit-fragment="6"><strong>Result</strong>: Mandates and signatures replace passwords</li>
-</ul>
-<blockquote>
-<p><strong>The question is no longer IF agents will transact, but HOW.</strong></p>
-</blockquote>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-class="lead" data-background-color="#fff" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-style="section {
-  font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  padding: 30px;
-}
-h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-strong { color: #2980B9; }
-img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
-" lang="en-SG" class="lead" style="--class:lead;--background-color:#fff;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;--style:section {
-  font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  padding: 30px;
-}
-h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-strong { color: #2980B9; }
-img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
-;background-color:#fff;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;">
-<h1 id="the-problem-i-actually-solved-%F0%9F%A7%A9"><strong>The Problem I Actually Solved</strong> <img class="emoji" draggable="false" alt="🧩" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f9e9.svg" data-marp-twemoji=""/></h1>
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+;color:#c9d1d9;background-color:#0d1117;background-image:none;">
+<h1 id="the-problem-i-solved-%F0%9F%A7%A9">The Problem I Solved <img class="emoji" draggable="false" alt="🧩" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f9e9.svg" data-marp-twemoji=""/></h1>
 <p><em>&quot;I'm building an AI shopping agent. How do I test it?&quot;</em></p>
 <table>
 <thead>
 <tr>
-<th>Challenge</th>
 <th>Without Sandbox</th>
 <th>With APS</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Testing payments</td>
 <td>Real money or test accounts</td>
-<td>Free, instant, local</td>
+<td><strong>Free, instant, local</strong></td>
 </tr>
 <tr>
-<td>Protocol compliance</td>
 <td>Read specs, hope you got it right</td>
-<td>Automated Inspector</td>
+<td><strong>Automated Inspector tests</strong></td>
 </tr>
 <tr>
-<td>Multiple protocols</td>
-<td>Implement each one separately</td>
-<td>Unified testing for all 4</td>
+<td>Implement each protocol separately</td>
+<td><strong>Unified testing for all 4</strong></td>
 </tr>
 <tr>
-<td>Edge cases</td>
-<td>Hard to reproduce</td>
-<td>Controllable mock responses</td>
+<td>Manual signature debugging</td>
+<td><strong>Security Analyzer with scoring</strong></td>
 </tr>
 </tbody>
 </table>
@@ -149,411 +108,558 @@ img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-colo
 <p><strong>There was no &quot;Postman for Agent Payments&quot;. So I built one.</strong></p>
 </blockquote>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-class="lead" data-background-color="#fff" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-style="section {
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-class="invert" data-background-color="#0d1117" data-color="#c9d1d9" data-theme="uncover" data-style="section {
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  padding: 30px;
+  font-size: 22px;
+  padding: 40px;
 }
-h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-strong { color: #2980B9; }
-img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
-" lang="en-SG" class="lead" style="--class:lead;--background-color:#fff;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;--style:section {
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+" lang="en-SG" class="invert" style="--class:invert;--background-color:#0d1117;--color:#c9d1d9;--theme:uncover;--style:section {
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  padding: 30px;
+  font-size: 22px;
+  padding: 40px;
 }
-h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-strong { color: #2980B9; }
-img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
-;background-color:#fff;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;">
-<h1 id="the-protocol-landscape-%F0%9F%93%8B"><strong>The Protocol Landscape</strong> <img class="emoji" draggable="false" alt="📋" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4cb.svg" data-marp-twemoji=""/></h1>
-<p><em>Four major protocols have emerged. APS tests all of them.</em></p>
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+;color:#c9d1d9;background-color:#0d1117;background-image:none;">
+<h1 id="the-protocol-landscape-%F0%9F%93%8B">The Protocol Landscape <img class="emoji" draggable="false" alt="📋" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4cb.svg" data-marp-twemoji=""/></h1>
+<p><em>Google announced UCP with 20+ partners including Shopify, Stripe, Walmart, Target.</em></p>
 <table>
 <thead>
 <tr>
 <th>Protocol</th>
-<th>Maintainer</th>
-<th>What It Does</th>
+<th>Owner</th>
+<th>Purpose</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>UCP</strong></td>
-<td><strong>Google + Partners</strong></td>
-<td>Universal checkout (Shopify, Walmart, Target)</td>
+<td>Google + Partners</td>
+<td>Universal checkout standard</td>
 </tr>
 <tr>
 <td><strong>AP2</strong></td>
-<td><strong>Google</strong></td>
-<td>Agent-to-Agent mandates with A2A messaging</td>
+<td>Google</td>
+<td>Agent Payments (A2A extension)</td>
 </tr>
 <tr>
 <td><strong>ACP</strong></td>
-<td><strong>OpenAI/Shopify</strong></td>
-<td>OpenAPI-based e-commerce checkout</td>
+<td>OpenAI + Shopify</td>
+<td>E-commerce checkout</td>
 </tr>
 <tr>
 <td><strong>x402</strong></td>
-<td><strong>Coinbase</strong></td>
-<td>HTTP 402 &quot;Payment Required&quot; for micropayments</td>
+<td>Coinbase</td>
+<td>HTTP 402 micropayments</td>
 </tr>
 </tbody>
 </table>
-<p><strong>How they relate:</strong></p>
-<ul>
-<li><strong>UCP</strong> = The universal standard (broadest adoption)</li>
-<li><strong>AP2</strong> = High-trust purchases (mandates, OTP challenges)</li>
-<li><strong>ACP</strong> = E-commerce focus (fulfillment, variants)</li>
-<li><strong>x402</strong> = Metered access (pay-per-request APIs)</li>
-</ul>
+<p><strong>How A2A fits</strong>: A2A is Google's Agent-to-Agent messaging protocol. <strong>AP2</strong> is the payment extension built on top of A2A.</p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-marpit-fragments="6" data-class="lead" data-background-color="#fff" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-style="section {
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-class="invert" data-background-color="#0d1117" data-color="#c9d1d9" data-theme="uncover" data-style="section {
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  padding: 30px;
+  font-size: 22px;
+  padding: 40px;
 }
-h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-strong { color: #2980B9; }
-img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
-" lang="en-SG" class="lead" style="--class:lead;--background-color:#fff;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;--style:section {
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+" lang="en-SG" class="invert" style="--class:invert;--background-color:#0d1117;--color:#c9d1d9;--theme:uncover;--style:section {
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  padding: 30px;
+  font-size: 22px;
+  padding: 40px;
 }
-h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-strong { color: #2980B9; }
-img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
-;background-color:#fff;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;">
-<h1 id="introducing-aps-%F0%9F%9A%80"><strong>Introducing APS</strong> <img class="emoji" draggable="false" alt="🚀" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f680.svg" data-marp-twemoji=""/></h1>
-<p><em>Unified Sandbox for Agentic Commerce</em></p>
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+;color:#c9d1d9;background-color:#0d1117;background-image:none;">
+<h1 id="what-i-actually-built-%F0%9F%94%A7">What I Actually Built <img class="emoji" draggable="false" alt="🔧" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f527.svg" data-marp-twemoji=""/></h1>
 <div class="columns">
 <div>
-<p><img src="https://kroki.io/mermaid/svg/eNpLL0osyFDwCeJSAILi0qR0MN-tKD-vJDUvBSwKAqGe0QE5iZXpRfmleSmxcGGXxOKMaBCRlJ9YBBWHaYMb5pSYnI1ilnNANBAr-OYnZyOMcgSKOmKKBhhFAzGaaIWJgVE0iEASh9kAc7qCrq4dzGoAmGQ9qg==" alt="" style="width:400px;" /></p>
+<h3 id="backend-fastapi">Backend (FastAPI)</h3>
+<ul>
+<li><code>ucp.py</code> — 475 lines</li>
+<li><code>ap2.py</code> — 727 lines</li>
+<li><code>x402.py</code> — 524 lines</li>
+<li><code>acp.py</code> — 340 lines</li>
+<li><code>inspector.py</code> — 491 lines</li>
+<li><code>x402_schema.py</code> — 226 lines</li>
+</ul>
+<p><strong>Total: 2,700+ lines of Python</strong></p>
 </div>
 <div>
-<h3 id="what-i-built">What I Built</h3>
+<h3 id="frontend-react--typescript">Frontend (React + TypeScript)</h3>
 <ul>
-<li data-marpit-fragment="1"><img class="emoji" draggable="false" alt="⚡" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a1.svg" data-marp-twemoji=""/> <strong>4 Mock Servers</strong>: UCP, AP2, ACP, x402</li>
-<li data-marpit-fragment="2"><img class="emoji" draggable="false" alt="🔍" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f50d.svg" data-marp-twemoji=""/> <strong>Inspector</strong>: Validates requests against specs</li>
-<li data-marpit-fragment="3"><img class="emoji" draggable="false" alt="🛡️" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e1.svg" data-marp-twemoji=""/> <strong>Security Analyzer</strong>: Signature verification</li>
-<li data-marpit-fragment="4"><img class="emoji" draggable="false" alt="🎮" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f3ae.svg" data-marp-twemoji=""/> <strong>Playground UI</strong>: Interactive protocol explorer</li>
+<li>Playground UI</li>
+<li>Dashboard with protocol cards</li>
+<li>Flow Runner (step-by-step)</li>
+<li>Security Analyzer panel</li>
 </ul>
-<h3 id="tech-stack">Tech Stack</h3>
-<ul>
-<li data-marpit-fragment="5">Frontend: React + TypeScript + Vite</li>
-<li data-marpit-fragment="6">Backend: FastAPI + Pydantic (2,000+ lines)</li>
-</ul>
+<p><strong>Demo Mode</strong>: Works on GitHub Pages with mock data</p>
 </div>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-class="lead" data-background-color="#fff" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-style="section {
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-class="invert" data-background-color="#0d1117" data-color="#c9d1d9" data-theme="uncover" data-style="section {
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  padding: 30px;
+  font-size: 22px;
+  padding: 40px;
 }
-h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-strong { color: #2980B9; }
-img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
-" lang="en-SG" class="lead" style="--class:lead;--background-color:#fff;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;--style:section {
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+" lang="en-SG" class="invert" style="--class:invert;--background-color:#0d1117;--color:#c9d1d9;--theme:uncover;--style:section {
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  padding: 30px;
+  font-size: 22px;
+  padding: 40px;
 }
-h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-strong { color: #2980B9; }
-img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
-;background-color:#fff;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;">
-<h1 id="ucp-flow-universal-commerce-%F0%9F%92%B3"><strong>UCP Flow: Universal Commerce</strong> <img class="emoji" draggable="false" alt="💳" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4b3.svg" data-marp-twemoji=""/></h1>
-<p><em>Discovery → Session → Complete (Google + Shopify + Walmart)</em></p>
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+;color:#c9d1d9;background-color:#0d1117;background-image:none;">
+<h1 id="the-inspector-compliance-testing-%F0%9F%94%8D">The Inspector: Compliance Testing <img class="emoji" draggable="false" alt="🔍" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f50d.svg" data-marp-twemoji=""/></h1>
+<p><em>Point it at any server. It runs test suites and returns a score.</em></p>
 <div class="columns">
 <div>
-<p><img src="https://kroki.io/mermaid/svg/eNp1jEEKgzAQRfc9xVzAC7gQpNl0URR6giH9tQOapJNR6O0rQVcls_zvzcv4rAgeTnhSXi60X2I18ZI4GPUTgv2td6h_8wGK0nTdObbkJPu4Qb-Fn3uzO8VtadT4khmV96uCDfRAzhJDrXFgurlaJi5phqEWGPQJ_QE801ME" alt="" style="width:400px;" /></p>
+<p><img src="https://kroki.io/mermaid/svg/eNpLy8kvT85ILCpR8AniUgACx-jI_NIiheDUorLUolgFXV07Badoz7zigtTkkvyiWLAaJ7Cwc3VIanFJcS1YyBks5BL9aE6rQkBicXEskqhr9KO5PQpuiZk5EFEXsKhbdHByflGqlYKhgQFE3BUs7h4dlJqcn5ubmpeSWJKZn1ccCwCPty_K" alt="" style="width:350px;" /></p>
 </div>
 <div>
-<h3 id="aps-tests">APS Tests</h3>
+<h3 id="test-suites">Test Suites</h3>
+<ul>
+<li><strong>UCP</strong>: 5 tests (discovery, checkout, idempotency)</li>
+<li><strong>ACP</strong>: 5 tests (session states, line items)</li>
+<li><strong>x402</strong>: 5 tests (402 response, CAIP-2 networks)</li>
+<li><strong>AP2</strong>: 2 tests (agent card, message handler)</li>
+</ul>
+<p><strong>Output</strong>: Pass/Fail + Security Score + Recommendations</p>
+</div>
+</div>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-class="invert" data-background-color="#0d1117" data-color="#c9d1d9" data-theme="uncover" data-style="section {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  padding: 40px;
+}
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+" lang="en-SG" class="invert" style="--class:invert;--background-color:#0d1117;--color:#c9d1d9;--theme:uncover;--style:section {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  padding: 40px;
+}
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+;color:#c9d1d9;background-color:#0d1117;background-image:none;">
+<h1 id="schema-validators-pydantic-power-%F0%9F%9B%A1%EF%B8%8F">Schema Validators: Pydantic Power <img class="emoji" draggable="false" alt="🛡️" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e1.svg" data-marp-twemoji=""/></h1>
+<p><em>Every request is validated against the official spec.</em></p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-comment"># x402_schema.py - Validates EIP-3009 Authorization</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">AuthorizationSchema</span>(<span class="hljs-title class_ inherited__">BaseModel</span>):
+    from_: <span class="hljs-built_in">str</span> = Field(alias=<span class="hljs-string">&quot;from&quot;</span>)  <span class="hljs-comment"># EVM address</span>
+    to: <span class="hljs-built_in">str</span>                            <span class="hljs-comment"># Receiver address</span>
+    value: <span class="hljs-built_in">str</span>                         <span class="hljs-comment"># Amount (wei)</span>
+    nonce: <span class="hljs-built_in">str</span>                         <span class="hljs-comment"># 32-byte hex</span>
+
+<span class="hljs-meta">    @field_validator(<span class="hljs-params"><span class="hljs-string">&quot;from_&quot;</span>, <span class="hljs-string">&quot;to&quot;</span></span>)</span>
+    <span class="hljs-keyword">def</span> <span class="hljs-title function_">validate_address</span>(<span class="hljs-params">cls, v</span>):
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> v.startswith(<span class="hljs-string">&quot;0x&quot;</span>) <span class="hljs-keyword">or</span> <span class="hljs-built_in">len</span>(v) != <span class="hljs-number">42</span>:
+            <span class="hljs-keyword">raise</span> ValueError(<span class="hljs-string">&quot;Must be valid EVM address&quot;</span>)
+        <span class="hljs-keyword">return</span> v
+</code></pre>
+<p><strong>Result</strong>: Agents learn the correct format before hitting production.</p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-class="invert" data-background-color="#0d1117" data-color="#c9d1d9" data-theme="uncover" data-style="section {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  padding: 40px;
+}
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+" lang="en-SG" class="invert" style="--class:invert;--background-color:#0d1117;--color:#c9d1d9;--theme:uncover;--style:section {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  padding: 40px;
+}
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+;color:#c9d1d9;background-color:#0d1117;background-image:none;">
+<h1 id="ucp-flow-universal-commerce-%F0%9F%92%B3">UCP Flow: Universal Commerce <img class="emoji" draggable="false" alt="💳" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4b3.svg" data-marp-twemoji=""/></h1>
+<p><em>Discovery → Session → Complete (Google + 20 Partners)</em></p>
+<div class="columns">
+<div>
+<p><img src="https://kroki.io/mermaid/svg/eNp1jEEKgzAQRfc9xVzAC7gQpNl0URR6giH9tQOapJNR6O0rQVcls_zvzcv4rAgeTnhSXi60X2I18ZI4GPUTgv2td6h_8wGK0nTdObbkJPu4Qb-Fn3uzO8VtadT4khmV96uCDfRAzhJDrXFgurlaJi5phqEWGPQJ_QE801ME" alt="" style="width:350px;" /></p>
+</div>
+<div>
+<h3 id="endpoints-tested">Endpoints Tested</h3>
 <ol>
-<li><strong>Discovery</strong>: <code>/.well-known/ucp</code></li>
-<li><strong>Create Session</strong>: POST <code>/checkout-sessions</code></li>
-<li><strong>Update Session</strong>: PUT <code>/checkout-sessions/{id}</code></li>
-<li><strong>Complete</strong>: POST <code>/complete</code></li>
-<li><strong>Idempotency</strong>: <code>Idempotency-Key</code> header</li>
+<li><code>GET /.well-known/ucp</code></li>
+<li><code>POST /checkout-sessions</code></li>
+<li><code>PUT /checkout-sessions/{id}</code></li>
+<li><code>POST /checkout-sessions/{id}/complete</code></li>
+<li><code>Idempotency-Key</code> header</li>
 </ol>
-<p><strong>Code</strong>: <code>ucp.py</code> (475 lines)</p>
+<p><strong>Code</strong>: <code>backend/app/mock/ucp.py</code></p>
 </div>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-class="lead" data-background-color="#fff" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-style="section {
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-class="invert" data-background-color="#0d1117" data-color="#c9d1d9" data-theme="uncover" data-style="section {
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  padding: 30px;
+  font-size: 22px;
+  padding: 40px;
 }
-h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-strong { color: #2980B9; }
-img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
-" lang="en-SG" class="lead" style="--class:lead;--background-color:#fff;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;--style:section {
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+" lang="en-SG" class="invert" style="--class:invert;--background-color:#0d1117;--color:#c9d1d9;--theme:uncover;--style:section {
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  padding: 30px;
+  font-size: 22px;
+  padding: 40px;
 }
-h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-strong { color: #2980B9; }
-img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
-;background-color:#fff;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;">
-<h1 id="ap2-flow-agent-mandates-%F0%9F%A4%96"><strong>AP2 Flow: Agent Mandates</strong> <img class="emoji" draggable="false" alt="🤖" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f916.svg" data-marp-twemoji=""/></h1>
-<p><em>A2A Messaging + Intent/Cart Mandates + OTP (Google)</em></p>
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+;color:#c9d1d9;background-color:#0d1117;background-image:none;">
+<h1 id="ap2-flow-agent-mandates-%F0%9F%A4%96">AP2 Flow: Agent Mandates <img class="emoji" draggable="false" alt="🤖" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f916.svg" data-marp-twemoji=""/></h1>
+<p><em>A2A Messaging + Intent/Cart Mandates + OTP</em></p>
 <div class="columns">
 <div>
-<p><img src="https://kroki.io/mermaid/svg/eNp1jUEKwzAMBO99hT6QD-QQSNNjAqU_EM6S6FDbkWUKfX1d05yKddydHSUcGd7hJrwpPy9ULrKaOInsjcYN3v7SBep2_hUV6YbhDHu6angl0F3Dmp2lSp1tV8i66GmW1DJMCjbQVH621t-OFvZrARuWMdseVN5oOR5wkGgf1LBUyA==" alt="" style="width:400px;" /></p>
+<p><img src="https://kroki.io/mermaid/svg/eNp1jUEKwzAMBO99hT6QD-QQSNNjAqU_EM6S6FDbkWUKfX1d05yKddydHSUcGd7hJrwpPy9ULrKaOInsjcYN3v7SBep2_hUV6YbhDHu6angl0F3Dmp2lSp1tV8i66GmW1DJMCjbQVH621t-OFvZrARuWMdseVN5oOR5wkGgf1LBUyA==" alt="" style="width:350px;" /></p>
 </div>
 <div>
-<h3 id="aps-tests-1">APS Tests</h3>
-<ol>
-<li><strong>Agent Card</strong>: <code>/.well-known/a2a</code></li>
-<li><strong>Message Handler</strong>: POST <code>/message</code> (JSON-RPC)</li>
-<li><strong>Intent Mandate</strong>: <code>ap2/createIntentMandate</code></li>
-<li><strong>Cart Mandate</strong>: <code>ap2/createCart</code></li>
-<li><strong>OTP Flow</strong>: <code>ap2/initiatePayment</code> → <code>submitOtp</code></li>
-</ol>
-<p><strong>Code</strong>: <code>ap2.py</code> (727 lines)</p>
+<h3 id="a2a-methods-implemented">A2A Methods Implemented</h3>
+<ul>
+<li><code>ap2/createIntentMandate</code></li>
+<li><code>ap2/browseProducts</code></li>
+<li><code>ap2/createCart</code> → CartMandate</li>
+<li><code>ap2/initiatePayment</code> → OTP</li>
+<li><code>ap2/submitOtp</code> → Receipt</li>
+</ul>
+<p><strong>Code</strong>: <code>backend/app/mock/ap2.py</code></p>
 </div>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-class="lead" data-background-color="#fff" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-style="section {
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-class="invert" data-background-color="#0d1117" data-color="#c9d1d9" data-theme="uncover" data-style="section {
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  padding: 30px;
+  font-size: 22px;
+  padding: 40px;
 }
-h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-strong { color: #2980B9; }
-img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
-" lang="en-SG" class="lead" style="--class:lead;--background-color:#fff;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;--style:section {
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+" lang="en-SG" class="invert" style="--class:invert;--background-color:#0d1117;--color:#c9d1d9;--theme:uncover;--style:section {
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  padding: 30px;
+  font-size: 22px;
+  padding: 40px;
 }
-h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-strong { color: #2980B9; }
-img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
-;background-color:#fff;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;">
-<h1 id="x402-flow-micropayments-%E2%9A%A1"><strong>x402 Flow: Micropayments</strong> <img class="emoji" draggable="false" alt="⚡" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a1.svg" data-marp-twemoji=""/></h1>
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+;color:#c9d1d9;background-color:#0d1117;background-image:none;">
+<h1 id="x402-flow-micropayments-%E2%9A%A1">x402 Flow: Micropayments <img class="emoji" draggable="false" alt="⚡" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/26a1.svg" data-marp-twemoji=""/></h1>
 <p><em>HTTP 402 + EIP-712 Signatures (Coinbase)</em></p>
 <div class="columns">
 <div>
-<p><img src="https://kroki.io/mermaid/svg/eNorTi0sTc1LTnXJTEwvSszlUgCCgsSikszkzILEvBIF55zM1LwSDOHg1KKy1CKwMESFrp0dRMxKwd01REG_KLU4v7QoORWsBCKjC1QDUWylYGJgpBAEtDqzKDUFtynaChG6AY6Rvq5-ITjMMTIwUHDOzysBcgD9NT9m" alt="" style="width:400px;" /></p>
+<p><img src="https://kroki.io/mermaid/svg/eNorTi0sTc1LTnXJTEwvSszlUgCCgsSikszkzILEvBIF55zM1LwSDOHg1KKy1CKwMESFrp0dRMxKwd01REG_KLU4v7QoORWsBCKjC1QDUWylYGJgpBAEtDqzKDUFtynaChG6AY6Rvq5-ITjMMTIwUHDOzysBcgD9NT9m" alt="" style="width:350px;" /></p>
 </div>
 <div>
-<h3 id="aps-tests-2">APS Tests</h3>
-<ol>
-<li><strong>Request Resource</strong>: GET <code>/resource/{id}</code></li>
-<li><strong>402 Response</strong>: PaymentRequired header</li>
-<li><strong>Sign Payment</strong>: EIP-712 + EIP-3009</li>
-<li><strong>Retry</strong>: GET + <code>X-PAYMENT</code> header</li>
-<li><strong>Facilitator</strong>: <code>/verify</code>, <code>/settle</code></li>
-</ol>
-<p><strong>Code</strong>: <code>x402.py</code> (524 lines)</p>
-</div>
-</div>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-class="lead" data-background-color="#fff" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-style="section {
-  font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  padding: 30px;
-}
-h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-strong { color: #2980B9; }
-img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
-" lang="en-SG" class="lead" style="--class:lead;--background-color:#fff;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;--style:section {
-  font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  padding: 30px;
-}
-h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-strong { color: #2980B9; }
-img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
-;background-color:#fff;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;">
-<h1 id="acp-flow-e-commerce-%F0%9F%9B%8D%EF%B8%8F"><strong>ACP Flow: E-commerce</strong> <img class="emoji" draggable="false" alt="🛍️" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6cd.svg" data-marp-twemoji=""/></h1>
-<p><em>OpenAPI Checkout + Fulfillment (Shopify/OpenAI)</em></p>
-<div class="columns">
-<div>
-<p><img src="https://kroki.io/mermaid/svg/eNptjTEOwjAMRXdO4Qv0Ah0qIboz9ARW-Got0cTYBonbk2ZCEI_v_Sc7Hk_khFl4Nd5PVE_ZQpIo56Dzihx_dNmKNtj0ME0HGGkWT-UFezd3sKG6thnpqiEleye7GDhAC9zrotd-q5-27HpHoPvRbrAPB8lHSg==" alt="" style="width:400px;" /></p>
-</div>
-<div>
-<h3 id="aps-tests-3">APS Tests</h3>
-<ol>
-<li><strong>Discovery</strong>: <code>/.well-known/checkout</code></li>
-<li><strong>Create Session</strong>: POST <code>/checkout_sessions</code></li>
-<li><strong>Add Fulfillment</strong>: Address + options</li>
-<li><strong>Complete</strong>: POST <code>/complete</code></li>
-<li><strong>API Version</strong>: <code>API-Version: 2026-01-16</code></li>
-</ol>
-<p><strong>Code</strong>: <code>acp.py</code> (340 lines)</p>
-</div>
-</div>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-marpit-fragments="3" data-class="lead" data-background-color="#fff" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-style="section {
-  font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  padding: 30px;
-}
-h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-strong { color: #2980B9; }
-img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
-" lang="en-SG" class="lead" style="--class:lead;--background-color:#fff;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;--style:section {
-  font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  padding: 30px;
-}
-h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-strong { color: #2980B9; }
-img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
-;background-color:#fff;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;">
-<h1 id="demo-mode-github-pages-%F0%9F%8C%90"><strong>Demo Mode: GitHub Pages</strong> <img class="emoji" draggable="false" alt="🌐" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f310.svg" data-marp-twemoji=""/></h1>
-<p><em>How I deployed a backend-heavy app to static hosting.</em></p>
-<div class="columns">
-<div>
-<h3 id="the-challenge">The Challenge</h3>
-<p>GitHub Pages = No Server.<br />
-API calls usually fail.</p>
-<h3 id="the-solution">The Solution</h3>
+<h3 id="x402-v2-features">x402 v2 Features</h3>
 <ul>
-<li data-marpit-fragment="1">Detect <code>github.io</code> hostname</li>
-<li data-marpit-fragment="2">Return realistic mock data</li>
-<li data-marpit-fragment="3">Show clear Demo Mode banner</li>
+<li>CAIP-2 network IDs (<code>eip155:84532</code>)</li>
+<li>PaymentRequired with <code>accepts</code> array</li>
+<li>EIP-3009 authorization</li>
+<li>Facilitator API: <code>/verify</code>, <code>/settle</code></li>
 </ul>
-<h3 id="result">Result</h3>
-<p>A frictionless live demo for recruiters.</p>
-</div>
-<div>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-typescript"><span class="hljs-comment">// frontend/src/services/api.ts</span>
-<span class="hljs-keyword">const</span> <span class="hljs-variable constant_">IS_DEMO</span> = <span class="hljs-variable language_">window</span>.<span class="hljs-property">location</span>.<span class="hljs-property">hostname</span>
-  .<span class="hljs-title function_">includes</span>(<span class="hljs-string">&#x27;github.io&#x27;</span>);
-
-<span class="hljs-keyword">if</span> (<span class="hljs-variable constant_">IS_DEMO</span>) {
-  <span class="hljs-keyword">return</span> <span class="hljs-variable constant_">DEMO_DATA</span>[endpoint];
-}
-</code></pre>
-<p><strong>Live Demo</strong>:<br />
-<a href="https://siva-sub.github.io/AgentPayment-Sandbox/">siva-sub.github.io/AgentPayment-Sandbox</a></p>
+<p><strong>Code</strong>: <code>backend/app/mock/x402.py</code></p>
 </div>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-marpit-fragments="3" data-class="lead" data-background-color="#fff" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-style="section {
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-class="invert" data-background-color="#0d1117" data-color="#c9d1d9" data-theme="uncover" data-style="section {
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  padding: 30px;
+  font-size: 22px;
+  padding: 40px;
 }
-h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-strong { color: #2980B9; }
-img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
-" lang="en-SG" class="lead" style="--class:lead;--background-color:#fff;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;--style:section {
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+" lang="en-SG" class="invert" style="--class:invert;--background-color:#0d1117;--color:#c9d1d9;--theme:uncover;--style:section {
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  padding: 30px;
+  font-size: 22px;
+  padding: 40px;
 }
-h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-strong { color: #2980B9; }
-img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
-;background-color:#fff;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;">
-<h1 id="why-a-product-owner-built-this-%F0%9F%91%A8%E2%80%8D%F0%9F%92%BC"><strong>Why a Product Owner Built This</strong> <img class="emoji" draggable="false" alt="👨‍💼" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f468-200d-1f4bc.svg" data-marp-twemoji=""/></h1>
-<p><em>&quot;You wrote 2,000+ lines of code. Aren't you a PM?&quot;</em></p>
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+;color:#c9d1d9;background-color:#0d1117;background-image:none;">
+<h1 id="why-a-product-owner-built-this-%F0%9F%91%A8%E2%80%8D%F0%9F%92%BC">Why a Product Owner Built This <img class="emoji" draggable="false" alt="👨‍💼" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f468-200d-1f4bc.svg" data-marp-twemoji=""/></h1>
+<p><em>&quot;You wrote 2,700+ lines of code. Aren't you a PM?&quot;</em></p>
 <h3 id="my-philosophy">My Philosophy</h3>
 <ol>
-<li><strong>Build to Understand</strong>: I prototype to deeply learn the problem space</li>
-<li><strong>Bridge Gaps</strong>: Translate complex specs into testable artifacts</li>
-<li><strong>De-risk Decisions</strong>: Validate ideas before committing teams</li>
+<li><strong>Build to Understand</strong> — I prototype to learn the problem space</li>
+<li><strong>Bridge Gaps</strong> — Translate complex specs into testable artifacts</li>
+<li><strong>De-risk Decisions</strong> — Validate ideas before committing teams</li>
 </ol>
 <h3 id="what-this-demonstrates">What This Demonstrates</h3>
 <ul>
-<li data-marpit-fragment="1">I can read protocol specs (AP2, x402, ACP, UCP)</li>
-<li data-marpit-fragment="2">I can implement working software (FastAPI, React)</li>
-<li data-marpit-fragment="3">I can document thoroughly (8 docs, 3 ADRs)</li>
+<li>I can read protocol specs (x402 v2, AP2, ACP, UCP)</li>
+<li>I can implement working software (FastAPI, React, Pydantic)</li>
+<li>I can document thoroughly (8 docs, 3 ADRs)</li>
 </ul>
 <blockquote>
 <p><strong>The best PMs accept complexity. They don't outsource understanding.</strong></p>
 </blockquote>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-marpit-fragments="4" data-class="lead" data-background-color="#fff" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-style="section {
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-class="invert" data-background-color="#0d1117" data-color="#c9d1d9" data-theme="uncover" data-style="section {
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  padding: 30px;
+  font-size: 22px;
+  padding: 40px;
 }
-h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-strong { color: #2980B9; }
-img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
-" lang="en-SG" class="lead" style="--class:lead;--background-color:#fff;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;--style:section {
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+" lang="en-SG" class="invert" style="--class:invert;--background-color:#0d1117;--color:#c9d1d9;--theme:uncover;--style:section {
   font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  padding: 30px;
+  font-size: 22px;
+  padding: 40px;
 }
-h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-strong { color: #2980B9; }
-img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-.profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
-;background-color:#fff;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;">
-<h1 id="lets-connect-%F0%9F%A4%9D"><strong>Let's Connect</strong> <img class="emoji" draggable="false" alt="🤝" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f91d.svg" data-marp-twemoji=""/></h1>
-<p>I am ready to bring this level of product thinking and execution to your team.</p>
-<ul>
-<li data-marpit-fragment="1"><img class="emoji" draggable="false" alt="🌐" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f310.svg" data-marp-twemoji=""/> <strong>Portfolio</strong>: <a href="https://sivasub.com">sivasub.com</a></li>
-<li data-marpit-fragment="2"><img class="emoji" draggable="false" alt="💼" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4bc.svg" data-marp-twemoji=""/> <strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/sivasub987/">linkedin.com/in/sivasub987</a></li>
-<li data-marpit-fragment="3"><img class="emoji" draggable="false" alt="💻" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4bb.svg" data-marp-twemoji=""/> <strong>Code</strong>: <a href="https://github.com/siva-sub/AgentPayment-Sandbox">GitHub/APS</a></li>
-<li data-marpit-fragment="4"><img class="emoji" draggable="false" alt="📚" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4da.svg" data-marp-twemoji=""/> <strong>Docs</strong>: <a href="https://github.com/siva-sub/AgentPayment-Sandbox/tree/main/docs">Documentation</a></li>
-</ul>
-<br />
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+;color:#c9d1d9;background-color:#0d1117;background-image:none;">
+<h1 id="github-pages-demo-%F0%9F%8C%90">GitHub Pages Demo <img class="emoji" draggable="false" alt="🌐" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f310.svg" data-marp-twemoji=""/></h1>
+<p><em>How I deployed a backend-heavy app to static hosting.</em></p>
+<div class="columns">
+<div>
+<h3 id="the-challenge">The Challenge</h3>
+<p>GitHub Pages = No Server.<br />
+API calls fail by default.</p>
+<h3 id="the-solution">The Solution</h3>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-typescript"><span class="hljs-keyword">const</span> <span class="hljs-variable constant_">IS_DEMO</span> = <span class="hljs-variable language_">window</span>.<span class="hljs-property">location</span>
+  .<span class="hljs-property">hostname</span>.<span class="hljs-title function_">includes</span>(<span class="hljs-string">&#x27;github.io&#x27;</span>);
+
+<span class="hljs-keyword">if</span> (<span class="hljs-variable constant_">IS_DEMO</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-variable constant_">DEMO_DATA</span>[endpoint];
+}
+</code></pre>
+</div>
+<div>
+<h3 id="result">Result</h3>
+<p>A frictionless live demo for recruiters.</p>
 <p><strong>Live Demo</strong>:<br />
 <a href="https://siva-sub.github.io/AgentPayment-Sandbox/">siva-sub.github.io/AgentPayment-Sandbox</a></p>
+<p><strong>GitHub</strong>:<br />
+<a href="https://github.com/siva-sub/AgentPayment-Sandbox">github.com/siva-sub/AgentPayment-Sandbox</a></p>
+</div>
+</div>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-class="invert" data-background-color="#0d1117" data-color="#c9d1d9" data-theme="uncover" data-style="section {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  padding: 40px;
+}
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+" lang="en-SG" class="invert" style="--class:invert;--background-color:#0d1117;--color:#c9d1d9;--theme:uncover;--style:section {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  padding: 40px;
+}
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+;color:#c9d1d9;background-color:#0d1117;background-image:none;">
+<h1 id="lets-connect-%F0%9F%A4%9D">Let's Connect <img class="emoji" draggable="false" alt="🤝" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f91d.svg" data-marp-twemoji=""/></h1>
+<p><strong>Sivasubramanian Ramanathan</strong><br />
+<em>Product Owner | Fintech, Payments &amp; Innovation</em></p>
+<p>Open for roles in:<br />
+<strong>Product Management</strong> • <strong>Fintech</strong> • <strong>Payments</strong> • <strong>RegTech</strong> • <strong>Digital Assets</strong></p>
+<br />
+<p><img class="emoji" draggable="false" alt="🌐" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f310.svg" data-marp-twemoji=""/> <a href="https://sivasub.com">sivasub.com</a><br />
+<img class="emoji" draggable="false" alt="💼" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4bc.svg" data-marp-twemoji=""/> <a href="https://www.linkedin.com/in/sivasub987/">linkedin.com/in/sivasub987</a><br />
+<img class="emoji" draggable="false" alt="💻" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4bb.svg" data-marp-twemoji=""/> <a href="https://github.com/siva-sub">github.com/siva-sub</a></p>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-class="invert" data-background-color="#0d1117" data-color="#c9d1d9" data-theme="uncover" data-style="section {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  padding: 40px;
+}
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+" lang="en-SG" class="invert" style="--class:invert;--background-color:#0d1117;--color:#c9d1d9;--theme:uncover;--style:section {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  padding: 40px;
+}
+h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+h3 { color: #58a6ff; font-size: 0.9em; }
+strong { color: #7ee787; }
+code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+img { border-radius: 8px; background-color: white; padding: 10px; }
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+table { font-size: 0.85em; }
+th { background: #21262d; }
+td { background: #161b22; }
+;color:#c9d1d9;background-color:#0d1117;background-image:none;">
+<h1 id="thank-you-%F0%9F%99%8F">Thank You! <img class="emoji" draggable="false" alt="🙏" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f64f.svg" data-marp-twemoji=""/></h1>
+<p><strong>AgentPayment Sandbox</strong> — The Postman for Agent Payments</p>
+<br />
+<p><img class="emoji" draggable="false" alt="🔗" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f517.svg" data-marp-twemoji=""/> <strong>Live Demo</strong>: <a href="https://siva-sub.github.io/AgentPayment-Sandbox/">siva-sub.github.io/AgentPayment-Sandbox</a><br />
+<img class="emoji" draggable="false" alt="📚" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4da.svg" data-marp-twemoji=""/> <strong>Documentation</strong>: <a href="https://github.com/siva-sub/AgentPayment-Sandbox/tree/main/docs">/docs</a></p>
 </section>
 <script>!function(){"use strict";const t={h1:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"1"},style:"display: block; font-size: 2em; margin-block-start: 0.67em; margin-block-end: 0.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h2:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"2"},style:"display: block; font-size: 1.5em; margin-block-start: 0.83em; margin-block-end: 0.83em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h3:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"3"},style:"display: block; font-size: 1.17em; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h4:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"4"},style:"display: block; margin-block-start: 1.33em; margin-block-end: 1.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h5:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"5"},style:"display: block; font-size: 0.83em; margin-block-start: 1.67em; margin-block-end: 1.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h6:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"6"},style:"display: block; font-size: 0.67em; margin-block-start: 2.33em; margin-block-end: 2.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},span:{proto:()=>HTMLSpanElement},pre:{proto:()=>HTMLElement,style:"display: block; font-family: monospace; white-space: pre; margin: 1em 0; --marp-auto-scaling-white-space: pre;"}},e="data-marp-auto-scaling-wrapper",i="data-marp-auto-scaling-svg",n="data-marp-auto-scaling-container";class s extends HTMLElement{container;containerSize;containerObserver;svg;svgComputedStyle;svgPreserveAspectRatio="xMinYMid meet";wrapper;wrapperSize;wrapperObserver;constructor(){super();const t=t=>([e])=>{const{width:i,height:n}=e.contentRect;this[t]={width:i,height:n},this.updateSVGRect()};this.attachShadow({mode:"open"}),this.containerObserver=new ResizeObserver(t("containerSize")),this.wrapperObserver=new ResizeObserver(((...e)=>{t("wrapperSize")(...e),this.flushSvgDisplay()}))}static get observedAttributes(){return["data-downscale-only"]}connectedCallback(){this.shadowRoot.innerHTML=`\n<style>\n  svg[${i}] { display: block; width: 100%; height: auto; vertical-align: top; }\n  span[${n}] { display: table; white-space: var(--marp-auto-scaling-white-space, nowrap); width: max-content; }\n</style>\n<div ${e}>\n  <svg part="svg" ${i}>\n    <foreignObject><span ${n}><slot></slot></span></foreignObject>\n  </svg>\n</div>\n    `.split(/\n\s*/).join(""),this.wrapper=this.shadowRoot.querySelector(`div[${e}]`)??void 0;const t=this.svg;this.svg=this.wrapper?.querySelector(`svg[${i}]`)??void 0,this.svg!==t&&(this.svgComputedStyle=this.svg?window.getComputedStyle(this.svg):void 0),this.container=this.svg?.querySelector(`span[${n}]`)??void 0,this.observe()}disconnectedCallback(){this.svg=void 0,this.svgComputedStyle=void 0,this.wrapper=void 0,this.container=void 0,this.observe()}attributeChangedCallback(){this.observe()}flushSvgDisplay(){const{svg:t}=this;t&&(t.style.display="inline",requestAnimationFrame((()=>{t.style.display=""})))}observe(){this.containerObserver.disconnect(),this.wrapperObserver.disconnect(),this.wrapper&&this.wrapperObserver.observe(this.wrapper),this.container&&this.containerObserver.observe(this.container),this.svgComputedStyle&&this.observeSVGStyle(this.svgComputedStyle)}observeSVGStyle(t){const e=()=>{const i=(()=>{const e=t.getPropertyValue("--preserve-aspect-ratio");if(e)return e.trim();return`x${(({textAlign:t,direction:e})=>{if(t.endsWith("left"))return"Min";if(t.endsWith("right"))return"Max";if("start"===t||"end"===t){let i="rtl"===e;return"end"===t&&(i=!i),i?"Max":"Min"}return"Mid"})(t)}YMid meet`})();i!==this.svgPreserveAspectRatio&&(this.svgPreserveAspectRatio=i,this.updateSVGRect()),t===this.svgComputedStyle&&requestAnimationFrame(e)};e()}updateSVGRect(){let t=Math.ceil(this.containerSize?.width??0);const e=Math.ceil(this.containerSize?.height??0);void 0!==this.dataset.downscaleOnly&&(t=Math.max(t,this.wrapperSize?.width??0));const i=this.svg?.querySelector(":scope > foreignObject");if(i?.setAttribute("width",`${t}`),i?.setAttribute("height",`${e}`),this.svg&&(this.svg.setAttribute("viewBox",`0 0 ${t} ${e}`),this.svg.setAttribute("preserveAspectRatio",this.svgPreserveAspectRatio),this.svg.style.height=t<=0||e<=0?"0":""),this.container){const t=this.svgPreserveAspectRatio.toLowerCase();this.container.style.marginLeft=t.startsWith("xmid")||t.startsWith("xmax")?"auto":"0",this.container.style.marginRight=t.startsWith("xmi")?"auto":"0"}}}const r=(t,{attrs:e={},style:i})=>class extends t{constructor(...t){super(...t);for(const[t,i]of Object.entries(e))this.hasAttribute(t)||this.setAttribute(t,i);this._shadow()}static get observedAttributes(){return["data-auto-scaling"]}connectedCallback(){this._update()}attributeChangedCallback(){this._update()}_shadow(){if(!this.shadowRoot)try{this.attachShadow({mode:"open"})}catch(t){if(!(t instanceof Error&&"NotSupportedError"===t.name))throw t}return this.shadowRoot}_update(){const t=this._shadow();if(t){const e=i?`<style>:host { ${i} }</style>`:"";let n="<slot></slot>";const{autoScaling:s}=this.dataset;if(void 0!==s){n=`<marp-auto-scaling exportparts="svg:auto-scaling" ${"downscale-only"===s?"data-downscale-only":""}>${n}</marp-auto-scaling>`}t.innerHTML=e+n}}};let o;const a=Symbol();let l;const c="marpitSVGPolyfill:setZoomFactor,",d=Symbol(),h=Symbol();const g=()=>{const t="Apple Computer, Inc."===navigator.vendor,e=t?[u]:[],i={then:e=>(t?(async()=>{if(void 0===l){const t=document.createElement("canvas");t.width=10,t.height=10;const e=t.getContext("2d"),i=new Image(10,10),n=new Promise((t=>{i.addEventListener("load",(()=>t()))}));i.crossOrigin="anonymous",i.src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%20viewBox%3D%220%200%201%201%22%3E%3CforeignObject%20width%3D%221%22%20height%3D%221%22%20requiredExtensions%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%20style%3D%22width%3A%201px%3B%20height%3A%201px%3B%20background%3A%20red%3B%20position%3A%20relative%22%3E%3C%2Fdiv%3E%3C%2FforeignObject%3E%3C%2Fsvg%3E",await n,e.drawImage(i,0,0),l=e.getImageData(5,5,1,1).data[3]<128}return l})().then((t=>{null==e||e(t?[u]:[])})):null==e||e([]),i)};return Object.assign(e,i)};let p,m;function u(t){const e="object"==typeof t&&t.target||document,i="object"==typeof t?t.zoom:t;window[h]||(Object.defineProperty(window,h,{configurable:!0,value:!0}),document.body.style.zoom=1.0001,document.body.offsetHeight,document.body.style.zoom=1,window.addEventListener("message",(({data:t,origin:e})=>{if(e===window.origin)try{if(t&&"string"==typeof t&&t.startsWith(c)){const[,e]=t.split(","),i=Number.parseFloat(e);Number.isNaN(i)||(m=i)}}catch(t){console.error(t)}})));let n=!1;Array.from(e.querySelectorAll("svg[data-marpit-svg]"),(t=>{var e,s,r,o;t.style.transform||(t.style.transform="translateZ(0)");const a=i||m||t.currentScale||1;p!==a&&(p=a,n=a);const l=t.getBoundingClientRect(),{length:c}=t.children;for(let i=0;i<c;i+=1){const n=t.children[i];if(n.getScreenCTM){const t=n.getScreenCTM();if(t){const i=null!==(s=null===(e=n.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==s?s:0,c=null!==(o=null===(r=n.y)||void 0===r?void 0:r.baseVal.value)&&void 0!==o?o:0,d=n.children.length;for(let e=0;e<d;e+=1){const s=n.children[e];if("SECTION"===s.tagName){const{style:e}=s;e.transformOrigin||(e.transformOrigin=`${-i}px ${-c}px`),e.transform=`scale(${a}) matrix(${t.a}, ${t.b}, ${t.c}, ${t.d}, ${t.e-l.left}, ${t.f-l.top}) translateZ(0.0001px)`;break}}}}}})),!1!==n&&Array.from(e.querySelectorAll("iframe"),(({contentWindow:t})=>{null==t||t.postMessage(`${c}${n}`,"null"===window.origin?"*":window.origin)}))}function v({once:t=!1,target:e=document}={}){const i=function(t=document){if(t[d])return t[d];let e=!0;const i=()=>{e=!1,delete t[d]};Object.defineProperty(t,d,{configurable:!0,value:i});let n=[],s=!1;(async()=>{try{n=await g()}finally{s=!0}})();const r=()=>{for(const e of n)e({target:t});s&&0===n.length||e&&window.requestAnimationFrame(r)};return r(),i}(e);return t?(i(),()=>{}):i}p=1,m=void 0;const w=Symbol(),b=(e=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(((e=document)=>{const i=window[a];i||customElements.define("marp-auto-scaling",s);for(const n of Object.keys(t)){const s=`marp-${n}`,a=t[n].proto();(o??(o=!!document.createElement("div",{is:"marp-auto-scaling"}).outerHTML.startsWith("<div is"),o))&&a!==HTMLElement?i||customElements.define(s,r(a,{style:t[n].style}),{extends:n}):(i||customElements.define(s,r(HTMLElement,t[n])),e.querySelectorAll(`${n}[is="${s}"]`).forEach((t=>{t.outerHTML=t.outerHTML.replace(new RegExp(`^<${n}`,"i"),`<${s}`).replace(new RegExp(`</${n}>$`,"i"),`</${s}>`)})))}window[a]=!0})(e),e[w])return e[w];const i=v({target:e}),n=()=>{i(),delete e[w]},l=Object.assign(n,{cleanup:n,update:()=>b(e)});return Object.defineProperty(e,w,{configurable:!0,value:l}),l},y=document.currentScript;b(y?y.getRootNode():document)}();
 </script></foreignObject></svg></div><script>/*!! License: https://unpkg.com/@marp-team/marp-cli@4.2.0/lib/bespoke.js.LICENSE.txt */

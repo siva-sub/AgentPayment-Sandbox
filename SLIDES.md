@@ -1,234 +1,242 @@
 ---
 marp: true
-theme: gaia
-class: lead
-backgroundColor: #fff
-backgroundImage: url('https://marp.app/assets/hero-background.svg')
+theme: uncover
+class: invert
+backgroundColor: #0d1117
+color: #c9d1d9
 style: |
   section {
     font-family: 'Inter', sans-serif;
-    font-size: 24px;
-    padding: 30px;
+    font-size: 22px;
+    padding: 40px;
   }
-  h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
-  h2 { color: #E74C3C; font-size: 1.0em; margin-bottom: 0.3em; }
-  strong { color: #2980B9; }
-  img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
-  .columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
-  .profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.8em; }
+  h1 { color: #58a6ff; font-size: 1.5em; margin-bottom: 0.2em; }
+  h2 { color: #8b949e; font-size: 1.0em; margin-bottom: 0.4em; }
+  h3 { color: #58a6ff; font-size: 0.9em; }
+  strong { color: #7ee787; }
+  code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
+  img { border-radius: 8px; background-color: white; padding: 10px; }
+  .columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+  table { font-size: 0.85em; }
+  th { background: #21262d; }
+  td { background: #161b22; }
 ---
 
-# **APS** 🤖💳
-## AgentPayment Sandbox
-
-<div class="columns">
-<div>
+# 🤖 **AgentPayment Sandbox**
+## Test AI Agent Payments Without Real Money
 
 **Sivasubramanian Ramanathan**
 *Product Owner | Fintech & Innovation*
-*Ex-BIS Innovation Hub Singapore*
 
-**🌏 Seeking Opportunities in Singapore**
-Product Management • Fintech • Payments • RegTech
-
-</div>
-<div class="profile-box">
-
-"I am a Product person. **I build to understand.**"
-
-The best Product Owners don't just write specs—they prototype. I built APS to deeply understand the protocols I might one day govern.
-
-This is how I learn: by building.
-
-</div>
-</div>
+🌏 Open to roles in Product Management, Fintech, Payments, RegTech
 
 ---
 
-# **The Paradigm Shift** 🌍
-
-*Checkout forms were designed for humans. Agents don't have fingers.*
-
-### 1. The Old World (Human Commerce) 👤
-*   Human → Browser → Click "Buy" → CAPTCHA → Enter Card → Done
-*   **Designed for**: Eyeballs and fingers
-*   **Result**: CAPTCHAs actively block automation
-
-### 2. The New World (Agentic Commerce) 🚀
-*   Agent → API Discovery → Structured Checkout → Crypto Auth → Done
-*   **Designed for**: Autonomous software agents
-*   **Result**: Mandates and signatures replace passwords
-
-> **The question is no longer IF agents will transact, but HOW.**
-
----
-
-# **The Problem I Actually Solved** 🧩
+# The Problem I Solved 🧩
 
 *"I'm building an AI shopping agent. How do I test it?"*
 
-| Challenge | Without Sandbox | With APS |
-|-----------|-----------------|----------|
-| Testing payments | Real money or test accounts | Free, instant, local |
-| Protocol compliance | Read specs, hope you got it right | Automated Inspector |
-| Multiple protocols | Implement each one separately | Unified testing for all 4 |
-| Edge cases | Hard to reproduce | Controllable mock responses |
+| Without Sandbox | With APS |
+|-----------------|----------|
+| Real money or test accounts | **Free, instant, local** |
+| Read specs, hope you got it right | **Automated Inspector tests** |
+| Implement each protocol separately | **Unified testing for all 4** |
+| Manual signature debugging | **Security Analyzer with scoring** |
 
 > **There was no "Postman for Agent Payments". So I built one.**
 
 ---
 
-# **The Protocol Landscape** 📋
+# The Protocol Landscape 📋
 
-*Four major protocols have emerged. APS tests all of them.*
+*Google announced UCP with 20+ partners including Shopify, Stripe, Walmart, Target.*
 
-| Protocol | Maintainer | What It Does |
-|----------|------------|--------------|
-| **UCP** | **Google + Partners** | Universal checkout (Shopify, Walmart, Target) |
-| **AP2** | **Google** | Agent-to-Agent mandates with A2A messaging |
-| **ACP** | **OpenAI/Shopify** | OpenAPI-based e-commerce checkout |
-| **x402** | **Coinbase** | HTTP 402 "Payment Required" for micropayments |
+| Protocol | Owner | Purpose |
+|----------|-------|---------|
+| **UCP** | Google + Partners | Universal checkout standard |
+| **AP2** | Google | Agent Payments (A2A extension) |
+| **ACP** | OpenAI + Shopify | E-commerce checkout |
+| **x402** | Coinbase | HTTP 402 micropayments |
 
-**How they relate:**
-- **UCP** = The universal standard (broadest adoption)
-- **AP2** = High-trust purchases (mandates, OTP challenges)
-- **ACP** = E-commerce focus (fulfillment, variants)
-- **x402** = Metered access (pay-per-request APIs)
+**How A2A fits**: A2A is Google's Agent-to-Agent messaging protocol. **AP2** is the payment extension built on top of A2A.
 
 ---
 
-# **Introducing APS** 🚀
-
-*Unified Sandbox for Agentic Commerce*
+# What I Actually Built 🔧
 
 <div class="columns">
 <div>
 
-![w:400](https://kroki.io/mermaid/svg/eNpLL0osyFDwCeJSAILi0qR0MN-tKD-vJDUvBSwKAqGe0QE5iZXpRfmleSmxcGGXxOKMaBCRlJ9YBBWHaYMb5pSYnI1ilnNANBAr-OYnZyOMcgSKOmKKBhhFAzGaaIWJgVE0iEASh9kAc7qCrq4dzGoAmGQ9qg==)
+### Backend (FastAPI)
+- `ucp.py` — 475 lines
+- `ap2.py` — 727 lines
+- `x402.py` — 524 lines
+- `acp.py` — 340 lines
+- `inspector.py` — 491 lines
+- `x402_schema.py` — 226 lines
+
+**Total: 2,700+ lines of Python**
 
 </div>
 <div>
 
-### What I Built
-*   ⚡ **4 Mock Servers**: UCP, AP2, ACP, x402
-*   🔍 **Inspector**: Validates requests against specs
-*   🛡️ **Security Analyzer**: Signature verification
-*   🎮 **Playground UI**: Interactive protocol explorer
+### Frontend (React + TypeScript)
+- Playground UI
+- Dashboard with protocol cards
+- Flow Runner (step-by-step)
+- Security Analyzer panel
 
-### Tech Stack
-*   Frontend: React + TypeScript + Vite
-*   Backend: FastAPI + Pydantic (2,000+ lines)
+**Demo Mode**: Works on GitHub Pages with mock data
 
 </div>
 </div>
 
 ---
 
-# **UCP Flow: Universal Commerce** 💳
+# The Inspector: Compliance Testing 🔍
 
-*Discovery → Session → Complete (Google + Shopify + Walmart)*
+*Point it at any server. It runs test suites and returns a score.*
 
 <div class="columns">
 <div>
 
-![w:400](https://kroki.io/mermaid/svg/eNp1jEEKgzAQRfc9xVzAC7gQpNl0URR6giH9tQOapJNR6O0rQVcls_zvzcv4rAgeTnhSXi60X2I18ZI4GPUTgv2td6h_8wGK0nTdObbkJPu4Qb-Fn3uzO8VtadT4khmV96uCDfRAzhJDrXFgurlaJi5phqEWGPQJ_QE801ME)
+![w:350](https://kroki.io/mermaid/svg/eNpLy8kvT85ILCpR8AniUgACx-jI_NIiheDUorLUolgFXV07Badoz7zigtTkkvyiWLAaJ7Cwc3VIanFJcS1YyBks5BL9aE6rQkBicXEskqhr9KO5PQpuiZk5EFEXsKhbdHByflGqlYKhgQFE3BUs7h4dlJqcn5ubmpeSWJKZn1ccCwCPty_K)
 
 </div>
 <div>
 
-### APS Tests
-1. **Discovery**: `/.well-known/ucp`
-2. **Create Session**: POST `/checkout-sessions`
-3. **Update Session**: PUT `/checkout-sessions/{id}`
-4. **Complete**: POST `/complete`
-5. **Idempotency**: `Idempotency-Key` header
+### Test Suites
+- **UCP**: 5 tests (discovery, checkout, idempotency)
+- **ACP**: 5 tests (session states, line items)
+- **x402**: 5 tests (402 response, CAIP-2 networks)
+- **AP2**: 2 tests (agent card, message handler)
 
-**Code**: `ucp.py` (475 lines)
+**Output**: Pass/Fail + Security Score + Recommendations
 
 </div>
 </div>
 
 ---
 
-# **AP2 Flow: Agent Mandates** 🤖
+# Schema Validators: Pydantic Power 🛡️
 
-*A2A Messaging + Intent/Cart Mandates + OTP (Google)*
+*Every request is validated against the official spec.*
+
+```python
+# x402_schema.py - Validates EIP-3009 Authorization
+class AuthorizationSchema(BaseModel):
+    from_: str = Field(alias="from")  # EVM address
+    to: str                            # Receiver address
+    value: str                         # Amount (wei)
+    nonce: str                         # 32-byte hex
+
+    @field_validator("from_", "to")
+    def validate_address(cls, v):
+        if not v.startswith("0x") or len(v) != 42:
+            raise ValueError("Must be valid EVM address")
+        return v
+```
+
+**Result**: Agents learn the correct format before hitting production.
+
+---
+
+# UCP Flow: Universal Commerce 💳
+
+*Discovery → Session → Complete (Google + 20 Partners)*
 
 <div class="columns">
 <div>
 
-![w:400](https://kroki.io/mermaid/svg/eNp1jUEKwzAMBO99hT6QD-QQSNNjAqU_EM6S6FDbkWUKfX1d05yKddydHSUcGd7hJrwpPy9ULrKaOInsjcYN3v7SBep2_hUV6YbhDHu6angl0F3Dmp2lSp1tV8i66GmW1DJMCjbQVH621t-OFvZrARuWMdseVN5oOR5wkGgf1LBUyA==)
+![w:350](https://kroki.io/mermaid/svg/eNp1jEEKgzAQRfc9xVzAC7gQpNl0URR6giH9tQOapJNR6O0rQVcls_zvzcv4rAgeTnhSXi60X2I18ZI4GPUTgv2td6h_8wGK0nTdObbkJPu4Qb-Fn3uzO8VtadT4khmV96uCDfRAzhJDrXFgurlaJi5phqEWGPQJ_QE801ME)
 
 </div>
 <div>
 
-### APS Tests
-1. **Agent Card**: `/.well-known/a2a`
-2. **Message Handler**: POST `/message` (JSON-RPC)
-3. **Intent Mandate**: `ap2/createIntentMandate`
-4. **Cart Mandate**: `ap2/createCart`
-5. **OTP Flow**: `ap2/initiatePayment` → `submitOtp`
+### Endpoints Tested
+1. `GET /.well-known/ucp`
+2. `POST /checkout-sessions`
+3. `PUT /checkout-sessions/{id}`
+4. `POST /checkout-sessions/{id}/complete`
+5. `Idempotency-Key` header
 
-**Code**: `ap2.py` (727 lines)
+**Code**: `backend/app/mock/ucp.py`
 
 </div>
 </div>
 
 ---
 
-# **x402 Flow: Micropayments** ⚡
+# AP2 Flow: Agent Mandates 🤖
+
+*A2A Messaging + Intent/Cart Mandates + OTP*
+
+<div class="columns">
+<div>
+
+![w:350](https://kroki.io/mermaid/svg/eNp1jUEKwzAMBO99hT6QD-QQSNNjAqU_EM6S6FDbkWUKfX1d05yKddydHSUcGd7hJrwpPy9ULrKaOInsjcYN3v7SBep2_hUV6YbhDHu6angl0F3Dmp2lSp1tV8i66GmW1DJMCjbQVH621t-OFvZrARuWMdseVN5oOR5wkGgf1LBUyA==)
+
+</div>
+<div>
+
+### A2A Methods Implemented
+- `ap2/createIntentMandate`
+- `ap2/browseProducts`
+- `ap2/createCart` → CartMandate
+- `ap2/initiatePayment` → OTP
+- `ap2/submitOtp` → Receipt
+
+**Code**: `backend/app/mock/ap2.py`
+
+</div>
+</div>
+
+---
+
+# x402 Flow: Micropayments ⚡
 
 *HTTP 402 + EIP-712 Signatures (Coinbase)*
 
 <div class="columns">
 <div>
 
-![w:400](https://kroki.io/mermaid/svg/eNorTi0sTc1LTnXJTEwvSszlUgCCgsSikszkzILEvBIF55zM1LwSDOHg1KKy1CKwMESFrp0dRMxKwd01REG_KLU4v7QoORWsBCKjC1QDUWylYGJgpBAEtDqzKDUFtynaChG6AY6Rvq5-ITjMMTIwUHDOzysBcgD9NT9m)
+![w:350](https://kroki.io/mermaid/svg/eNorTi0sTc1LTnXJTEwvSszlUgCCgsSikszkzILEvBIF55zM1LwSDOHg1KKy1CKwMESFrp0dRMxKwd01REG_KLU4v7QoORWsBCKjC1QDUWylYGJgpBAEtDqzKDUFtynaChG6AY6Rvq5-ITjMMTIwUHDOzysBcgD9NT9m)
 
 </div>
 <div>
 
-### APS Tests
-1. **Request Resource**: GET `/resource/{id}`
-2. **402 Response**: PaymentRequired header
-3. **Sign Payment**: EIP-712 + EIP-3009
-4. **Retry**: GET + `X-PAYMENT` header
-5. **Facilitator**: `/verify`, `/settle`
+### x402 v2 Features
+- CAIP-2 network IDs (`eip155:84532`)
+- PaymentRequired with `accepts` array
+- EIP-3009 authorization
+- Facilitator API: `/verify`, `/settle`
 
-**Code**: `x402.py` (524 lines)
+**Code**: `backend/app/mock/x402.py`
 
 </div>
 </div>
 
 ---
 
-# **ACP Flow: E-commerce** 🛍️
+# Why a Product Owner Built This 👨‍💼
 
-*OpenAPI Checkout + Fulfillment (Shopify/OpenAI)*
+*"You wrote 2,700+ lines of code. Aren't you a PM?"*
 
-<div class="columns">
-<div>
+### My Philosophy
+1. **Build to Understand** — I prototype to learn the problem space
+2. **Bridge Gaps** — Translate complex specs into testable artifacts
+3. **De-risk Decisions** — Validate ideas before committing teams
 
-![w:400](https://kroki.io/mermaid/svg/eNptjTEOwjAMRXdO4Qv0Ah0qIboz9ARW-Got0cTYBonbk2ZCEI_v_Sc7Hk_khFl4Nd5PVE_ZQpIo56Dzihx_dNmKNtj0ME0HGGkWT-UFezd3sKG6thnpqiEleye7GDhAC9zrotd-q5-27HpHoPvRbrAPB8lHSg==)
+### What This Demonstrates
+- I can read protocol specs (x402 v2, AP2, ACP, UCP)
+- I can implement working software (FastAPI, React, Pydantic)
+- I can document thoroughly (8 docs, 3 ADRs)
 
-</div>
-<div>
-
-### APS Tests
-1. **Discovery**: `/.well-known/checkout`
-2. **Create Session**: POST `/checkout_sessions`
-3. **Add Fulfillment**: Address + options
-4. **Complete**: POST `/complete`
-5. **API Version**: `API-Version: 2026-01-16`
-
-**Code**: `acp.py` (340 lines)
-
-</div>
-</div>
+> **The best PMs accept complexity. They don't outsource understanding.**
 
 ---
 
-# **Demo Mode: GitHub Pages** 🌐
+# GitHub Pages Demo 🌐
 
 *How I deployed a backend-heavy app to static hosting.*
 
@@ -237,65 +245,56 @@ This is how I learn: by building.
 
 ### The Challenge
 GitHub Pages = No Server.
-API calls usually fail.
+API calls fail by default.
 
 ### The Solution
-*   Detect `github.io` hostname
-*   Return realistic mock data
-*   Show clear Demo Mode banner
-
-### Result
-A frictionless live demo for recruiters.
-
-</div>
-<div>
-
 ```typescript
-// frontend/src/services/api.ts
-const IS_DEMO = window.location.hostname
-  .includes('github.io');
+const IS_DEMO = window.location
+  .hostname.includes('github.io');
 
 if (IS_DEMO) {
   return DEMO_DATA[endpoint];
 }
 ```
 
+</div>
+<div>
+
+### Result
+A frictionless live demo for recruiters.
+
 **Live Demo**:
 [siva-sub.github.io/AgentPayment-Sandbox](https://siva-sub.github.io/AgentPayment-Sandbox/)
 
+**GitHub**:
+[github.com/siva-sub/AgentPayment-Sandbox](https://github.com/siva-sub/AgentPayment-Sandbox)
+
 </div>
 </div>
 
 ---
 
-# **Why a Product Owner Built This** 👨‍💼
+# Let's Connect 🤝
 
-*"You wrote 2,000+ lines of code. Aren't you a PM?"*
+**Sivasubramanian Ramanathan**
+*Product Owner | Fintech, Payments & Innovation*
 
-### My Philosophy
-1. **Build to Understand**: I prototype to deeply learn the problem space
-2. **Bridge Gaps**: Translate complex specs into testable artifacts
-3. **De-risk Decisions**: Validate ideas before committing teams
-
-### What This Demonstrates
-*   I can read protocol specs (AP2, x402, ACP, UCP)
-*   I can implement working software (FastAPI, React)
-*   I can document thoroughly (8 docs, 3 ADRs)
-
-> **The best PMs accept complexity. They don't outsource understanding.**
-
----
-
-# **Let's Connect** 🤝
-
-I am ready to bring this level of product thinking and execution to your team.
-
-*   🌐 **Portfolio**: [sivasub.com](https://sivasub.com)
-*   💼 **LinkedIn**: [linkedin.com/in/sivasub987](https://www.linkedin.com/in/sivasub987/)
-*   💻 **Code**: [GitHub/APS](https://github.com/siva-sub/AgentPayment-Sandbox)
-*   📚 **Docs**: [Documentation](https://github.com/siva-sub/AgentPayment-Sandbox/tree/main/docs)
+Open for roles in:
+**Product Management** • **Fintech** • **Payments** • **RegTech** • **Digital Assets**
 
 <br>
 
-**Live Demo**:
-[siva-sub.github.io/AgentPayment-Sandbox](https://siva-sub.github.io/AgentPayment-Sandbox/)
+🌐 [sivasub.com](https://sivasub.com)
+💼 [linkedin.com/in/sivasub987](https://www.linkedin.com/in/sivasub987/)
+💻 [github.com/siva-sub](https://github.com/siva-sub)
+
+---
+
+# Thank You! 🙏
+
+**AgentPayment Sandbox** — The Postman for Agent Payments
+
+<br>
+
+🔗 **Live Demo**: [siva-sub.github.io/AgentPayment-Sandbox](https://siva-sub.github.io/AgentPayment-Sandbox/)
+📚 **Documentation**: [/docs](https://github.com/siva-sub/AgentPayment-Sandbox/tree/main/docs)
