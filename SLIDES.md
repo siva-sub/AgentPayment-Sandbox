@@ -83,6 +83,117 @@ style: |
 
 ---
 
+# UCP Flow: Universal Checkout 🛒
+
+<div class="columns">
+<div>
+
+![w:380](https://kroki.io/mermaid/svg/eNp1jkEKgzAQRfc9RS6QunchFC1dKljXJUymNqhJOkkqvX1DcFOMsxmY__5jHL4DasBGiZHEcmJxrCCvQFmhPbuMqP3uOtQdEy6tHumDlIjE8qqK55LdrndWnFecZz5ps-oigE1UTHmEElyyRjkwUfA9MFgyMoB3mWotvJjNuC92bR-b8EKYTPDcoXPK6Jxiix5KZixDTlJs6L9nsFJ4lIevmMXO6DHTbEkiMTD6qWhB-QMsLHpR)
+
+</div>
+<div>
+
+### Endpoints Tested
+- `GET /.well-known/ucp` → Discovery
+- `GET /products` → Catalog
+- `POST /checkout-sessions` → Create session
+- `PUT /checkout-sessions/{id}` → Update cart
+- `POST /complete` → Order confirmed
+
+### Key Features
+- Idempotency via `Idempotency-Key` header
+- Fulfillment options calculation
+- Order history tracking
+
+</div>
+</div>
+
+---
+
+# AP2 Flow: Agent Payments Protocol 💳
+
+<div class="columns">
+<div>
+
+![w:380](https://kroki.io/mermaid/svg/eNptkDFvxCAMhff-Co-94ZaON5yE0oxR0aU74sAiVhOg4FzVf1-SXtQ2hc1-n58fzvg-ozf4TNolPT1AeVEnJkNRe4ZegM7QDyFG8g6EQ8__oK5doA6TGZayDjVygZqEtqikxwwyhRtZTCvai-P53LUnEE_iBCahZlTkucBq0t6WcuW69ljAvjB_RUW24nNN4SOjiinY2XDeOcjf7WoAUz6wG1pa21J4zOQ82sOPQyPvDhlHNKyi_pzWmMhD-I7YyM1rEzm8oa-kIE_lVCXHHdxFeXmVUE4-jugdVsbzfJ2IVeC4G7ygQYr8Bcr2m2g=)
+
+</div>
+<div>
+
+### A2A Methods Tested
+- `create_intent_mandate` → User authorization
+- `browse_products` → Catalog access
+- `create_cart` → Merchant commits price
+- `select_payment_method` → Credentials Provider
+- `initiate_payment` → OTP challenge
+- `submit_otp` → Complete payment
+
+### Key Features
+- Signed mandates (Intent, Cart, Payment)
+- Multi-agent architecture
+- OTP step-up challenge
+
+</div>
+</div>
+
+---
+
+# x402 Flow: HTTP 402 Micropayments ⚡
+
+<div class="columns">
+<div>
+
+![w:380](https://kroki.io/mermaid/svg/eNqNj70KwkAQhHufYnsJililEAR_KjVoEC2XyxoX4kX3NqKI7-4lEYyYwmuO25n7ZtbRpSBraMKYCp464M8ZRdnwGa3COCWrP9PbsD8AdPW9IbmS_HhmaDhjRc1rrSIFo1H5J4T5NIaekMsLMdR7cPKsTKUYeFNlDqHEdyHC-8k_174qCyVftEZKCNFq46m-DB_ulauhNqhbzDgBx6lFLYT-audr7IJovF9Ml_GnaWu-I9WM2vJreCxoHRrl3MIR3bFt8fU7G0xu1U9exMWFBw==)
+
+</div>
+<div>
+
+### Endpoints Tested
+- `GET /resource/{id}` → Returns 402
+- `POST /verify` → Validate signature
+- `POST /settle` → Execute on-chain
+- `GET /info` → Server capabilities
+- `GET /supported` → Payment networks
+
+### Key Features
+- CAIP-2 network identifiers
+- EIP-3009 authorization format
+- Facilitator API pattern
+- Base Sepolia testnet support
+
+</div>
+</div>
+
+---
+
+# ACP Flow: Agentic Commerce Protocol 🏪
+
+<div class="columns">
+<div>
+
+![w:380](https://kroki.io/mermaid/svg/eNqN0D0LwjAQBuDdX3G71OwOBbHiqFA7l5Bc9TBfJqlFxP9uWi0idjDLwd17D0cCXlo0AgviR8_1DNJz3EcS5LiJsDqiib_d9R54GEqJ_op-SAzZLM9TewnbzQHYokOlsrOxnWHihOJs2xeWIlmf7DeWUFAQNik3cN42pPCX2-_K5I1GHTAEsiZMYO9RTRLmYF38xL68aopjd5KPCbNykkfswaZV6UClx1_558hBZcJqpzDiBL_zEj0IaxryGuUTvdeBhA==)
+
+</div>
+<div>
+
+### Endpoints Tested
+- `GET /.well-known/checkout` → Discovery
+- `POST /checkout_sessions` → Create session
+- `PUT /checkout_sessions/{id}` → Update items
+- `POST /complete` → Finalize order
+- `DELETE /checkout_sessions/{id}` → Cancel
+
+### Key Features
+- OpenAI + Shopify integration
+- Fulfillment address handling
+- API versioning support
+- Session state machine
+
+</div>
+</div>
+
+---
+
 # Why I'm Exploring This 🔍
 
 ![bg left:35%](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=700&fit=crop)
