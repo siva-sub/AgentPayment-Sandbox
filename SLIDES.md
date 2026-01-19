@@ -8,9 +8,9 @@ style: |
     font-size: 22px;
     padding: 35px;
   }
-  h1 { color: #1a365d; font-size: 1.5em; margin-bottom: 0.2em; }
-  h2 { color: #2b6cb0; font-size: 1.0em; margin-bottom: 0.3em; }
-  h3 { color: #2c5282; font-size: 0.9em; }
+  h1 { color: #1a365d; font-size: 1.6em; margin-bottom: 0.2em; }
+  h2 { color: #2b6cb0; font-size: 1.1em; margin-bottom: 0.3em; }
+  h3 { color: #2c5282; font-size: 0.95em; }
   strong { color: #2f855a; }
   code { background: #edf2f7; padding: 2px 6px; border-radius: 4px; font-size: 0.8em; }
   img { border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
@@ -18,20 +18,51 @@ style: |
   table { font-size: 0.8em; margin: 0 auto; }
   th { background: #2b6cb0; color: white; }
   blockquote { background: #ebf8ff; padding: 12px; border-left: 4px solid #2b6cb0; border-radius: 6px; font-size: 0.9em; }
+  .big-title { font-size: 2.2em !important; }
 ---
 
 <!-- _class: lead -->
 
-# AI Agents Will Transact
+![bg](https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1920&h=1080&fit=crop)
+
+# <span class="big-title">🤖 AI Agents Will Transact</span>
+
 ## But Today's Payments Weren't Built for Them
 
-![bg right:45%](https://images.unsplash.com/photo-1676911809746-85b85f3d61fe?w=600&h=900&fit=crop)
+<br><br>
 
 **Sivasubramanian Ramanathan**
 *Product Owner | Fintech & Innovation*
-*Ex BIS Innovation Hub Singapore*
 
-🌏 Open for Fintech & Payments roles
+---
+
+# The Problem: Checkout Was Designed for Humans 🧩
+
+*Agents don't have fingers to click "Buy Now".*
+
+<div class="columns">
+<div>
+
+### What Developers Face Today
+- No standard way for agents to pay
+- Multiple competing protocols (UCP, AP2, x402, ACP)
+- No testing tools — only real implementations
+- Security concerns unclear
+
+</div>
+<div>
+
+### What I Built
+**AgentPayment Sandbox (APS)**
+- Mock servers for 4 protocols
+- Inspector for compliance testing
+- Schema validators
+- Works offline, no real money
+
+</div>
+</div>
+
+> **The problem**: Developers building AI shopping agents have no way to test payment flows without implementing real protocol servers.
 
 ---
 
@@ -52,23 +83,20 @@ style: |
 
 ---
 
-# Why This Matters to Me 🏛️
-
-*From BIS Innovation Hub to Agentic Commerce*
+# Why I'm Exploring This 🔍
 
 ![bg left:35%](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=700&fit=crop)
 
-### My Background
-- **Ex BIS Innovation Hub Singapore**
-- Cross-border payments, digital innovation
-- Financial infrastructure perspective
+### My Curiosity
+Agentic commerce sits at the intersection of **fintech**, **AI**, and **policy** — areas I find fascinating.
 
-### Why I'm Exploring This
-1. **Infrastructure Gap**: Payments weren't built for agents
-2. **Trust Crisis**: Who's liable when an agent buys wrong?
-3. **Prompt Injection**: Can attackers hijack agent purchases?
+### Questions That Drew Me In
+1. **Infrastructure Gap**: How will payments evolve for agents?
+2. **Trust**: Who's liable when an agent buys wrong?
+3. **Security**: Can attackers hijack agent purchases?
 
-> I build to understand emerging infrastructure.
+### My Approach
+I build things to understand them. APS is how I learn.
 
 ---
 
@@ -105,9 +133,25 @@ style: |
 
 *User is available to approve the final purchase.*
 
-![w:850](https://kroki.io/mermaid/svg/eNptkEFOwzAQRfecYi7QC2RRKZiIlSWLwAFG9pCMSGxju616e8ZJES2Jl_Pn__c9mb5P5C29MA4J5yeQFzEVthzRF_jIlDbDvgXM0I8hRvYDtAP5slnSXV3SlOyIO7IyVVaJnJgZpwwmhTO7G65yD8dj3zZ_nFS75jWqb0XVXQPPKVwyQUzBnWzJi6i7w81r1jFMfO-r4UvuBUIsHHzeMGkisXGhOT_ypDEWAitf-cfqefDkQImi0TvZ2iVWJ3yGBBil9BmnDVty9lOUaeCVitzxOsvVYKYyBrfoyvzWeA9f5B87G7zedV27vJEljuUH0_mc4w==)
+<div class="columns">
+<div>
 
-**Key**: User signs a **Cart Mandate** binding them to specific SKUs.
+![w:420](https://kroki.io/mermaid/svg/eNptkEFOwzAQRfecYi7QC2RRKZiIlSWLwAFG9pCMSGxju616e8ZJES2Jl_Pn__c9mb5P5C29MA4J5yeQFzEVthzRF_jIlDbDvgXM0I8hRvYDtAP5slnSXV3SlOyIO7IyVVaJnJgZpwwmhTO7G65yD8dj3zZ_nFS75jWqb0XVXQPPKVwyQUzBnWzJi6i7w81r1jFMfO-r4UvuBUIsHHzeMGkisXGhOT_ypDEWAitf-cfqefDkQImi0TvZ2iVWJ3yGBBil9BmnDVty9lOUaeCVitzxOsvVYKYyBrfoyvzWeA9f5B87G7zedV27vJEljuUH0_mc4w==)
+
+</div>
+<div>
+
+### The Flow
+1. User → Shopping Agent: "Buy shoes"
+2. Agent → Merchant: Browse products
+3. Merchant → Agent: Signed CartMandate
+4. Agent → User: Show cart for approval
+5. User signs CartMandate
+6. Agent → Credentials Provider: Get token
+7. Pay → Receipt
+
+</div>
+</div>
 
 ---
 
@@ -115,9 +159,26 @@ style: |
 
 *"Buy these shoes when price drops below $100"*
 
-![w:850](https://kroki.io/mermaid/svg/eNptj01OxDAMhfecwnOAucAsRirQBYugkSIOYKWexELjBMel4vY0oYBQyTLv8_up9DaTBHpkjIq3O1hfQTUOXFAMXirp7tMPgBV8yqWwRBgiie0gNzbIkYaEm9zMjuezH05wP3_AkkigKAeCSXOpnfHDSjTwBA9Zrqw3YDHaO3iOAk9dcigTGnXiORtBfieFBvVqsCBbhWtWMOUYt0U9yY1rTqLw-lWkC248bhmXn3KFpsPfq8vcllWChS39U-TXxc8hUN3N-zaYDp_EB3lL)
+<div class="columns">
+<div>
 
-**Key**: User signs an **Intent Mandate** with constraints (budget, product type).
+![w:420](https://kroki.io/mermaid/svg/eNptj01OxDAMhfecwnOAucAsRirQBYugkSIOYKWexELjBMel4vY0oYBQyTLv8_up9DaTBHpkjIq3O1hfQTUOXFAMXirp7tMPgBV8yqWwRBgiie0gNzbIkYaEm9zMjuezH05wP3_AkkigKAeCSXOpnfHDSjTwBA9Zrqw3YDHaO3iOAk9dcigTGnXiORtBfieFBvVqsCBbhWtWMOUYt0U9yY1rTqLw-lWkC248bhmXn3KFpsPfq8vcllWChS39U-TXxc8hUN3N-zaYDp_EB3lL)
+
+</div>
+<div>
+
+### The Flow
+1. User → Agent: "Buy when price drops"
+2. User signs **Intent Mandate** (budget, constraints)
+3. Agent waits for trigger
+4. Price drops → Agent purchases
+5. Merchant may force user confirmation
+6. Receipt sent to user
+
+**Key**: Intent Mandate limits agent scope.
+
+</div>
+</div>
 
 ---
 
@@ -216,7 +277,6 @@ style: |
 </div>
 
 > **Together**: AP2 provides the trust framework, x402 provides the crypto rails.
-> See: [google-agentic-commerce/a2a-x402](https://github.com/google-agentic-commerce/a2a-x402/)
 
 ---
 
@@ -251,41 +311,6 @@ style: |
 
 </div>
 </div>
-
----
-
-# The Role-Based Architecture 🏗️
-
-*AP2 defines clear actors with separation of concerns.*
-
-| Actor | Role |
-|-------|------|
-| **User** | Human who delegates task |
-| **Shopping Agent (SA)** | AI that builds the cart |
-| **Credentials Provider (CP)** | Digital wallet, holds payment methods |
-| **Merchant Endpoint (ME)** | Merchant's agent/API |
-| **Merchant Payment Processor (MPP)** | Sends txn to network |
-| **Network/Issuer** | Visa, Mastercard, bank |
-
-> **Key Insight**: No single entity holds all sensitive data.
-
----
-
-# Step-Up Challenges 🔒
-
-*Any party can require additional verification.*
-
-- Issuer can trigger **3D Secure**
-- Merchant can require **user confirmation**
-- Credentials Provider can request **OTP**
-
-### Human Not Present Scenario
-If merchant is unsure about Intent Mandate, they can:
-1. Force user back to session
-2. Present final options
-3. Require **Cart Mandate** instead
-
-> This balances **autonomy** with **merchant confidence**.
 
 ---
 
@@ -333,11 +358,13 @@ if (IS_DEMO) {
 ![bg right:40%](https://images.unsplash.com/photo-1573164713988-8665fc963095?w=600&h=800&fit=crop)
 
 **Sivasubramanian Ramanathan**
-*Product Owner | Ex BIS Innovation Hub Singapore*
+*Product Owner | Fintech & Innovation*
 
-### Open for Roles
+### 💼 Open for Roles In
 Product Management • Fintech • Payments
 RegTech • Digital Assets
+
+*Also open to roles that sit between policy, technology, and stakeholder engagement.*
 
 🌐 [sivasub.com](https://sivasub.com)
 💼 [LinkedIn](https://www.linkedin.com/in/sivasub987/)

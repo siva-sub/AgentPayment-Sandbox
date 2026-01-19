@@ -6,73 +6,75 @@
 
 ---
 
-Teaching AI Agents to Shop: The Infrastructure Gap 🤖💳
+𝗧𝗵𝗲 𝗣𝗿𝗼𝗯𝗹𝗲𝗺: 𝗔𝗜 𝗔𝗴𝗲𝗻𝘁𝘀 𝗖𝗮𝗻'𝘁 𝗖𝗹𝗶𝗰𝗸 "𝗕𝘂𝘆 𝗡𝗼𝘄"
 
-Checkout forms were designed for humans. Agents don't have fingers.
+Checkout forms were designed for humans with fingers.
 
-𝗧𝗵𝗲 𝗣𝗮𝗿𝗮𝗱𝗶𝗴𝗺 𝗦𝗵𝗶𝗳𝘁
+When you're building an AI shopping agent, you face a real challenge: How do you test payment flows?
 
-The Old World:
-Human → Browser → Click "Buy" → CAPTCHA → Enter Card → Done
-❌ Designed for eyeballs and fingers
+Right now, developers have to:
+❌ Read protocol specs (AP2, UCP, x402, ACP) and hope they understood them
+❌ Implement real servers to test against
+❌ Use real money or complex test environments
+❌ Figure out security concerns on their own
 
-The New World:
-Agent → API Discovery → Structured Checkout → Crypto Auth → Done
-✅ Designed for autonomous software agents
+𝗧𝗵𝗲 𝗦𝗼𝗹𝘂𝘁𝗶𝗼𝗻: 𝗔𝗴𝗲𝗻𝘁𝗣𝗮𝘆𝗺𝗲𝗻𝘁 𝗦𝗮𝗻𝗱𝗯𝗼𝘅 (𝗔𝗣𝗦)
 
-𝗧𝗵𝗲 𝗣𝗿𝗼𝗯𝗹𝗲𝗺 𝗜 𝗦𝗼𝗹𝘃𝗲𝗱
+I built a testing environment for agentic commerce protocols:
 
-"I'm building an AI shopping agent. How do I test it?"
+⚡ 𝗠𝗼𝗰𝗸 𝗦𝗲𝗿𝘃𝗲𝗿𝘀 — All 4 protocols (UCP, AP2, x402, ACP) in one place
+🔍 𝗜𝗻𝘀𝗽𝗲𝗰𝘁𝗼𝗿 — Point it at YOUR server, get compliance scores
+🛡️ 𝗦𝗰𝗵𝗲𝗺𝗮 𝗩𝗮𝗹𝗶𝗱𝗮𝘁𝗼𝗿𝘀 — Pydantic validators for x402, ACP
+🎮 𝗣𝗹𝗮𝘆𝗴𝗿𝗼𝘂𝗻𝗱 — Interactive UI to explore flows
 
-Google announced 𝗨𝗖𝗣 with 20+ partners (Shopify, Stripe, Walmart, Target). But testing these protocols is hard:
+𝗪𝗵𝗮𝘁 𝗜 𝗟𝗲𝗮𝗿𝗻𝗲𝗱 𝗕𝘂𝗶𝗹𝗱𝗶𝗻𝗴 𝗧𝗵𝗶𝘀
 
-• 𝗨𝗖𝗣 (Google + Partners) — Universal checkout standard
-• 𝗔𝗣𝟮 (Google) — Agent Payments (built on A2A messaging)
-• 𝗔𝗖𝗣 (OpenAI/Shopify) — E-commerce checkout
-• 𝘅𝟰𝟬𝟮 (Coinbase) — HTTP 402 micropayments
+These protocols solve real trust problems:
 
-There was no "Postman for Agent Payments". So I built one.
+• 𝐇𝐮𝐦𝐚𝐧 𝐏𝐫𝐞𝐬𝐞𝐧𝐭: User signs a CartMandate binding them to specific items
+• 𝐇𝐮𝐦𝐚𝐧 𝐍𝐨𝐭 𝐏𝐫𝐞𝐬𝐞𝐧𝐭: User signs an IntentMandate ("buy when price drops")
+• 𝐃𝐢𝐬𝐩𝐮𝐭𝐞 𝐑𝐞𝐬𝐨𝐥𝐮𝐭𝐢𝐨𝐧: Cryptographic proof of who authorized what
 
-𝗜𝗻𝘁𝗿𝗼𝗱𝘂𝗰𝗶𝗻𝗴 𝗔𝗣𝗦 (𝗔𝗴𝗲𝗻𝘁𝗣𝗮𝘆𝗺𝗲𝗻𝘁 𝗦𝗮𝗻𝗱𝗯𝗼𝘅) 🚀
+And they anticipate security threats:
+• Prompt injection → Intent Mandate limits scope
+• Agent hallucination → Cart Mandate requires user sign-off
+• Account takeover → Device-backed key attestation
 
-⚡ 𝗠𝗼𝗰𝗸 𝗦𝗲𝗿𝘃𝗲𝗿𝘀: 4 protocols, 2,700+ lines of Python
-🔍 𝗜𝗻𝘀𝗽𝗲𝗰𝘁𝗼𝗿: Runs test suites, returns security scores
-🛡️ 𝗦𝗰𝗵𝗲𝗺𝗮 𝗩𝗮𝗹𝗶𝗱𝗮𝘁𝗼𝗿𝘀: Pydantic validators for x402, ACP
-🎮 𝗣𝗹𝗮𝘆𝗴𝗿𝗼𝘂𝗻𝗱 𝗨𝗜: Interactive protocol explorer
+𝗛𝗼𝘄 𝘁𝗵𝗲 𝗣𝗿𝗼𝘁𝗼𝗰𝗼𝗹𝘀 𝗥𝗲𝗹𝗮𝘁𝗲
 
-𝗛𝗼𝘄 𝗔𝟮𝗔 𝗿𝗲𝗹𝗮𝘁𝗲𝘀 𝘁𝗼 𝗔𝗣𝟮:
+• MCP: Agents talk to data (APIs)
+• A2A: Agents talk to agents (tasks)
+• AP2: Agents talk about payments (mandates)
+• x402: AP2 + crypto payments (HTTP 402)
 
-A2A = Agent-to-Agent (messaging protocol)
-AP2 = Agent Payments Protocol (built ON TOP of A2A)
+𝗪𝗵𝘆 𝗜 𝗕𝘂𝗶𝗹𝘁 𝗧𝗵𝗶𝘀
 
-𝗪𝗵𝘆 𝗮 𝗣𝗿𝗼𝗱𝘂𝗰𝘁 𝗢𝘄𝗻𝗲𝗿 𝗕𝘂𝗶𝗹𝘁 𝗧𝗵𝗶𝘀
+I'm a Product Owner who builds things to understand them. Agentic commerce sits at the intersection of fintech, AI, and policy — areas I find fascinating.
 
-I believe the best Product Owners don't just write specs—they prototype.
+2,700+ lines of Python, 8 documentation files, 3 ADRs.
 
-I built APS to deeply understand the protocols I might one day govern. This is how I learn: by building.
-
-💼 𝗢𝗽𝗲𝗻 𝗳𝗼𝗿 𝗿𝗼𝗹𝗲𝘀 𝗶𝗻:
+💼 𝗢𝗽𝗲𝗻 𝗳𝗼𝗿 𝗥𝗼𝗹𝗲𝘀 𝗜𝗻:
 Product Management • Fintech • Payments • RegTech • Digital Assets
 
-The full slide deck is attached below! 👇
-
----
-
-## Hashtags:
-
-#AgenticCommerce #AIPayments #Fintech #ProductManagement #UCP #AP2 #A2A #x402 #Coinbase #Google #Shopify #AIAgents #Payments #RegTech #DigitalAssets #OpenToWork
+Also open to roles that sit between policy, technology, and stakeholder engagement.
 
 ---
 
 ## Links:
 
-- 𝗟𝗶𝘃𝗲 𝗗𝗲𝗺𝗼: https://siva-sub.github.io/AgentPayment-Sandbox/
-- 𝗚𝗶𝘁𝗛𝘂𝗯: https://github.com/siva-sub/AgentPayment-Sandbox
-- 𝗦𝗹𝗶𝗱𝗲𝘀 𝗣𝗗𝗙: Attach SLIDES.pdf
+🔗 Live Demo: https://siva-sub.github.io/AgentPayment-Sandbox/
+💻 GitHub: https://github.com/siva-sub/AgentPayment-Sandbox
+📄 Slides: Attached below
 
 ---
 
-## To Generate PDF:
+## Hashtags:
+
+#AgenticCommerce #AIPayments #Fintech #ProductManagement #AP2 #A2A #x402 #UCP #Google #Coinbase #OpenAI #Payments #OpenToWork
+
+---
+
+## To Generate Slides PDF:
 
 ```bash
 marp SLIDES.md --pdf --output SLIDES.pdf --allow-local-files
