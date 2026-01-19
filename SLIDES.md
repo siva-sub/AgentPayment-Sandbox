@@ -5,213 +5,316 @@ paginate: true
 style: |
   section {
     font-family: 'Inter', 'Segoe UI', sans-serif;
-    font-size: 24px;
-    padding: 40px;
+    font-size: 22px;
+    padding: 35px;
   }
-  h1 { color: #1a365d; font-size: 1.6em; margin-bottom: 0.3em; }
-  h2 { color: #2b6cb0; font-size: 1.1em; margin-bottom: 0.4em; }
-  h3 { color: #2c5282; font-size: 0.95em; }
+  h1 { color: #1a365d; font-size: 1.5em; margin-bottom: 0.2em; }
+  h2 { color: #2b6cb0; font-size: 1.0em; margin-bottom: 0.3em; }
+  h3 { color: #2c5282; font-size: 0.9em; }
   strong { color: #2f855a; }
-  code { background: #edf2f7; padding: 2px 6px; border-radius: 4px; font-size: 0.85em; }
-  img { border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
-  .columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; align-items: center; }
-  table { font-size: 0.85em; margin: 0 auto; }
+  code { background: #edf2f7; padding: 2px 6px; border-radius: 4px; font-size: 0.8em; }
+  img { border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
+  .columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+  table { font-size: 0.8em; margin: 0 auto; }
   th { background: #2b6cb0; color: white; }
-  blockquote { background: #ebf8ff; padding: 15px; border-left: 4px solid #2b6cb0; border-radius: 8px; }
+  blockquote { background: #ebf8ff; padding: 12px; border-left: 4px solid #2b6cb0; border-radius: 6px; font-size: 0.9em; }
 ---
 
 <!-- _class: lead -->
 
-# 🤖 AgentPayment Sandbox
+# AI Agents Will Transact
+## But Today's Payments Weren't Built for Them
 
-## Test AI Agent Payments Without Real Money
-
-![bg right:40%](https://images.unsplash.com/photo-1676911809746-85b85f3d61fe?w=600&h=900&fit=crop)
+![bg right:45%](https://images.unsplash.com/photo-1676911809746-85b85f3d61fe?w=600&h=900&fit=crop)
 
 **Sivasubramanian Ramanathan**
 *Product Owner | Fintech & Innovation*
+*Ex BIS Innovation Hub Singapore*
 
-🌏 Open for roles in Singapore
-
----
-
-# The Problem I Solved 🧩
-
-![bg left:35%](https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=700&fit=crop)
-
-*"I'm building an AI shopping agent. How do I test it?"*
-
-| Without Sandbox | With APS |
-|-----------------|----------|
-| Real money | **Free, instant, local** |
-| Hope you got it right | **Automated Inspector** |
-| Build 4 mock servers | **Unified platform** |
-
-> **There was no "Postman for Agent Payments". So I built one.**
+🌏 Open for Fintech & Payments roles
 
 ---
 
-# The Protocol Landscape 📋
+# The Emerging Protocols 📋
 
-![bg right:30%](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=600&fit=crop)
+*Google, Coinbase, and OpenAI are defining how agents will pay.*
 
-*Google announced UCP with 20+ partners*
+| Protocol | What It Does | Key Innovation |
+|----------|--------------|----------------|
+| **UCP** | Universal checkout | Shopify, Walmart, Stripe unified API |
+| **AP2** | Agent Payments | Verifiable Credentials (Mandates) |
+| **A2A** | Agent messaging | Agents talk to agents |
+| **x402** | Micropayments | HTTP 402 + crypto signatures |
+| **ACP** | E-commerce | OpenAI + Shopify checkout |
+| **MCP** | Tool access | Claude/ChatGPT to APIs |
 
-| Protocol | Owner | Purpose |
-|----------|-------|---------|
-| **UCP** | Google + Partners | Universal checkout |
-| **AP2** | Google | Agent mandates (A2A) |
-| **ACP** | OpenAI + Shopify | E-commerce checkout |
-| **x402** | Coinbase | Micropayments |
-
-**A2A** = Messaging protocol
-**AP2** = Payment extension on A2A
-
----
-
-# What APS Tests ✅
-
-![bg left:40%](https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=700&fit=crop)
-
-### Backend (2,700+ lines Python)
-- `ucp.py` — 475 lines
-- `ap2.py` — 727 lines  
-- `x402.py` — 524 lines
-- `acp.py` — 340 lines
-- `inspector.py` — 491 lines
-
-### Frontend (React + TypeScript)
-- Interactive Playground UI
-- Flow Runner (step-by-step)
-- Security Analyzer
+> **AP2 is built ON TOP of A2A. x402 extends AP2 for crypto.**
 
 ---
 
-# The Inspector 🔍
+# Why This Matters to Me 🏛️
+
+*From BIS Innovation Hub to Agentic Commerce*
+
+![bg left:35%](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=700&fit=crop)
+
+### My Background
+- **Ex BIS Innovation Hub Singapore**
+- Cross-border payments, digital innovation
+- Financial infrastructure perspective
+
+### Why I'm Exploring This
+1. **Infrastructure Gap**: Payments weren't built for agents
+2. **Trust Crisis**: Who's liable when an agent buys wrong?
+3. **Prompt Injection**: Can attackers hijack agent purchases?
+
+> I build to understand emerging infrastructure.
+
+---
+
+# The Trust Crisis 🔐
+
+*Payments assume a human clicked "Buy". Agents break that.*
 
 <div class="columns">
 <div>
 
-![w:400](https://kroki.io/mermaid/svg/eNpLy8kvT85ILCpR8AniUgACx-jI_NIiheDUorLUolgFXV07Badoz7zigtTkkvyiWLAaJ7Cwc3VIanFJcS1YyBks5BL9aE6rQkBicXEskqhr9KO5PQpuiZk5EFEXsKhbdHByflGqlYKhgQFE3BUs7h4dlJqcn5ubmpeSWJKZn1ccCwCPty_K)
+### Old World Problems
+- CAPTCHAs block agents
+- Card forms need human input
+- No proof of agent authority
+- Who's liable for wrong purchases?
 
 </div>
 <div>
 
-### Test Suites Per Protocol
-- **UCP**: 5 tests
-- **ACP**: 5 tests
-- **x402**: 5 tests
-- **AP2**: 2 tests
-
-### Output
-✅ Pass/Fail status
-📊 Security Score (0-100)
-💡 Recommendations
+### New World Solutions (AP2)
+- **Verifiable Credentials** (VCs)
+- **Intent Mandates** (what user wants)
+- **Cart Mandates** (what merchant agreed)
+- **Payment Mandates** (audit trail)
 
 </div>
 </div>
+
+> **AP2's core innovation**: Cryptographic proof of who authorized what.
 
 ---
 
-# UCP Flow 💳
+# Life of a Transaction: Human Present 👤
 
-*Discovery → Session → Complete*
+*User is available to approve the final purchase.*
+
+![w:850](https://kroki.io/mermaid/svg/eNptkEFOwzAQRfecYi7QC2RRKZiIlSWLwAFG9pCMSGxju616e8ZJES2Jl_Pn__c9mb5P5C29MA4J5yeQFzEVthzRF_jIlDbDvgXM0I8hRvYDtAP5slnSXV3SlOyIO7IyVVaJnJgZpwwmhTO7G65yD8dj3zZ_nFS75jWqb0XVXQPPKVwyQUzBnWzJi6i7w81r1jFMfO-r4UvuBUIsHHzeMGkisXGhOT_ypDEWAitf-cfqefDkQImi0TvZ2iVWJ3yGBBil9BmnDVty9lOUaeCVitzxOsvVYKYyBrfoyvzWeA9f5B87G7zedV27vJEljuUH0_mc4w==)
+
+**Key**: User signs a **Cart Mandate** binding them to specific SKUs.
+
+---
+
+# Life of a Transaction: Human NOT Present 🤖
+
+*"Buy these shoes when price drops below $100"*
+
+![w:850](https://kroki.io/mermaid/svg/eNptj01OxDAMhfecwnOAucAsRirQBYugkSIOYKWexELjBMel4vY0oYBQyTLv8_up9DaTBHpkjIq3O1hfQTUOXFAMXirp7tMPgBV8yqWwRBgiie0gNzbIkYaEm9zMjuezH05wP3_AkkigKAeCSXOpnfHDSjTwBA9Zrqw3YDHaO3iOAk9dcigTGnXiORtBfieFBvVqsCBbhWtWMOUYt0U9yY1rTqLw-lWkC248bhmXn3KFpsPfq8vcllWChS39U-TXxc8hUN3N-zaYDp_EB3lL)
+
+**Key**: User signs an **Intent Mandate** with constraints (budget, product type).
+
+---
+
+# Security: What Could Go Wrong? ⚠️
+
+*The protocol anticipates adversarial scenarios.*
+
+| Threat | Description | AP2 Mitigation |
+|--------|-------------|----------------|
+| **Prompt Injection** | Attacker tricks agent into buying | Intent Mandate limits scope |
+| **Agent Hallucination** | Agent misunderstands request | Cart Mandate requires user sign-off |
+| **First-Party Misuse** | User claims fraud for refund | Signed mandate is evidence |
+| **Account Takeover** | Fraudster uses victim's agent | Device-backed key attestation |
+| **Man-in-the-Middle** | Attacker alters transaction | Cryptographic signature verification |
+
+> **Dispute Resolution**: Mandates provide non-repudiable audit trail.
+
+---
+
+# The Mandate System 📜
+
+*Verifiable Credentials are the trust anchors.*
 
 <div class="columns">
 <div>
 
-![w:380](https://kroki.io/mermaid/svg/eNp1jEEKgzAQRfc9xVzAC7gQpNl0URR6giH9tQOapJNR6O0rQVcls_zvzcv4rAgeTnhSXi60X2I18ZI4GPUTgv2td6h_8wGK0nTdObbkJPu4Qb-Fn3uzO8VtadT4khmV96uCDfRAzhJDrXFgurlaJi5phqEWGPQJ_QE801ME)
+### 1. Intent Mandate
+- User's **shopping intent** in natural language
+- Budget constraints
+- **Signed by user's device key**
+- Has expiration time (TTL)
+
+### 2. Cart Mandate
+- Final SKUs, price, shipping
+- **Signed by merchant first**
+- Then **signed by user**
+- Binding contract
 
 </div>
 <div>
 
-### Endpoints
-1. `GET /.well-known/ucp`
-2. `POST /checkout-sessions`
-3. `PUT /checkout-sessions/{id}`
-4. `POST /.../complete`
+### 3. Payment Mandate
+- Shared with network/issuer
+- Contains: AI agent presence signals
+- Enables: Risk assessment
+- Evidence for disputes
 
-**Partners**: Shopify, Walmart, Target, Etsy
+### Key Property
+**Non-repudiable**: Can't deny you signed it.
 
 </div>
 </div>
 
 ---
 
-# AP2 Flow 🤖
+# How AP2, A2A, MCP Relate 🔗
 
-*A2A Messaging + Mandates + OTP*
+*Three layers of agent infrastructure.*
+
+| Layer | Protocol | Purpose |
+|-------|----------|---------|
+| **Data Access** | MCP | Agent ↔ Tools/APIs |
+| **Agent Comms** | A2A | Agent ↔ Agent messaging |
+| **Payments** | AP2 | Agent ↔ Payments (mandates) |
+
+> **In short**:
+> - MCP: Agents talk to **data**
+> - A2A: Agents talk to **agents**
+> - AP2: Agents talk about **payments**
+
+---
+
+# How AP2 and x402 Relate ⚡
+
+*AP2 is payment-method agnostic. x402 is crypto payments.*
 
 <div class="columns">
 <div>
 
-![w:380](https://kroki.io/mermaid/svg/eNp1jUEKwzAMBO99hT6QD-QQSNNjAqU_EM6S6FDbkWUKfX1d05yKddydHSUcGd7hJrwpPy9ULrKaOInsjcYN3v7SBep2_hUV6YbhDHu6angl0F3Dmp2lSp1tV8i66GmW1DJMCjbQVH621t-OFvZrARuWMdseVN5oOR5wkGgf1LBUyA==)
+### AP2 (Google)
+- Supports "pull" payments (cards)
+- Roadmap: "push" payments (bank, crypto)
+- **Payment agnostic framework**
+- Partners: Visa, Mastercard, Adyen
 
 </div>
 <div>
 
-### A2A Methods
-- `ap2/createIntentMandate`
-- `ap2/browseProducts`
-- `ap2/createCart`
-- `ap2/initiatePayment`
-- `ap2/submitOtp`
-
-**Result**: CartMandate → OTP → Receipt
+### x402 (Coinbase)
+- **HTTP 402 "Payment Required"**
+- EIP-712 signatures
+- Stablecoins (USDC on Base)
+- Metered API access
 
 </div>
 </div>
+
+> **Together**: AP2 provides the trust framework, x402 provides the crypto rails.
+> See: [google-agentic-commerce/a2a-x402](https://github.com/google-agentic-commerce/a2a-x402/)
 
 ---
 
-# x402 Flow ⚡
+# What APS Tests 🧪
 
-*HTTP 402 + EIP-712 Signatures*
+*I built a sandbox to learn by doing.*
 
 <div class="columns">
 <div>
 
-![w:380](https://kroki.io/mermaid/svg/eNorTi0sTc1LTnXJTEwvSszlUgCCgsSikszkzILEvBIF55zM1LwSDOHg1KKy1CKwMESFrp0dRMxKwd01REG_KLU4v7QoORWsBCKjC1QDUWylYGJgpBAEtDqzKDUFtynaChG6AY6Rvq5-ITjMMTIwUHDOzysBcgD9NT9m)
+### Mock Servers (2,700+ lines)
+| File | Lines | Tests |
+|------|-------|-------|
+| `ucp.py` | 475 | Discovery, checkout |
+| `ap2.py` | 727 | Mandates, OTP |
+| `x402.py` | 524 | 402, verify, settle |
+| `acp.py` | 340 | Sessions, fulfillment |
 
 </div>
 <div>
 
-### x402 v2 Features
-- CAIP-2 network IDs
-- `PaymentRequired` response
-- EIP-3009 authorization
-- Facilitator: `/verify`, `/settle`
+### Inspector
+- Runs test suites against YOUR server
+- Checks: endpoints, status codes, fields
+- Returns: **Security Score** (0-100)
+- Recommendations for compliance
 
-**Owner**: Coinbase
+### Schema Validators
+- Pydantic validators for x402
+- CAIP-2 network validation
+- EIP-3009 authorization format
 
 </div>
 </div>
 
 ---
 
-# Why a Product Owner Built This 👨‍💼
+# The Role-Based Architecture 🏗️
+
+*AP2 defines clear actors with separation of concerns.*
+
+| Actor | Role |
+|-------|------|
+| **User** | Human who delegates task |
+| **Shopping Agent (SA)** | AI that builds the cart |
+| **Credentials Provider (CP)** | Digital wallet, holds payment methods |
+| **Merchant Endpoint (ME)** | Merchant's agent/API |
+| **Merchant Payment Processor (MPP)** | Sends txn to network |
+| **Network/Issuer** | Visa, Mastercard, bank |
+
+> **Key Insight**: No single entity holds all sensitive data.
+
+---
+
+# Step-Up Challenges 🔒
+
+*Any party can require additional verification.*
+
+- Issuer can trigger **3D Secure**
+- Merchant can require **user confirmation**
+- Credentials Provider can request **OTP**
+
+### Human Not Present Scenario
+If merchant is unsure about Intent Mandate, they can:
+1. Force user back to session
+2. Present final options
+3. Require **Cart Mandate** instead
+
+> This balances **autonomy** with **merchant confidence**.
+
+---
+
+# Why a PM Built This 👨‍💼
 
 ![bg right:40%](https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=700&fit=crop)
 
-*"You wrote 2,700+ lines of code. Aren't you a PM?"*
+*"You wrote 2,700+ lines. Aren't you a PM?"*
 
 ### My Philosophy
 1. **Build to Understand**
-2. **Bridge Technical Gaps**
-3. **De-risk Decisions**
+2. Infrastructure needs PMs who get tech
+3. De-risk by prototyping
 
-> **The best PMs accept complexity. They don't outsource understanding.**
+### What This Shows
+- I can read protocol specs
+- I can implement working software
+- I can document thoroughly (8 docs, 3 ADRs)
 
 ---
 
-# GitHub Pages Demo 🌐
+# Live Demo 🌐
 
 ![bg left:35%](https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=500&h=700&fit=crop)
 
-### The Challenge
-GitHub Pages = No server.
+### GitHub Pages Challenge
+No server = No mock endpoints
 
-### The Solution
+### Solution
 ```typescript
 const IS_DEMO = hostname
   .includes('github.io');
@@ -221,20 +324,20 @@ if (IS_DEMO) {
 }
 ```
 
-**Result**: Frictionless live demo!
+**Live**: [siva-sub.github.io/AgentPayment-Sandbox](https://siva-sub.github.io/AgentPayment-Sandbox/)
 
 ---
 
 # Let's Connect 🤝
 
-![bg right:45%](https://images.unsplash.com/photo-1573164713988-8665fc963095?w=600&h=800&fit=crop)
+![bg right:40%](https://images.unsplash.com/photo-1573164713988-8665fc963095?w=600&h=800&fit=crop)
 
 **Sivasubramanian Ramanathan**
-*Product Owner | Fintech & Innovation*
+*Product Owner | Ex BIS Innovation Hub Singapore*
 
 ### Open for Roles
-Product Management • Fintech
-Payments • RegTech • Digital Assets
+Product Management • Fintech • Payments
+RegTech • Digital Assets
 
 🌐 [sivasub.com](https://sivasub.com)
 💼 [LinkedIn](https://www.linkedin.com/in/sivasub987/)
@@ -244,12 +347,13 @@ Payments • RegTech • Digital Assets
 
 <!-- _class: lead -->
 
-# Thank You! 🙏
+# Thank You 🙏
 
 ## AgentPayment Sandbox
-*The Postman for Agent Payments*
+*Testing the future of AI agent payments*
 
 ![bg right:40%](https://images.unsplash.com/photo-1673187636492-fec1c2e6e25c?w=600&h=900&fit=crop)
 
+📄 **[Slides PDF](https://github.com/siva-sub/AgentPayment-Sandbox/raw/main/SLIDES.pdf)**
 🔗 **[Live Demo](https://siva-sub.github.io/AgentPayment-Sandbox/)**
 📚 **[Documentation](https://github.com/siva-sub/AgentPayment-Sandbox/tree/main/docs)**
