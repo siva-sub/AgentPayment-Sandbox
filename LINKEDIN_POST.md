@@ -16,29 +16,27 @@ Right now, developers have to:
 ❌ Read protocol specs (AP2, UCP, x402, ACP) and hope they understood them
 ❌ Implement real servers to test against
 ❌ Use real money or complex test environments
-❌ Figure out security concerns on their own
 
 𝗧𝗵𝗲 𝗦𝗼𝗹𝘂𝘁𝗶𝗼𝗻: 𝗔𝗴𝗲𝗻𝘁𝗣𝗮𝘆𝗺𝗲𝗻𝘁 𝗦𝗮𝗻𝗱𝗯𝗼𝘅 (𝗔𝗣𝗦)
 
-I built a testing environment for agentic commerce protocols:
+I built mock servers for all 4 major agentic commerce protocols:
 
-⚡ 𝗠𝗼𝗰𝗸 𝗦𝗲𝗿𝘃𝗲𝗿𝘀 — All 4 protocols (UCP, AP2, x402, ACP) in one place
+⚡ 𝗨𝗖𝗣 — Discovery, checkout sessions, idempotency
+💳 𝗔𝗣𝟮 — Intent/Cart Mandates, OTP challenges, A2A messaging
+🔗 𝘅𝟰𝟬𝟮 — HTTP 402 response, CAIP-2 networks, EIP-3009 auth
+🏪 𝗔𝗖𝗣 — Sessions, fulfillment, OpenAI+Shopify integration
+
+Plus:
 🔍 𝗜𝗻𝘀𝗽𝗲𝗰𝘁𝗼𝗿 — Point it at YOUR server, get compliance scores
-🛡️ 𝗦𝗰𝗵𝗲𝗺𝗮 𝗩𝗮𝗹𝗶𝗱𝗮𝘁𝗼𝗿𝘀 — Pydantic validators for x402, ACP
-🎮 𝗣𝗹𝗮𝘆𝗴𝗿𝗼𝘂𝗻𝗱 — Interactive UI to explore flows
+🛡️ 𝗦𝗰𝗵𝗲𝗺𝗮 𝗩𝗮𝗹𝗶𝗱𝗮𝘁𝗼𝗿𝘀 — Pydantic validators for message formats
 
-𝗪𝗵𝗮𝘁 𝗜 𝗟𝗲𝗮𝗿𝗻𝗲𝗱 𝗕𝘂𝗶𝗹𝗱𝗶𝗻𝗴 𝗧𝗵𝗶𝘀
+𝗪𝗵𝗮𝘁 𝗧𝗵𝗲𝘀𝗲 𝗣𝗿𝗼𝘁𝗼𝗰𝗼𝗹𝘀 𝗦𝗼𝗹𝘃𝗲
 
-These protocols solve real trust problems:
+Trust. When an agent buys on your behalf, who's liable?
 
-• 𝐇𝐮𝐦𝐚𝐧 𝐏𝐫𝐞𝐬𝐞𝐧𝐭: User signs a CartMandate binding them to specific items
-• 𝐇𝐮𝐦𝐚𝐧 𝐍𝐨𝐭 𝐏𝐫𝐞𝐬𝐞𝐧𝐭: User signs an IntentMandate ("buy when price drops")
-• 𝐃𝐢𝐬𝐩𝐮𝐭𝐞 𝐑𝐞𝐬𝐨𝐥𝐮𝐭𝐢𝐨𝐧: Cryptographic proof of who authorized what
-
-And they anticipate security threats:
-• Prompt injection → Intent Mandate limits scope
-• Agent hallucination → Cart Mandate requires user sign-off
-• Account takeover → Device-backed key attestation
+• 𝐈𝐧𝐭𝐞𝐧𝐭 𝐌𝐚𝐧𝐝𝐚𝐭𝐞: User signs budget + constraints
+• 𝐂𝐚𝐫𝐭 𝐌𝐚𝐧𝐝𝐚𝐭𝐞: Merchant + User sign specific items
+• 𝐏𝐚𝐲𝐦𝐞𝐧𝐭 𝐌𝐚𝐧𝐝𝐚𝐭𝐞: Cryptographic proof for disputes
 
 𝗛𝗼𝘄 𝘁𝗵𝗲 𝗣𝗿𝗼𝘁𝗼𝗰𝗼𝗹𝘀 𝗥𝗲𝗹𝗮𝘁𝗲
 
@@ -49,9 +47,9 @@ And they anticipate security threats:
 
 𝗪𝗵𝘆 𝗜 𝗕𝘂𝗶𝗹𝘁 𝗧𝗵𝗶𝘀
 
-I'm a Product Owner who builds things to understand them. Agentic commerce sits at the intersection of fintech, AI, and policy — areas I find fascinating.
+I'm a Product Owner who builds things to understand them.
 
-Mock servers for 4 protocols, an Inspector for compliance testing, Pydantic schema validators, and comprehensive documentation.
+Agentic commerce sits at the intersection of fintech, AI, and policy — areas I find fascinating. APS is how I learn.
 
 💼 𝗢𝗽𝗲𝗻 𝗳𝗼𝗿 𝗥𝗼𝗹𝗲𝘀 𝗜𝗻:
 Product Management • Fintech • Payments • RegTech • Digital Assets
