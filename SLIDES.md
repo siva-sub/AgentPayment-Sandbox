@@ -15,21 +15,19 @@ style: |
   code { background: #edf2f7; padding: 2px 6px; border-radius: 4px; font-size: 0.8em; }
   img { border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
   .columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
-  table { font-size: 0.8em; margin: 0 auto; }
+  table { font-size: 0.8em; margin: 0 auto; margin-bottom: 1em; }
   th { background: #2b6cb0; color: white; }
-  blockquote { background: #ebf8ff; padding: 12px; border-left: 4px solid #2b6cb0; border-radius: 6px; font-size: 0.9em; }
+  blockquote { background: #ebf8ff; padding: 12px; border-left: 4px solid #2b6cb0; border-radius: 6px; font-size: 0.9em; margin-top: 1em; }
   .big-title { font-size: 2.2em !important; }
 ---
 
 <!-- _class: lead -->
 
-![bg](https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1920&h=1080&fit=crop)
-
 # <span class="big-title">🤖 AI Agents Will Transact</span>
 
 ## But Today's Payments Weren't Built for Them
 
-<br><br>
+![bg right:45%](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=900&fit=crop)
 
 **Sivasubramanian Ramanathan**
 *Product Owner | Fintech & Innovation*
@@ -287,13 +285,13 @@ I build things to understand them. APS is how I learn.
 <div class="columns">
 <div>
 
-### Mock Servers (2,700+ lines)
-| File | Lines | Tests |
-|------|-------|-------|
-| `ucp.py` | 475 | Discovery, checkout |
-| `ap2.py` | 727 | Mandates, OTP |
-| `x402.py` | 524 | 402, verify, settle |
-| `acp.py` | 340 | Sessions, fulfillment |
+### Mock Servers
+| Protocol | What It Tests |
+|----------|---------------|
+| `ucp.py` | Discovery, checkout sessions, idempotency |
+| `ap2.py` | Intent/Cart Mandates, OTP flow, A2A messages |
+| `x402.py` | 402 response, CAIP-2 networks, EIP-3009 auth |
+| `acp.py` | Sessions, fulfillment addresses, completion |
 
 </div>
 <div>

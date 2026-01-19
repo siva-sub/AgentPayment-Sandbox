@@ -51,7 +51,7 @@ And they anticipate security threats:
 
 I'm a Product Owner who builds things to understand them. Agentic commerce sits at the intersection of fintech, AI, and policy — areas I find fascinating.
 
-2,700+ lines of Python, 8 documentation files, 3 ADRs.
+Mock servers for 4 protocols, an Inspector for compliance testing, Pydantic schema validators, and comprehensive documentation.
 
 💼 𝗢𝗽𝗲𝗻 𝗳𝗼𝗿 𝗥𝗼𝗹𝗲𝘀 𝗜𝗻:
 Product Management • Fintech • Payments • RegTech • Digital Assets
