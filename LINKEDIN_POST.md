@@ -8,48 +8,47 @@
 
 Teaching AI Agents to Shop: The Infrastructure Gap 🤖💳
 
-We are moving from a world where humans click buttons to a world where 𝗮𝗴𝗲𝗻𝘁𝘀 𝗻𝗲𝗴𝗼𝘁𝗶𝗮𝘁𝗲 𝗽𝗿𝗼𝘁𝗼𝗰𝗼𝗹𝘀.
+Checkout forms were designed for humans. Agents don't have fingers.
 
-Today, Google announced the **Universal Commerce Protocol (UCP)**, co-developed with **Shopify, Stripe, Visa, Mastercard, Target, Walmart, Wayfair, and Etsy**. This is the new standard.
+𝗧𝗵𝗲 𝗣𝗮𝗿𝗮𝗱𝗶𝗴𝗺 𝗦𝗵𝗶𝗳𝘁
 
-⚡ 𝟭. 𝗧𝗵𝗲 𝗢𝗹𝗱 𝗪𝗮𝘆 (𝗛𝘂𝗺𝗮𝗻-𝗖𝗲𝗻𝘁𝗿𝗶𝗰)
-User navigates UI, solves CAPTCHAs, inputs 16-digit PAN.
-❌ 𝗚𝗮𝗽: Depends on human attention span.
-❌ 𝗥𝗲𝘀𝘂𝗹𝘁: Friction and abandoned carts.
+The Old World:
+Human → Browser → Click "Buy" → CAPTCHA → Enter Card → Done
+❌ Designed for eyeballs and fingers
 
-⚡ 𝟮. 𝗧𝗵𝗲 ��� 𝗪𝗮𝘆 (𝗔𝗴𝗲𝗻𝘁-𝗖𝗲𝗻𝘁𝗿𝗶𝗰)
-Agents autonomously discover products, fill carts, and execute payments using **Cryptographic Mandates**.
-✅ 𝗥𝗲𝘀𝘂𝗹𝘁: Zero-click, autonomous execution.
+The New World:
+Agent → API Discovery → Structured Checkout → Crypto Auth → Done
+✅ Designed for autonomous software agents
 
-But how does it all fit together? The ecosystem is complex:
-• 𝗨�𝗣 (Google + Partners): The Universal Standard unifying the stack.
-• ��𝟮 (Google): The Auth Layer handling Mandates & VCs.
-• 𝗔𝗖𝗣 (Shopify): The Commerce Layer for checkout flows.
-• 𝘅��� (Coinbase): The Crypto Extension for web3 native payments.
+𝗧𝗵𝗲 𝗣𝗿𝗼𝗯𝗹𝗲𝗺 𝗜 𝗦𝗼𝗹𝘃𝗲𝗱
 
-𝗧𝗵𝗲 𝗣𝗿𝗼𝗯𝗹𝗲𝗺: How do developers test their agents against *all* of these disjointed layers without building 4 different mock servers?
+"I'm building an AI shopping agent. How do I test it?"
 
-Introducing the 𝗔𝗴𝗲𝗻𝘁𝗣𝗮𝘆𝗺𝗲𝗻𝘁 𝗦𝗮𝗻𝗱𝗯𝗼𝘅 (𝗔𝗣𝗦) 🚀
+Four major protocols have emerged:
+• 𝗨𝗖𝗣 (Google + Shopify + Walmart + Target) — Universal checkout
+• 𝗔𝗣𝟮 (Google) — Agent-to-Agent mandates
+• 𝗔𝗖𝗣 (OpenAI/Shopify) — E-commerce checkout
+• 𝘅𝟰𝟬𝟮 (Coinbase) — HTTP 402 micropayments
 
-A unified testing platform for the agentic commerce ecosystem.
+There was no "Postman for Agent Payments". So I built one.
 
-🧪 𝗪𝗵𝗮𝘁 𝗔𝗣𝗦 𝗗𝗼𝗲𝘀
-• 𝗠𝗼𝗰𝗸 𝗦𝗲𝗿𝘃𝗲𝗿𝘀: Instant endpoints for UCP, AP2, ACP, and x402.
-• 𝗠𝗮𝗻𝗱𝗮𝘁𝗲 𝗩𝗮𝗹𝗶𝗱𝗮𝘁𝗶𝗼𝗻: Checks "Intent" and "Cart" signatures for AP2.
-• 𝗜𝗻𝘀𝗽𝗲𝗰𝘁𝗼𝗿: Validates agent requests against official schemas.
-• 𝗣𝗹𝗮𝘆𝗴𝗿𝗼𝘂𝗻𝗱: Learn the flows interactively.
+𝗜𝗻𝘁𝗿𝗼𝗱𝘂𝗰𝗶𝗻𝗴 𝗔𝗣𝗦 (𝗔𝗴𝗲𝗻𝘁𝗣𝗮𝘆𝗺𝗲𝗻𝘁 𝗦𝗮𝗻𝗱𝗯𝗼𝘅) 🚀
 
-🔧 𝗧𝗵𝗲 𝗕𝘂𝗶𝗹𝗱
-I architected this to bridge the gap between abstract specs and working code:
-• Frontend: React + TypeScript (Interactive Playground)
-• Backend: FastAPI + Pydantic (Mock Servers)
-• Deployment: GitHub Pages (Demo Mode)
+A unified testing platform for all 4 protocols:
 
-🌟 𝗔𝗯𝗼𝘂𝘁 𝗺𝗲 𝗮𝗻𝗱 𝘁𝗵𝗲 𝗿𝗼𝗹𝗲𝘀 𝗜 𝗮𝗺 𝗼𝗽𝗲𝗻 𝘁𝗼:
+⚡ 𝗠𝗼𝗰𝗸 𝗦𝗲𝗿𝘃𝗲𝗿𝘀: Instant endpoints (2,000+ lines of Python)
+🔍 𝗜𝗻𝘀𝗽𝗲𝗰𝘁𝗼𝗿: Validates requests against specs
+🛡️ 𝗦𝗲𝗰𝘂𝗿𝗶𝘁𝘆 𝗔𝗻𝗮𝗹𝘆𝘇𝗲𝗿: Signature verification
+🎮 𝗣𝗹𝗮𝘆𝗴𝗿𝗼𝘂𝗻𝗱 𝗨𝗜: Interactive protocol explorer
 
-💼 I am looking for roles in 𝗣𝗿𝗼𝗱𝘂𝗰𝘁 𝗠𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁, 𝗙𝗶𝗻𝘁𝗲𝗰𝗵, 𝗣𝗮𝘆𝗺𝗲𝗻𝘁𝘀, 𝗥𝗲𝗴𝗧𝗲𝗰𝗵, 𝗗𝗶𝗴𝗶𝘁𝗮𝗹 𝗔𝘀𝘀𝗲𝘁𝘀, and related areas.
+𝗪𝗵𝘆 𝗮 𝗣𝗿𝗼𝗱𝘂𝗰𝘁 𝗢𝘄𝗻𝗲𝗿 𝗕𝘂𝗶𝗹𝘁 𝗧𝗵𝗶𝘀
 
-My background spans product delivery and cross-agency collaboration at the **BIS Innovation Hub Singapore**. I specialize in identifying emerging waves (like Agentic Commerce) and building the infrastructure to enable them.
+I believe the best Product Owners don't just write specs—they prototype.
+
+I built APS to deeply understand the protocols I might one day govern. This is how I learn: by building.
+
+💼 𝗢𝗽𝗲𝗻 𝗳𝗼𝗿 𝗿𝗼𝗹𝗲𝘀 𝗶𝗻:
+Product Management • Fintech • Payments • RegTech • Digital Assets
 
 The full slide deck is attached below! 👇
 
